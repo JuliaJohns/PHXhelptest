@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Marker 1 and 2 Sensor THC</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.6.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Process Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Marker 1 and Marker 2 with Sensor THC Process</h1>
+<p><span style="font-weight: bold;">Note:</span> The XPR cutting processes 
+ automatically include marking process settings. <span style="font-weight: bold;">Marker 
+ 1</span> and <span style="font-weight: bold;">Marker 2 Process</span> 
+ screens are not applicable for XPR, but marking is still supported.</p>
+<p>To run the Marker 1 or Marker 2 process, the part program must contain 
+ the M36 T3 or M36 T4 process selection code. This code works like the 
+ <span style="font-weight: bold;">Cut Mode</span> parameter on the <a href="Main_Screen.htm" 
+	 style="font-weight: bold;">Main</a> and <a href="Setups_Screen.htm" 
+												 style="font-weight: bold;">Cutting</a> 
+ screens. Marker part programs require this code because marker processes 
+ are not available in the <span style="font-weight: bold;">Cut Mode</span> 
+ selection. </p>
+<p>In addition:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">A <span style="font-weight: bold;">Marker Offset</span> 
+	 is set on the <span style="font-weight: bold;">Cutting</span> screen 
+	 so the CNC can position the marker and then reposition the other cutting 
+	 tool.</li>
+	<li class="Bullet">Because a marking tool is always used with another 
+	 tool, you will need to use numbered I/O to control the marker.</li>
+</ul>
+<p>&#160;</p>
+<p>The options on this screen appear when you have selected Sensor THC 
+ for the Lifter in the <a href="Station_Configurarion_Screen.htm" style="font-weight: bold;">Station 
+ Configuration</a> screen. This screen has <a href="#Field_Definitions">field 
+ definitions</a> and <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span><span 
+	 style="font-weight: bold;"> Main screen &gt; Setups &gt; Process &gt; 
+ Marker 1</span></p>
+<p>From here you can customize and control the marking process and torch 
+ height for either a single-torch system (that has 1 marking process) or 
+ for the 1st of 2 marking processes for a dual-torch system (that has a 
+ different power supply for each torch). </p>
+<p>Use the following parameters to customize and control the marker process 
+ and torch:</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr style="height: 13px;">
+		<td><p><a href="#Height_Control">Height Control (Manual/Automatic)</a></p></td>
+		<td><p><a href="#Auto_Kerf_Detect_Voltage">Auto Kerf Detect Voltage</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#IHS_in_Manual">IHS In Manual</a></p></td>
+		<td><p><a href="#Corner_Current_Percent">Corner Current Percent</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Sample_Voltage">Sample Voltage</a></p></td>
+		<td><p><a href="#Preflow_During_IHS">Preflow 
+		 During IHS</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Set_Arc_Voltage">Set Arc Voltage</a></p></td>
+		<td><p><a href="#IHS_Start_Height">IHS 
+		 Start Height</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Set_Arc_Current">Set Arc Current</a></p></td>
+		<td><p><a href="#Skip_IHS_Within">Skip IHS Within</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Marking_Height">Marking Height</a></p></td>
+		<td><p><a href="#AVC_Delay">AVC Delay</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Motion_Delay">Motion Delay</a></p></td>
+		<td><p><a href="#Arc_Off_Time">Arc Off Time</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Marking_Speed">Marking Speed</a></p></td>
+		<td><p><a href="#Stop_Time">Stop Time</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Nozzle_Contact_IHS">Nozzle Contact IHS</a></p></td>
+		<td><p><a href="#Retract_Height">Retract Height</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Nozzle_Contact_Cutting">Nozzle Contact Cutting</a></p></td>
+		<td><p><a href="#Default_All_Parameters">Default All Parameters</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><span style="font-size: 9pt;"><a href="#Auto_Kerf_Detect" style="font-size: 9pt;">Auto 
+		 Kerf Detect</a></span></td>
+		<td>&#160;</td>
+	</tr>
+	<tr style="height: 17px;">
+		<td>&#160;</td>
+		<td>&#160;</td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Height_Control" id="Height_Control"></a></p>
+<div>
+<p class="SettingName">Height Control (Manual/Automatic)</p>
+<p class="SettingBody">Choose <span class="Bold">Manual</span> to control 
+ the THC with the Raise and Lower station controls on the CNC operator 
+ console or Soft Op Con. Before using <span style="font-weight: bold;">Manual</span> 
+ mode, make sure the torch is close enough to the workpiece to transfer 
+ the arc. After cutting starts the torch stays at the height where you 
+ positioned it. Manual torch height control enables the <span style="font-weight: bold;">IHS 
+ In Manual</span> option and disables <span style="font-weight: bold;">Sample 
+ Voltage</span>. </p>
+<p class="SettingBody">Choose <span class="Bold">Automatic</span> to allow 
+ Phoenix to control the height of the torch based on arc voltage feedback 
+ and the settings in this screen. </p>
+</div>
+<p class="SnippetBookmark"><a name="IHS_in_Manual" id="IHS_in_Manual"></a></p>
+<div>
+<p class="SettingName">IHS In Manual</p>
+<p class="SettingBody">If this setting is <span style="font-weight: bold;">ON</span>, 
+ Initial Height Sense (IHS) and the sequence of operations is automatic, 
+ but the torch height is not controlled by measured arc voltage.</p>
+<p class="SettingBody">If&#160;this setting is <span style="font-weight: bold;">OFF</span>, 
+ all operations are controlled manually.</p>
+</div>
+<p class="SnippetBookmark"><a name="Sample_Voltage" id="Sample_Voltage"></a></p>
+<div>
+<p class="SettingName">Sample Voltage</p>
+<p class="SettingBody">When this setting is <span style="font-weight: bold;">ON</span>, 
+ the THC measures the voltage at the end of the AVC Delay and uses the 
+ voltage as a set point for the remainder of the cut.</p>
+<p class="SettingBody">When this setting is<span style="font-weight: bold;"> 
+ OFF</span>, the <span style="font-weight: bold;">Set Arc Voltage</span> 
+ is used as the set point for torch height control.</p>
+</div>
+<p class="SnippetBookmark"><a name="Set_Arc_Voltage" id="Set_Arc_Voltage"></a></p>
+<div>
+<h5>Set Arc Voltage</h5>
+<p class="SettingBody">In the CNC, each plasma process has an arc voltage 
+ set point, called the <span style="font-weight: bold;">Set Arc Voltage</span>, 
+ for a given material thickness, cut height, cut speed, gas type, and current. 
+ When cutting starts, the CNC tracks the actual voltage drop across the 
+ arc and compares it to the <span style="font-weight: bold;">Set Arc Voltage</span>. 
+ When the actual arc voltage is higher or lower than the <span style="font-weight: bold;">Set 
+ Arc Voltage</span>, the CNC commands the lifter to move the torch down 
+ or up.</p>
+<ul style="list-style: disc;">
+	<li class="Bullet"><p>When the actual arc voltage is higher than the 
+	 arc voltage set point, the torch moves down.</p></li>
+	<li class="Bullet"><p>When the arc voltage is lower than the set point, 
+	 the torch moves up.</p></li>
+	<li class="Bullet"><p>The higher the arc voltage set point, the higher 
+	 the cut height.</p></li>
+</ul>
+</div>
+<p class="SnippetBookmark"><a name="Set_Arc_Current" id="Set_Arc_Current"></a></p>
+<div>
+<p class="SettingName">Set Arc Current</p>
+<p class="SettingBody" style="margin-left: 12px;">Enter the amperage needed 
+ to cut the material. This option can be used only with plasma systems 
+ that communicate with the CNC.</p>
+<p style="margin-left: 12px;">The <span style="font-weight: bold;">Set 
+ Arc Current</span> value comes from the cut chart. You can override the 
+ <span style="font-weight: bold;">Set&#160;Arc Current</span> value if 
+ you enter a different number in this field. If you change this option, 
+ it will revert to the original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SettingName"><a name="Marking_Height" id="Marking_Height"></a>Marking 
+ Height</p>
+<p class="SettingBody">This value is the height at which the torch marks 
+ the workpiece. This value originates in the cut chart and can be temporarily 
+ fine-tuned on this screen.</p>
+<p class="SettingName"><a name="Motion_Delay" id="Motion_Delay"></a>Motion 
+ Delay</p>
+<p class="SettingBody">Enter a time delay to elapse between firing the 
+ torch to the start of X/Y marking motion. The <span style="font-weight: bold;">motion 
+ delay</span> is often set to<span style="font-weight: bold;"> 0</span>.</p>
+<p class="SettingName"><a name="Marking_Speed" id="Marking_Speed"></a>Marking 
+ Speed</p>
+<p class="SettingBody">This setting originates in the cut chart and can 
+ be temporarily fine-tuned on this screen.</p>
+<p class="SnippetBookmark"><a name="Nozzle_Contact_IHS" id="Nozzle_Contact_IHS"></a></p>
+<div>
+<p class="SettingName">Nozzle Contact IHS</p>
+<p class="SettingBody">This feature requires that the <span style="font-weight: bold;">Height 
+ Control</span> be set to <span style="font-weight: bold;">Automatic</span>. 
+ When <span style="font-weight: bold;">ON</span>, the THC uses electrical 
+ ohmic contact to sense the workpiece.</p>
+<p class="SettingBody">When <span style="font-weight: bold;">OFF</span>, 
+ the THC uses stall force to sense the workpiece. Set to <span style="font-weight: bold;">OFF</span> 
+ on water tables or painted workpieces because of the unreliability of 
+ the electrical contact.</p>
+</div>
+<p class="SnippetBookmark"><a name="Nozzle_Contact_Cutting" id="Nozzle_Contact_Cutting"></a></p>
+<div>
+<p class="SettingName">Nozzle Contact Cutting</p>
+<p class="SettingBody">The THC uses Ohmic contact to sense and retract 
+ from the workpiece during marking. This option may be set to <span style="font-weight: bold;">OFF</span> 
+ for use with water tables, a dirty workpiece, or a cutting or marking 
+ process with a very low standoff.</p>
+</div>
+<p class="SnippetBookmark"><a name="Auto_Kerf_Detect" id="Auto_Kerf_Detect"></a></p>
+<div>
+<p class="SettingName">Auto Kerf Detect</p>
+<p class="SettingBody">To set this parameter, the THC must be in <span 
+	 style="font-weight: bold;">Automatic</span> mode. When <span style="font-weight: bold;">Auto 
+ Kerf Detect</span> is active, the THC looks for a rapid rise in the measured 
+ arc voltage that indicates that the torch is cutting across a previously 
+ cut kerf. This parameter temporarily disables the AVC and prevents the 
+ torch from diving into the workpiece.</p>
+</div>
+<p class="SnippetBookmark"><a name="Auto_Kerf_Detect_Voltage"></a></p>
+<div>
+<p class="SettingName">Auto Kerf Detect Voltage</p>
+<p class="SettingBody">The Auto Kerf Detect Voltage value (1&#160;– 10 volts) should be set high 
+ enough to detect normal kerf crossings, but low enough to prevent false 
+ kerf detection. In general, the lower the voltage, the higher the detection 
+ sensitivity. This parameter is active only if Auto Kerf Detect is ON.</p>
+</div>
+<p class="SnippetBookmark"><a name="Corner_Current_Percent" id="Corner_Current_Percent"></a></p>
+<div>
+<p class="SettingName">Corner Current Percent</p>
+<p class="SettingBody">Enter a percentage of the <span style="font-weight: bold;">Set 
+ Arc Current</span>. This option reduces the arc current to a percentage 
+ that is 50%&#160;– 100% of the <span style="font-weight: bold;">Set Arc 
+ Current</span> value. Reduced arc current when cutting corners can improve 
+ corner cut quality. </p>
+</div>
+<p class="SnippetBookmark"><a name="Preflow_During_IHS" id="Preflow_During_IHS"></a></p>
+<div>
+<p class="SettingName">Preflow During IHS</p>
+<p class="SettingBody">This parameter is used for Rapid Part cutting. When 
+ this parameter is active (On), the CNC issues the Start and Hold Ignition 
+ signals to the plasma system early to allow the gas preflow to occur while 
+ the THC is performing an IHS operation. This reduces the time required 
+ to move to the next part and start cutting.</p>
+</div>
+<p class="SnippetBookmark"><a name="IHS_Start_Height" id="IHS_Start_Height"></a></p>
+<div>
+<p class="SettingName">IHS Start Height </p>
+<p class="SettingBody">This value is the height above the workpiece where 
+ the THC starts the initial height sense process. When the torch reaches 
+ this distance above the workpiece the following actions occur:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet"><p>Speed slows from Maximum THC Speed to Fast IHS 
+	 Speed.</p></li>
+	<li class="Bullet"><p>THC Torque Limit and Nozzle Contact Enable outputs 
+	 turn on.</p></li>
+	<li class="Bullet"><p>The CNC monitors the Nozzle Contact Sense input. 
+	 This input activates when the torch touches the workpiece, so the 
+	 CNC knows the height of the workpiece.</p></li>
+	<li class="Bullet"><p>The CNC monitors the axis following error which 
+	 the CNC compares to the stall force. When the following error exceeds 
+	 the stall force, the CNC knows the height of workpiece.</p></li>
+	<li class="Bullet"><p>Setting: 2.54&#160;– 
+	 50.8 mm (0.1&#160;– 
+	 2.0 in)</p></li>
+</ul>
+</div>
+<p class="SnippetBookmark"><a name="Skip_IHS_Within" id="Skip_IHS_Within"></a></p>
+<div>
+<p class="SettingName">Skip IHS Within</p>
+<p class="SettingBody">This setting disables initial height sense at pierce 
+ points if IHS falls within the selected distance. This setting increases 
+ cutting productivity. The distance is measured from the end point of the 
+ cut segment to the next pierce point. Choose the check box to automatically 
+ set this parameter to the default value.</p>
+<p class="SettingBody">If you de-select the check box, you can enter a 
+ different <span style="font-weight: bold;">Skip IHS Within</span> value 
+ here.</p>
+</div>
+<p class="SnippetBookmark"><a name="AVC_Delay" id="AVC_Delay"></a></p>
+<div>
+<p class="SettingName">AVC Delay</p>
+<p class="SettingBody">This value is the duration (in seconds) to allow 
+ the power supply&#160;to achieve steady-state operation at the cut height 
+ before automatic voltage control begins. When <span style="font-weight: bold;">AVC 
+ Delay</span> ends, the AVC is enabled for the remainder of the cut. If 
+ the THC is in <span style="font-weight: bold;">Sample Voltage</span> mode, 
+ the arc voltage sample is taken after this delay.</p>
+</div>
+<p class="SnippetBookmark"><a name="Arc_Off_Time"></a></p>
+<div>
+<p class="SettingName">Arc Off Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ (0&#160;– 2 seconds) 
+ that torch motion continues if the arc is lost while cutting. This option 
+ allows motion to continue to the next pierce point. Torch motion stops 
+ when <span style="font-weight: bold;">Arc Off Time</span> ends.</p>
+</div>
+<p class="SnippetBookmark"><a name="Stop_Time" id="Stop_Time"></a></p>
+<div>
+<p class="SettingName">Stop Time</p>
+<p class="SettingBody">This value is the time (0&#160;–&#160;10 seconds) that the CNC 
+ delays X/Y motion at the end of a cut before it moves to the next pierce 
+ point. This time can be used to retract the torch to avoid tip-ups.</p>
+</div>
+<p class="SnippetBookmark"><a name="Retract_Height" id="Retract_Height"></a></p>
+<div>
+<p class="SettingName">Retract Height</p>
+<p class="SettingBody">This value is the height above the workpiece to 
+ which the torch retracts at the end of a cut.</p>
+</div>
+<p class="SnippetBookmark"><a name="Default_All_Parameters"></a></p>
+<div>
+<p class="SettingName">Default All Parameters</p>
+<p class="SettingBody">The CNC can automatically estimate the values for 
+ the plasma or marking process. Choose the <span style="font-weight: bold;">Default 
+ All Parameters</span> soft key to load the estimated values. Under most 
+ conditions, these estimated values yield good results. However, you can 
+ override any of these values for special conditions. To override an estimated 
+ value, clear the check box for that parameter and enter a new value. The 
+ CNC displays your entered value in blue.</p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<p class="SettingName">Oxyfuel</p>
+<p class="SettingBody" style="margin-left: 12px;">This soft key opens the 
+ <span style="font-weight: bold;">Oxyfuel</span> screen where you can customize 
+ and control torch motion and the processes for oxyfuel 
+ cutting/marking.</p>
+</div>
+<div>
+<p class="SettingName">Load Data/Save Data</p>
+<p class="SettingBody">Use these soft keys to save the settings from the<span 
+	 style="font-weight: bold;"> Process</span> screen. The CNC saves the 
+ file on either the CNC hard drive or on a USB memory stick. You can then 
+ transfer this file to another CNC or save a copy as a backup.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Marker 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 1</span> screen and process parameters are not available for XPR, 
+ but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Marker 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 2</span> &#160;screen and process parameters are not available 
+ for XPR, but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Timing Diagram</p>
+<p class="SettingBody">This soft key shows&#160;the activation and deactivation 
+ of I/O for each type of process. </p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

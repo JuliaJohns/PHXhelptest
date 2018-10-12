@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Sensor THC axis</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_10";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Sensor THC axis</h1>
+<p>The <span style="font-weight: bold;">Sensor THC axis</span> screen opens 
+ when you choose the <span style="font-weight: bold;">Sensor THC</span> 
+ soft key on the <span style="font-weight: bold;">Axes</span> screen. Use 
+ this screen to enter information specific to the lifter installed on the 
+ cutting machine. The EDGE Connect CNC can support up to 4 Sensor THC axes.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Voltage_gain">Voltage gain</a></p></td>
+		<td><p><a href="#Slide_length">Slide length</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Servo_error_tolerance">Servo error tolerance</a></p></td>
+		<td><p><a href="#Home">Home</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Stall_force_tolerance_">Stall force tolerance</a></p></td>
+		<td><p><a href="#Current_limit__">Current limit %</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Encoder_counts_mm_inch">Encoder counts per mm 
+		 (inch)</a></p></td>
+		<td><p><a href="#Home_current_limit__">Home current limit %</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Retry_on_transfer_fail">Retry on transfer fail</a></p></td>
+		<td><p><a href="#IHS_current_limit__">IHS current limit %</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Tracking_mode">Tracking mode</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Average_voltage_over">Average voltage over</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Lock_on_delta_limit">Lock on delta limit</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Lock_on_rate_limit">Lock on rate limit</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Voltage_tracking_range_">Voltage tracking range</a></p></td>
+	</tr>
+</table>
+<p class="SettingName"><a name="Voltage_gain" id="Voltage_gain"></a>Voltage 
+ gain</p>
+<p class="SettingBody">This value controls the relative responsiveness 
+ of the entire Sensor THC to maintain the programmed cut height. The higher 
+ the value you enter, the more aggressive the response of the lifter. Voltage 
+ Gain is the only tuning parameter that affects cutting. The other gains 
+ affect raising and lowering the torch and initial height sense motion. 
+ <span style="font-weight: bold;">Voltage gain</span> can range from 1 
+ to 500. For Sensor THC, the recommended setting is 100.</p>
+<p class="SnippetBookmark"><a name="Servo_error_tolerance" id="Servo_error_tolerance"></a></p>
+<div>
+<h4><span>Servo error tolerance</span> </h4>
+<p class="SettingBody">Servo error, also called following error, is the 
+ difference between the commanded motor position and the actual motor position 
+ as calculated by the drive. The servo error tolerance is the upper limit 
+ of the amount of following error allowed before the CNC faults. &#160;&#160;</p>
+<p class="SettingBody">The amount of servo error tolerance depends on the 
+ cutting machine mechanics. Setting the servo error tolerance too low could 
+ cause the CNC to fault repeatedly. Setting the tolerance too high may 
+ allow inaccurate motion or result in mechanical damage. Set the servo 
+ error tolerance to a value higher than the steady-state following error 
+ which is reported by the drive.</p>
+</div>
+<p class="SettingName"><a name="Stall_force_tolerance_" id="Stall_force_tolerance_"></a>Stall 
+ force tolerance</p>
+<p class="SettingBody">Stall force is a method of detecting the workpiece 
+ during initial height sense. Use stall force when cutting underwater or 
+ in other conditions in which ohmic contact is not feasible.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Stall force tolerance</span> 
+ is the maximum amount of following error on the THC axis. The CNC starts 
+ monitoring the THC axis following error when it reaches the Start IHS 
+ Height. The following error accumulates when the torch tip contacts the 
+ workpiece and the lifter continues downward movement, but is stopped by 
+ the workpiece. When the following error exceeds the stall force tolerance 
+ value, the CNC knows the position of the workpiece motion reverses. Motion 
+ stops when the amount of reverse travel of the THC equals the Transfer 
+ Height. </p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> The 
+ recommended Stall force tolerance for Sensor THC is 1.27 mm (0.05 inch).</p>
+<p class="SnippetBookmark"><a name="Encoder_counts_mm_inch" id="Encoder_counts_mm_inch"></a></p>
+<div>
+<h4>Encoder counts per mm (inch)</h4>
+<p class="SettingBody">This parameter is a position scaling factor used 
+ by Phoenix. Refer to the <span style="font-style: italic;">EDGE Connect 
+ Setup and Installation Manual</span> (809340) for a general overview of 
+ encoder counts. Refer to the drive manufacturer documentation for specific 
+ scaling information required by the drives.</p>
+</div>
+<p class="SettingName"><a name="Retry_on_transfer_fail" id="Retry_on_transfer_fail"></a>Retry 
+ on transfer fail</p>
+<p class="SettingBody">When IHS completes, the following actions occur:</p>
+<ol style="list-style: decimal;">
+	<li><p class="SettingBody">The torch attempts ignition.</p></li>
+	<li><p class="SettingBody">The CNC starts a 10 second timer and waits 
+	 for the Cut/Mark Sense input (or Cut Sense # input) to turn on.</p></li>
+	<li><p class="SettingBody">Finally the CNC displays the status message 
+	 &quot;Waiting For Arc On.&quot; </p></li>
+</ol>
+<p class="SettingBody">If the input does not activate within 10 seconds, 
+ the ignition process stops, the torch retracts, and the IHS starts again 
+ with another attempt to ignite the torch. The CNC repeats this sequence 
+ twice.</p>
+<p class="SettingName"><a name="Slide_length" id="Slide_length"></a>Slide 
+ length</p>
+<p class="SettingBody">Enter the physical length of the slide. The Sensor 
+ THC slide is 239 mm (9.40 inches).</p>
+<p class="SettingName"><a name="Home" id="Home"></a>Home</p>
+<p class="SettingBody">Select the homing method for the THC Axis. If the<span 
+	 style="font-weight: bold;"> Home to Switch</span> option is selected, 
+ the THC Home (or THC Home 1) input is the Home Switch input. The Sensor 
+ THC uses Hard Stop Current Limited.</p>
+<p class="SettingBody">If you select the <span style="font-weight: bold;">Hard 
+ Stop Current Limited</span> option, the THC Torque Limit output should 
+ be connected to the current limit input of the drive. This reduces torque 
+ during homing or initial height sense. Select the option that is compatible 
+ with the installed lifter and motor drive.</p>
+<p class="SettingName"><a name="Current_limit__" id="Current_limit__"></a>Current 
+ limit %</p>
+<p class="SettingBody">Set the maximum current output for the operation 
+ of the lifter motor, from 0.001 to 100. The default is 50.</p>
+<p class="SettingName"><a name="Home_current_limit__" id="Home_current_limit__"></a>Home 
+ current limit %</p>
+<p class="SettingBody">Enter the maximum current during the homing sequence 
+ to stall and detect the top of the slide. Set <span style="font-weight: bold;">Home 
+ Current Limit</span> to 50% of drive capacity, from 0.001 to 100. The 
+ default is 10.</p>
+<p class="SettingName"><a name="IHS_current_limit__" id="IHS_current_limit__"></a>IHS 
+ current limit %</p>
+<p class="SettingBody">Set the maximum current during IHS to stall and 
+ detect the workpiece, from 0.001 to 100. The default is 5.</p>
+<p class="SettingName"><a name="Tracking_mode" id="Tracking_mode"></a>Tracking 
+ mode</p>
+<p class="SettingBody">The CNC uses voltage tracking to lock on to the 
+ Actual Arc Voltage and compare&#160;actual arc voltage to the Set Arc 
+ Voltage. You can choose individual tracking mode settings for Plasma 1, 
+ Plasma 2, Marker 1, Marker 2, and Laser processes.</p>
+<p class="SettingBody">For most applications, set tracking mode to <span 
+	 style="font-weight: bold;">Normal</span>. Voltage tracking in <span 
+	 style="font-weight: bold;">Normal</span> mode locks on within 2 volts 
+ of the Set Arc Voltage value. Adjust voltage gain to increase lifter responsiveness. 
+ In <span style="font-weight: bold;">Normal</span> mode, arc voltage accuracy 
+ is +/- 1.0 arc volt.</p>
+<p class="SettingBody">Use <span style="font-weight: bold;">Special</span> 
+ tracking mode only for applications that require an extra high-speed, 
+ high-accuracy response, such as diamond-plate cutting. In <span style="font-weight: bold;">Special</span> 
+ mode, arc voltage accuracy is +/- 0.25 arc volt.</p>
+<p class="SettingName"><a name="Average_voltage_over" id="Average_voltage_over"></a>Average 
+ voltage over</p>
+<p class="SettingBody">Sets the arc voltage sampling rate. Phoenix records 
+ the arc voltage every millisecond and averages the arc voltage over the 
+ number of milliseconds entered. The average value is compared to the voltage 
+ set point and then the command to the lifter is calculated.</p>
+<p class="SettingBody">For<span class="Bold">&#160;</span>Sensor THC, choose 
+ <span style="font-weight: bold;">Plasma 1</span> or <span style="font-weight: bold;">2</span> 
+ as the process, then choose <span style="font-weight: bold;">Normal</span> 
+ for tracking mode. Set <span style="font-weight: bold;">Average Voltage 
+ Over</span> to 25 ms. Do not use <span style="font-weight: bold;">Special</span> 
+ tracking mode with the Sensor THC.</p>
+<p class="SettingName"><a name="Lock_on_delta_limit" id="Lock_on_delta_limit"></a>Lock 
+ on delta limit</p>
+<p class="SettingBody">This setting creates a lock-on window above and 
+ below the lock-on value. The<span style="font-weight: bold;"> Set Arc 
+ Voltage</span> value, within this window, controls the operation of the 
+ THC. Enter the number of volts above and below the <span style="font-weight: bold;">lock-on</span> 
+ value to create the <span style="font-weight: bold;">lock-on</span> window, 
+ from 0 to 10 volts. The default is 0.</p>
+<p class="SettingName"><a name="Lock_on_rate_limit" id="Lock_on_rate_limit"></a>Lock 
+ on rate limit</p>
+<p class="SettingBody">This setting sets the number of consecutive values 
+ within the <span style="font-weight: bold;">lock-on</span> window that 
+ are required to define lock-on. Enter the number of consecutive values 
+ within the <span style="font-weight: bold;">lock-on</span> window that 
+ must be recorded to remain at lock-on.</p>
+<p class="SettingName"><a name="Voltage_tracking_range_" id="Voltage_tracking_range_"></a>Voltage 
+ tracking range</p>
+<p class="SettingBody">This value sets the allowable variation in arc voltage 
+ from the set point. If the arc voltage exceeds this range, the CNC faults 
+ and pauses cutting. Enter the number of volts of allowable arc variation, 
+ from 5 to 400. The default is 20.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

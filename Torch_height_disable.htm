@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Torch height disable</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Torch Height Disable </h1>
+<p>The Torch Height Disable (THD) feature activates the Torch Height Disable 
+ output and freezes, or disables, the automatic adjustment of the automated 
+ torch height control system to prevent diving or crashing of the torch 
+ in corners, holes, or other part features which require the cutting machine 
+ to slow down to preserve cut quality or system mechanics.</p>
+<p>The CNC activates the Torch Height Disable output based on the values 
+ of the following parameters:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">Torch Height Disable Speed</li>
+	<li class="Bullet">Distance Before THD Speed</li>
+	<li class="Bullet">Distance After THD Speed</li>
+</ul>
+<p>When any one of these conditions is met, the Torch Height Disable feature 
+ is activated. The definition of a corner is based on the tangent angle 
+ in the <a href="Special_Setups.htm" style="font-weight: bold;">Special 
+ Setups</a> screen and the value of the <span style="font-weight: bold;">Torch 
+ Height Disable speed</span>.</p>
+<p class="SettingName">Tangent Angle</p>
+<p class="SettingBody">Set on the <span style="font-weight: bold;">Special 
+ Setups</span> screen, this value specifies the degree of the tangent angle 
+ for motion control. </p>
+<p class="SettingBody">Segments within a part that intersect at angles 
+ <span style="font-weight: bold;">greater than</span> the selected tangent 
+ angle will decelerate to zero or the minimum corner speed. </p>
+<p class="SettingBody">Segments within a part that intersect at angles<span 
+	 style="font-weight: bold;"> less than or equal to</span> the selected 
+ tangent angle do not decelerate unless the next segment is a speed-limited 
+ arc.</p>
+<div>
+<p class="SettingName">Torch height disable speed</p>
+<p class="SettingBody">This value specifies the percentage of the program 
+ cut speed at which the CNC disables the height control.</p>
+<p class="SettingBody">For example, when the cutting machine slows to cut 
+ a part feature such as a corner, the arc voltage increases. Increased 
+ arc voltage causes the torch to move toward the workpiece. When the cutting 
+ machine slows down to this percentage of the cut speed, the CNC disables 
+ THC voltage tracking.</p>
+</div>
+<p class="SettingName">Distance Before THD Speed</p>
+<p class="SettingBody">This distance is active whenever the program cut 
+ speed drops below the Torch Height Disable Speed, or when segments intersect 
+ at an angle greater than the tangent angle. This value specifies the distance 
+ before turning a corner at which the CNC disables the torch height control.</p>
+<p class="SettingName">Distance After THD Speed</p>
+<p class="SettingBody">This value specifies the distance after turning 
+ a corner to enable voltage tracking for torch height control. <span style="font-weight: bold;">Distance 
+ After THD Speed</span> is active whenever the speed drops below the Torch 
+ Height Disable Speed, or when segments intersect at an angle greater than 
+ the tangent angle.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

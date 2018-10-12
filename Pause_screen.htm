@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Pause screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Pause</h1>
+<p>To pause cutting, do one of the following actions:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">Press the <span style="font-weight: bold;">Stop</span> 
+	 button on the operator console.</li>
+	<li class="Bullet">Press <span style="font-weight: bold;">F10</span> 
+	 on the keyboard.</li>
+	<li class="Bullet">Press <span style="font-weight: bold;">Stop</span> 
+	 on the Soft Op Con.</li>
+</ul>
+<p>&#160;</p>
+<p><img src="Art/SoftOpConStartStop.jpg" alt="" style=" border:none; width:100%; max-width:336px;" border="0" /></p>
+<p style="margin-left: 200px;">&#160;&#160;&#160;&#160;</p>
+<p>The Cut Loss Recovery features of the CNC show on the <span style="font-weight: bold;">Pause</span> 
+ screen. The <span style="font-weight: bold;">Pause</span> screen displays 
+ when you press <span style="font-weight: bold;">Stop</span> or if the 
+ Cut Sense input turns off. Choose the <span style="font-weight: bold;">Cancel</span> 
+ soft key on the <span style="font-weight: bold;">Pause</span> screen to 
+ cancel the part program.</p>
+<h2>Soft keys</h2>
+<p class="SettingName">Return to Start</p>
+<p class="SettingBody">This soft key returns to the start point of the 
+ part program. If you use the <span style="font-weight: bold;">Return to 
+ Start</span> function after a cut loss, the current position of the cutting 
+ device on the path is lost.</p>
+<p class="SettingName">Backup and Forward on Path</p>
+<p class="SettingBody">Use these two soft keys to move backward and forward 
+ along the cut path. Press the <span style="font-weight: bold;">Start</span> 
+ key to resume the cut at the program cut speed. The <span style="font-weight: bold;">Backup</span> 
+ and <span style="font-weight: bold;">Forward on Path</span> soft keys 
+ also allow full movement through all segments of a <span style="font-weight: bold;">Shape 
+ Repeat</span> part.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Backup</span> and<span 
+	 style="font-weight: bold;"> Forward on Path</span> use the <span style="font-weight: bold;">Move 
+ Speed</span> displayed on the <span style="font-weight: bold;">Pause</span> 
+ screen. Choose the <span style="font-weight: bold;">Change Move Speed</span> 
+ to speed up or slow down the <span style="font-weight: bold;">Move Speed</span>.</p>
+<p class="SettingName">Move to Pierce</p>
+<p class="SettingBody">Choose the<span style="font-weight: bold;"> Move 
+ to Pierce</span> soft key to position the tool at a pierce point. </p>
+<p class="SettingName">Change Cut Mode</p>
+<p class="SettingBody">This soft key alternates the restart mode between 
+ <span style="font-weight: bold;">Cut</span> and <span style="font-weight: bold;">Trial</span>. 
+ This allows the operator to move through the part partially as a trial 
+ cut and partially as an actual cut.</p>
+<p class="SettingBody">Change <span style="font-weight: bold;">Move Speed 
+ Cycles</span> through the four move speeds that are available: <span style="font-weight: bold;">Maximum 
+ Machine Speed</span>,<span style="font-weight: bold;"> High Jog Speed</span>, 
+ <span style="font-weight: bold;">Medium Jog Speed</span> and <span style="font-weight: bold;">Low 
+ Jog Speed</span> from the <span style="font-weight: bold;">Speeds</span> 
+ setups.</p>
+<p class="SettingName">On-Path Restart</p>
+<p class="SettingBody">To restart the cut at the pierce point that you 
+ selected using<span style="font-weight: bold;"> On-Path Backup</span>, 
+ press the <span style="font-weight: bold;">Start</span> key. The cut speed 
+ and the cut mode are the same as they were before the motion was paused 
+ unless the values have been edited in the<span style="font-weight: bold;"> 
+ Watch Window</span>.</p>
+<p class="SettingBody">While the <span style="font-weight: bold;">Pause</span> 
+ window displays, the manual arrow keys are fully functional so you can 
+ move the cutting device. This allows you to move the machine in any direction 
+ (not necessarily along the path) to inspect the partially cut piece. Once 
+ the cutting device is moved off the cut path, the <span style="font-weight: bold;">Off-Path 
+ Pause</span> window displays.</p>
+<p class="SettingName">Return to Path</p>
+<p class="SettingBody">Press this soft key in the <span style="font-weight: bold;">Off-Path 
+ Pause</span> window to return the cutting device to the point on the cut 
+ path from which it was jogged away. This feature is useful for inspecting 
+ or replacing components after cut loss and then returning to the cut loss 
+ point. When the cutting device is back on the cut path, the <span style="font-weight: bold;">On-Path 
+ Pause</span> window is restored and cutting can resume.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Move Part</span> 
+ moves the entire part on the plate. The point along the cut path to which 
+ the cutting device moves becomes the current position of the cutting device. 
+ The<span style="font-weight: bold;"> On-Path Pause</span> window displays 
+ again because the cutting device is on path.</p>
+<p class="SettingName">Off-Path Restart</p>
+<p class="SettingBody">Press the <span style="font-weight: bold;">Start</span> 
+ key from the <span style="font-weight: bold;">Off-Path Pause</span> window, 
+ to construct a lead-in from the off-path point back to the original part.</p>
+<p class="SettingBody">In a cut loss situation, the operator can use the 
+ <span style="font-weight: bold;">Backup on Path</span> key in the <span 
+	 style="font-weight: bold;">On-Path Pause</span> window menu to position 
+ the cutting device on the cut path where the cut was lost. The operator 
+ can then use the manual arrow keys to jog the cutting device off path 
+ to a suitable pierce point.</p>
+<p class="SettingBody">Press <span style="font-weight: bold;">Start</span> 
+ at this point to cut a new lead-in from the off-path pierce point to the 
+ point along the path from which the cutting device was jogged away. When 
+ the cutting device is back on path, it continues along the path to cut 
+ the remainder of the part.</p>
+<p class="SettingName">Rush Job Interrupt</p>
+<p class="SettingBody">This soft key allows you to pause the current part 
+ program and retain the part and current position information. On the <span 
+	 style="font-weight: bold;">Pause</span> screen, press the <span style="font-weight: bold;">Cancel</span> 
+ key. A prompt displays on the screen to allow you to save the part information.</p>
+<p class="SettingBody">If you select <span style="font-weight: bold;">Yes</span>, 
+ the <span style="font-weight: bold;">Resume Last Part</span> button displays 
+ on the<span style="font-weight: bold;"> Files</span> screen. You can load 
+ and execute another part program and then return to the original part 
+ using the <span style="font-weight: bold;">Resume Last Part</span> soft 
+ key. The part program and position resumes.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

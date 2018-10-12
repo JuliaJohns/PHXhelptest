@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>S-curve acceleration</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>S-curve acceleration</h1>
+<p>S-curve motion is a feature of Hypertherm CNCs that allows smoother 
+ motion during acceleration than traditional, or trapezoidal, motion. S-curve 
+ motion is available in the Advanced Plasma/Oxyfuel and Advanced Waterjet 
+ options to the EDGE Connect. </p>
+<p>During trapezoidal motion, the CNC sends a command to the drive systems 
+ to accelerate immediately to the desired machine acceleration, as determined 
+ in <span style="font-weight: bold;">Machine Setups</span>. This is the 
+ fastest way of reaching the maximum acceleration rate and achieving the 
+ desired cut speed. However, this rapid change in acceleration produces 
+ “jerk” in the motion of the table that can affect cut quality. Jerk is 
+ always greatest when the table is beginning to accelerate or decelerate 
+ at the beginning or end of a cut.</p>
+<p>During S-curve motion, the CNC sends acceleration commands to the drive 
+ system in increments until the system reaches the maximum acceleration 
+ rate. The S-curve commands smooth out acceleration and reduce jerk for 
+ a given acceleration rate. This may allow the table to reach higher acceleration 
+ rates if jerk was the limiting factor when using trapezoidal motion.</p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="Art/TrapJerkAccelVelocity.jpg" alt="" style=" border-left-width:1px; border-left-style:Solid; border-top-width:1px; border-top-style:Solid; border-right-width:1px; border-right-style:Solid; border-bottom-width:1px; border-bottom-style:Solid; width:100%; max-width:253px;" border="1" /></p>
+<p style="text-align: center;">Trapezoidal</p>
+<p style="text-align: center;">&#160;</p>
+<p style="text-align: center;"><img src="Art/ScurveJerkAccelVelocity.jpg" alt="" style=" border-left-width:1px; border-left-style:Solid; border-top-width:1px; border-top-style:Solid; border-right-width:1px; border-right-style:Solid; border-bottom-width:1px; border-bottom-style:Solid; width:100%; max-width:253px;" border="1" /></p>
+<p style="text-align: center;">S-curve</p>
+<p>&#160;</p>
+<p>The typical implementation of S-curve motion uses the same peak acceleration 
+ as trapezoidal acceleration and results in smoother acceleration. However, 
+ this implementation takes more time to reach the desired acceleration 
+ rate and more time to complete a specific motion.</p>
+<p>In Hypertherm’s implementation of S-curve, the CNC uses the same average 
+ acceleration rate that was selected for trapezoidal acceleration but uses 
+ a peak acceleration that is 50% higher than the average acceleration setting. 
+ Increasing the peak acceleration allows S-curve acceleration to execute 
+ a segment in the same amount of time as trapezoidal acceleration.</p>
+<p>As an example, if 40 mG average acceleration has been selected for trapezoidal 
+ motion, when S-curve motion is turned on, the table still accelerates 
+ at an average rate of 40 mG but the peak rate of acceleration will reach 
+ 60 mG.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>System</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.10.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Special Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>System</h1>
+<p>The <span style="font-weight: bold;">System</span> screen shows table 
+ manufacturer and CNC performance information. </p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span> <span 
+	 style="font-weight: bold;">Setups &gt; Password &gt; Special Setups 
+ &gt; System</span></p>
+<p class="SettingName">Table Manufacturer Information</p>
+<p class="SettingBody">Enter the contact information for the cutting table 
+ manufacturer. This information displays when Remote Help starts. You can 
+ also change the web server address to show your own Remote Help server.</p>
+<p class="SettingName">CNC Performance Information</p>
+<p class="SettingBody">This feature shows information about processes within 
+ the CNC that can contribute to unreliable motion control. Look at these 
+ parameters if the CNC takes longer than expected to load files or perform 
+ operations than it did when it was originally installed.</p>
+<p class="SettingBody">Each parameter provides the valid range for a process 
+ that operates within the CNC. Time values next to each parameter display 
+ the longest time that has been recorded for that process since the CNC 
+ was turned on. Values in blue are within the valid range; values in red 
+ are outside the valid range.</p>
+<p class="SettingBody">To verify CNC performance:</p>
+<ol style="list-style: decimal;">
+	<li><p class="SettingBody">From the<span style="font-weight: bold;"> 
+	 Main</span> <span style="font-weight: bold;">screen</span>, choose 
+	 <span style="font-weight: bold;">Setups &gt; Password</span> and enter 
+	 the <span style="font-weight: bold;">Special Setups screen</span> 
+	 password.</p></li>
+	<li><p class="SettingBody">Choose the<span style="font-weight: bold;"> 
+	 System</span> soft key. If the numbers for all parameters are blue, 
+	 the CNC is operating normally. If the number for any parameter is 
+	 red, restart the CNC.</p></li>
+	<li><p class="SettingBody">After restarting the CNC, check the <span 
+	 style="font-weight: bold;">System</span> screen again.</p></li>
+</ol>
+<p class="SettingBody">If any number displays in red after the restart, 
+ and other programs are running, shut down any other programs so that Phoenix 
+ is the only program running.</p>
+<p class="SettingBody">If any number still displays in red after shutting 
+ down all other programs, contact Hypertherm Technical Service for assistance.</p>
+<h2><span class="Bold">Soft Keys</span></h2>
+<p class="SettingName">Reset setups</p>
+<p class="SettingBody">If your system is experiencing motion or other problems 
+ for which you cannot find a solution, reloading the factory settings provides 
+ you with a known starting point for configuring the CNC to work with your 
+ cutting machine. For more information about setup files, see <a href="Setup_files.htm">Phoenix 
+ setup files</a>.</p>
+<p class="SettingBody">If the soft key label reads <span style="font-weight: bold;">Default 
+ Setups</span>, then the file Default.ini exists in the hard drive root 
+ folder. Reload the default settings instead of the factory settings, if 
+ possible.</p>
+<p class="SettingName">Network tools</p>
+<p class="SettingBody">Opens the <span style="font-weight: bold;">Network 
+ Connections</span> section of the<span style="font-weight: bold;"> Windows 
+ Control Panel</span> to set up your wireless or LAN network connections. 
+ </p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Oxy Fuel Cut Chart Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.7.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Cut Charts" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Oxyfuel Cut Chart</h1>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<h2>Process Selection Fields</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Torch_Type">Torch Type</a></p></td>
+		<td><p><a href="#Material_Type">Material Type</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Specific_Material">Specific Material</a></p></td>
+		<td><p><a href="#Fuel_Gas">Fuel Gas</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Material_Thickness">Material Thickness</a></p></td>
+		<td><p><a href="#Tip_Size">Tip Size</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cutting_Tip">Cutting Tip</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2>Other Parameter Fields</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Cut_Speed">Cut Speed</a></p></td>
+		<td><p><a href="#Kerf">Kerf</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#High_Preheat_Time">High Preheat Time</a></p></td>
+		<td><p><a href="#Pierce_Time">Pierce Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Moving_Pierce_Time">Moving Pierce Time</a></p></td>
+		<td><p><a href="#Creep_Time">Creep Time</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Torch_Type" id="Torch_Type"></a></p>
+<div>
+<h5>Torch Type</h5>
+<p class="SettingBody">Select the torch that you are using on the cutting 
+ table. If a power supply has only one torch available, the <span style="font-weight: bold;">Torch 
+ Type</span> selection will not be available.</p>
+</div>
+<p class="SnippetBookmark"><a name="Material_Type" id="Material_Type"></a></p>
+<div>
+<h5>Material Type</h5>
+<p class="SettingBody">This field displays the type of material for this 
+ cut chart: <span style="font-weight: bold;">mild steel</span>, <span style="font-weight: bold;">stainless 
+ steel</span>, or <span style="font-weight: bold;">aluminum</span>.</p>
+</div>
+<p class="SnippetBookmark"><a name="Specific_Material" id="Specific_Material"></a></p>
+<div>
+<h5>Specific Material</h5>
+<p class="SettingBody">This value identifies a custom cut chart.</p>
+</div>
+<p class="SettingName"><a name="Fuel_Gas" id="Fuel_Gas"></a>Fuel Gas</p>
+<p class="SettingBody">This field shows the fuel gas for the process.</p>
+<p class="SnippetBookmark"><a name="Material_Thickness" id="Material_Thickness"></a></p>
+<div>
+<h5>Material Thickness</h5>
+<p class="SettingBody">This field shows the workpiece thickness for the 
+ cut chart. Select a different material thickness to change the cut chart.</p>
+</div>
+<p class="SettingName"><a name="Tip_Size" id="Tip_Size"></a>Tip Size</p>
+<p class="SettingBody" style="background-color: Transparent;">This field 
+ shows the tip size needed for the torch. Select a different tip size to 
+ change the cut chart. The cutting tip part number displays below the <span 
+	 style="font-weight: bold;">Tip Size</span>.</p>
+<p class="SettingName"><a name="Cutting_Tip" id="Cutting_Tip"></a>Cutting 
+ Tip</p>
+<p class="SettingBody">This field shows the model of cutting tip.</p>
+<p class="SnippetBookmark"><a name="Cut_Speed" id="Cut_Speed"></a></p>
+<div>
+<h5>Cut Speed</h5>
+<p class="SettingBody">This field sets the cutting speed (also known as 
+ feed rate) for the material type and material thickness of the workpiece.</p>
+<p class="SettingBody">You can use this field to override the default Cut 
+ Speed. The default Cut Speed value (in inches per minute or mm per minute) 
+ comes from the cut chart. If you change this option, it reverts to the 
+ original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SnippetBookmark"><a name="Kerf" id="Kerf"></a></p>
+<div>
+<h5>Kerf</h5>
+<p class="SettingBody">Kerf is the width of the cut that the tool&#160;removes 
+ as it cuts the material. The CNC automatically offsets the motion path 
+ by half the kerf dimension to make sure that the part is cut at the correct 
+ size.</p>
+</div>
+<p class="SnippetBookmark"><a name="High_Preheat_Time" id="High_Preheat_Time"></a></p>
+<div>
+<p class="SettingName">High Preheat Time</p>
+<p class="SettingBody" style="background-color: Transparent;">This value 
+ turns on the high preheat gas valve and sets the time for preheating the 
+ workpiece before piercing. When you run the part, you can use the <span 
+	 style="font-weight: bold;">Set</span>, <span style="font-weight: bold;">Extend</span>, 
+ or <span style="font-weight: bold;">Release</span> soft keys to change 
+ the preheat time. When a part is being cut, use the<span style="font-weight: bold;"> 
+ Set</span>, <span style="font-weight: bold;">Extend</span>, or<span style="font-weight: bold;"> 
+ Release</span> soft keys to change the <span style="font-weight: bold;">High 
+ Preheat Time</span>. To bypass the preheat timer, press <span style="font-weight: bold;">Start</span> 
+ 2 times.</p>
+</div>
+<p class="SnippetBookmark"><a name="Pierce_Time" id="Pierce_Time"></a></p>
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SettingName"><a name="Moving_Pierce_Time" id="Moving_Pierce_Time"></a>Moving 
+ Pierce Time</p>
+<p class="SettingBody">This field sets the amount of time that the pierce 
+ control output remains on and allows X/Y motion while piercing. The moving 
+ pierce allows the molten material from the pierce to be ejected behind 
+ the torch.</p>
+<p class="SnippetBookmark"><a name="Creep_Time" id="Creep_Time"></a></p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<h6>Save Process</h6>
+<p class="SettingBody">This soft key saves the current process settings 
+ to the hard drive.</p>
+</div>
+<div>
+<h6>Reset Process</h6>
+<p class="SettingBody">This soft key resets the cut chart to factory defaults 
+ based on the process variables selected. The CNC retrieves these settings 
+ from the cut chart file ending in .fac.</p>
+</div>
+<div>
+<h6>Save Cut Charts</h6>
+<p class="SettingBody">This soft key copies the current user and factory 
+ cut chart files to USB memory stick. User files have an .usr file extension 
+ and the factory files have a .fac file extension.</p>
+<p class="SettingBody">Examples of user and factory file name are<span 
+	 style="font-style: italic;"> Mild Steel-HPR XD-HPR.</span>usr and 
+ <span style="font-style: italic;">Mild Steel-HPR XD-HPR.</span>fac.</p>
+<p class="SettingBody">If you have changed any cut charts, be sure to use 
+ this feature to back up your cut charts before you load a cut chart update 
+ (cutchart.exe). Contact your OEM or system integrator if you need to update 
+ your cut charts.</p>
+</div>
+<div>
+<h6>Load Cut Charts</h6>
+<p class="SettingBody">This soft key loads cut charts from the USB memory 
+ stick.</p>
+</div>
+<div>
+<h6>Change Consumables</h6>
+<p class="SettingBody">This soft key shows the torch consumables and their 
+ part numbers. For power supplies except XPR, this screen also shows the 
+ accumulated cutting time on the plasma nozzle and electrode or oxyfuel 
+ torch tip.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

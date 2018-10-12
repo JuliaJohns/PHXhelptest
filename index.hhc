@@ -1,0 +1,283 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contents">
+    <param name="Local" value="Main_Screen.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Main">
+      <param name="Local" value="Main_Screen.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Load a part">
+      <param name="Local" value="Load_a_part.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Cut a part">
+      <param name="Local" value="Cut_a_part.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Pause screen">
+      <param name="Local" value="Pause_screen.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Manual Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Manual">
+        <param name="Local" value="Manual_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Manual Options">
+        <param name="Local" value="Manual_Options_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Home Axes">
+        <param name="Local" value="Home_Axes_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Shape Manager Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Shape Manager or Shape Library">
+        <param name="Local" value="Shape_Manager_or_Shape_Library_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Shape Wizard">
+        <param name="Local" value="Shape_Wizard.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Text Editor">
+        <param name="Local" value="Text_Editor_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Remnant Trace">
+        <param name="Local" value="Remnant_Trace_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Manual Nester">
+        <param name="Local" value="Nester_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Nester Setup">
+        <param name="Local" value="Nester_Setups_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Files Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Files or Load from Disk">
+        <param name="Local" value="Files_or_Load_From_Disk_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Save to Disk">
+        <param name="Local" value="Save_to_Disk_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Save System Files">
+        <param name="Local" value="Save_System_Files_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Current Part Options Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Current Part Options">
+        <param name="Local" value="Current_Part_Options_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Repeat">
+        <param name="Local" value="Repeat_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Align">
+        <param name="Local" value="Align_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Setups Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Setups">
+        <param name="Local" value="Setups_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Watch Window">
+        <param name="Local" value="Watch_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Process Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Marker 1 and 2 with Sensor THC Process">
+        <param name="Local" value="Marker_1_and_2_Sensor_THC.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Marker 1 and 2 without Sensor THC Process">
+        <param name="Local" value="Marker_1_and_2_No_THC.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Plasma 1 and 2 with Sensor THC Process">
+        <param name="Local" value="Plasma_1_and_2_Sensor_THC.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Plasma 1 and 2 without THC Process">
+        <param name="Local" value="Plasma_1_and_2_No_THC.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Oxyfuel Process">
+        <param name="Local" value="Oxy_Fuel_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Cut Charts">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Plasma Cut Chart">
+        <param name="Local" value="Plasma_Cut_Chart_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Plasma Cut Chart for XPR">
+        <param name="Local" value="Plasma_Cut_Chart_for_XPR.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Oxyfuel Cut Chart">
+        <param name="Local" value="Oxy_Fuel_Cut_Chart_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Change Consumables">
+        <param name="Local" value="Change_Consumables_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Diagnostics Screens">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Control Information (Diagnostics)">
+        <param name="Local" value="Diagnostics_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Oscilloscope">
+        <param name="Local" value="Oscilloscope_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="HPR System">
+        <param name="Local" value="HPR_System_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Power Supply Inputs and Outputs">
+        <param name="Local" value="Power_Supply_Inputs_Screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Gas Console Inputs or Outputs">
+        <param name="Local" value="Gas_Console_Inputs_Screen.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Machine Setups">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Machine Setups">
+        <param name="Local" value="Machine_Setup_screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Speeds">
+        <param name="Local" value="Speeds_screen.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Torch Height Disable">
+        <param name="Local" value="Torch_height_disable.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="S-curve acceleration">
+        <param name="Local" value="S-curve_acceleration.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Digital I/O">
+        <param name="Local" value="Digital_I_O.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Analog I/O">
+        <param name="Local" value="Analog_I_O.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Transverse or Rail axis">
+        <param name="Local" value="Transverse_or_Rail_axis.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="CBH axis">
+        <param name="Local" value="CBH_axis.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Dual Gantry axis">
+        <param name="Local" value="Dual_Gantry.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Sensor THC axis">
+        <param name="Local" value="Sensor_THC_axis.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Rotate and Rotate 2 axes">
+        <param name="Local" value="Rotate_and_Rotate_2_axes.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Tilt and Tilt 2 axes">
+        <param name="Local" value="Tilt_and_Tilt_2_axes.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Transverse 2 axis">
+        <param name="Local" value="Transverse_2_axis.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Laser Mapping">
+        <param name="Local" value="Laser_Mapping.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Special Setups">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Special Setups">
+        <param name="Local" value="Special_Setups.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="System">
+        <param name="Local" value="System.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Phoenix Setup files">
+        <param name="Local" value="Setup_files.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Station Configuration">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Station Configuration">
+        <param name="Local" value="Station_Configurarion_Screen.htm">
+      </object>
+      </ul>
+    </ul>
+</ul>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="topic-comment" content="Definition of Hypertherm Record ID" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Record ID</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+</head>
+
+<body>
+<p class="SettingName">Record ID</p>
+<p class="SettingBody">This read-only field is the unique identification 
+ number for the record in the cut charts that contains all the parameters 
+ needed by Phoenix to execute the part program. The record includes the 
+ process IDs, which Phoenix sends to the XPR when executing the part program.</p>
+</body>
+</html>

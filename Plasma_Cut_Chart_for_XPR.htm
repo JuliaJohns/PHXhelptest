@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Plasma Cut Chart for XPR</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.7.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Cut Charts" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Plasma Cut Chart for XPR<a name="top"></a></h1>
+<p>This screen has definitions of <a href="#XPR_Process_Selection_Fields">process 
+ selection fields</a>, <a href="#XPR_Selected_IDs">selected IDs</a>, <a 
+	 href="#XPR_Read_only">parameter fields</a>, and <a href="Plasma_Cut_Chart_Screen.htm#Soft_Keys">soft 
+ keys</a>. The selected IDs and parameter fields are read-only and cannot 
+ be modified on the XPR <span style="font-weight: bold;">Cut Chart</span> 
+ screen.</p>
+<p>XPR has its own cut charts. The <span style="font-weight: bold;">Plasma 
+ Cut Chart</span> screen for HPRXD and other plasma power supplies is different 
+ than the <span style="font-weight: bold;">Plasma Cut Chart screen for 
+ XPR</span> cut chart screen described below. The default cut charts that 
+ are loaded into the CNC at the factory provide values for all remaining 
+ parameters for the cut chart and these values are displayed on the right 
+ of the Cut Chart screen. </p>
+<h2><a name="XPR_Process_Selection_Fields"></a>Process Selection Fields</h2>
+<table class="FieldJumps" cellspacing="16px" width="50%">
+	<col style="width: 100%;" />
+	<tr>
+		<td><p style="font-size: 9pt;"><a href="#Material_Type" style="font-size: 9pt;">Material 
+		 Type</a></p></td>
+	</tr>
+	<tr>
+		<td><p style="font-size: 9pt;"><a href="#Material_Thickness" style="font-size: 9pt;">Material 
+		 Thickness</a></p></td>
+	</tr>
+	<tr>
+		<td><p style="font-size: 9pt;"><a href="#Cutting_Surface" style="font-size: 9pt;">Cutting 
+		 Surface</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Process_Name">Process Name</a></p></td>
+	</tr>
+</table>
+<h2><a name="XPR_Selected_IDs"></a>Selected IDs</h2>
+<table class="FieldJumps" cellspacing="16px" width="50%">
+	<col style="width: 100%;" />
+	<tr style="height: 13px;">
+		<td><p><a href="#Record_ID">Record ID</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Cut_Process_ID">Cut Process ID</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#N2_Marking_ID">Marking Process ID</a></p></td>
+	</tr>
+</table>
+<h2><a name="XPR_Read_only"></a>Parameter Fields</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Cut_Speed">Cut Speed</a></p></td>
+		<td><p><a href="#Cut_Height">Cut Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#kerf-xpr" target="_self">Kerf</a></p></td>
+		<td><p><a href="#Transfer_Height">Transfer Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Time">Pierce Time</a> </p></td>
+		<td><p><a href="#Pierce_Height">Pierce Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Height_Delay">Cut Height Delay</a> &#160;&#160;&#160;</p></td>
+		<td><p><a href="#Arc_Voltage">Arc Voltage</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#creep_time">Creep Time</a></p></td>
+		<td><p><a href="#Arc_current">Arc Current</a></p></td>
+	</tr>
+</table>
+<h2><a name="xpr_soft_keys"></a>Soft Keys</h2>
+<table class="FieldJumps" cellspacing="16px" width="50%">
+	<col style="width: 100%;" />
+	<tr style="height: 13px;">
+		<td><p><a href="#send_process_to_xpr">Send Process to XPR</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#xpr_cutting_tips">Cutting Tips</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#xpr_help">Help</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#load_cut_charts">Load cut charts</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#change_consumable">Change consumable</a></p></td>
+	</tr>
+</table>
+<h2>Process Selection Fields</h2>
+<p class="SnippetBookmark"><a name="Material_Type"></a></p>
+<div>
+<h5>Material Type</h5>
+<p class="SettingBody">This field displays the type of material for this 
+ cut chart: <span style="font-weight: bold;">mild steel</span>, <span style="font-weight: bold;">stainless 
+ steel</span>, or <span style="font-weight: bold;">aluminum</span>.</p>
+</div>
+<p class="SnippetBookmark"><a name="Material_Thickness"></a></p>
+<div>
+<h5>Material Thickness</h5>
+<p class="SettingBody">This field shows the workpiece thickness for the 
+ cut chart. Select a different material thickness to change the cut chart.</p>
+</div>
+<p class="SnippetBookmark"><a name="Cutting_Surface"></a></p>
+<div>
+<h5>Cutting Surface</h5>
+<p class="SettingBody">Choose whether the workpiece will be cut above or 
+ below water. This selection is available only for XPR and HPRXD power 
+ supplies.</p>
+</div>
+<p class="SnippetBookmark"><a name="Process_Name"></a></p>
+<div>
+<p class="SettingName" style="font-family: 'Segoe UI', sans-serif; font-size: 10pt; 
+	 color: #000080;">Process Name</p>
+<p class="SettingBody" style="font-family: 'Segoe UI', sans-serif; font-size: 9pt;">Choose 
+ the process current and gas.</p>
+</div>
+<p class="NormalIndent" style="font-weight: bold;">Note:</p>
+<ul style="list-style: disc;">
+	<li><span style="font-weight: bold;">(Ar)</span> = Argon Assist <span>Pierce</span> 
+	 (Requires a VWI<span style="vertical-align: Super; font-size: 6pt;">TM</span><span 
+	 style="font-size: xx-small;"> </span>&#160;or OptiMix<span style="vertical-align: Super; 
+	 font-size: 6pt;">TM</span><span style="font-size: xx-small;"> </span>&#160;gas 
+	 console)</li>
+	<li><span style="font-weight: bold;">(ES)</span> = Edge Start</li>
+</ul>
+<h2>Selected IDs</h2>
+<p class="SnippetBookmark"><a name="Record_ID"></a></p>
+<div>
+<p class="SettingName">Record ID</p>
+<p class="SettingBody">This read-only field is the unique identification 
+ number for the record in the cut charts that contains all the parameters 
+ needed by Phoenix to execute the part program. The record includes the 
+ process IDs, which Phoenix sends to the XPR when executing the part program.</p>
+</div>
+<p class="SnippetBookmark"><a name="Cut_Process_ID"></a></p>
+<div>
+<p class="SettingName">Cut Process ID</p>
+<p class="SettingBody">This read-only field is the identification number 
+ for the process specified in the cut chart. The process contains the parameters 
+ the XPR uses for cutting and True Hole cutting.</p>
+</div>
+<p class="SnippetBookmark"><a name="N2_Marking_ID"></a></p>
+<div>
+<p class="SettingName">Marking Process ID</p>
+<p class="SettingBody">This read-only field is the identification number 
+ for the marking process specified in the cut chart. The process contains 
+ the parameters the XPR uses for marking.</p>
+</div>
+<h2>Parameter Fields</h2>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> The 
+ XPR cut chart parameter fields are read-only and cannot be modified.</p>
+<p class="SettingName"><a name="Cut_speed"></a>Cut Speed</p>
+<p class="SettingBody">This read-only&#160;field shows the cutting speed 
+ (also known as feed rate) for the material type and material thickness 
+ of the workpiece. The default Cut Speed value (in inches per minute or 
+ mm per minute) comes from the cut chart. </p>
+<p class="SnippetBookmark"><a name="kerf-xpr"></a> </p>
+<div>
+<h5>Kerf</h5>
+<p class="SettingBody">Kerf is the width of the cut that the tool&#160;removes 
+ as it cuts the material. The CNC automatically offsets the motion path 
+ by half the kerf dimension to make sure that the part is cut at the correct 
+ size.</p>
+</div>
+<p class="SettingBody" style="font-weight: bold;">Note: <span style="font-weight: normal;">Kerf 
+ is a read-only field.</span></p>
+<p class="SnippetBookmark"><a name="Pierce_time"></a> </p>
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SettingBody" style="font-weight: bold;">Note: <span style="font-weight: normal;">Pierce 
+ Time is a read-only field.</span></p>
+<p class="SettingName"><a name="Cut_Height_Delay" id="Cut_Height_Delay"></a>Cut 
+ Height Delay</p>
+<p class="SettingBody">This read-only field shows the amount of time in 
+ seconds that the torch spends between pierce height and cut height while 
+ X and Y motion advances.</p>
+<p class="SnippetBookmark"><a name="creep_time"></a> </p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<p class="SettingBody" style="font-weight: bold;">Note: <span style="font-weight: normal;">Creep</span> 
+ <span style="font-weight: normal;">Time is a read-only field.</span></p>
+<p class="SettingName"><a name="cut_height"></a>Cut Height</p>
+<p class="SettingBody">This read-only field lists the height at which the 
+ torch cuts the workpiece.</p>
+<p class="SettingName"><a name="Transfer_Height"></a>Transfer Height</p>
+<p class="SettingBody">When the arc transfers to the workpiece, it can 
+ be “stretched” to the pierce height. The transfer height is lower than 
+ the pierce height because initiating arc transfer at a high pierce height 
+ may result in the arc not transferring to the workpiece at all. The Transfer 
+ Height value is read-only and is shown as&#160;an absolute value in inches 
+ or millimeters. </p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> For 
+ XPR, transfer height is independent of cut height.</p>
+<p class="SettingName"><a name="Pierce_Height"></a>Pierce Height</p>
+<p class="SettingBody">This&#160;read-only field specifies the height of 
+ the torch during pierces as an actual pierce height distance in inches 
+ or millimeters. A common guideline is that thicker material requires a 
+ higher pierce height. For XPR, pierce height is independent of cut height.</p>
+<p class="SettingName"><a name="Arc_Voltage"></a>Arc Voltage</p>
+<p class="SettingBody">This read-only field specifies the arc voltage for 
+ the material selected. This is part of automatic voltage control (AVC) 
+ Auto height. In general, the higher the arc voltage is set, the higher 
+ the torch will be from the plate while cutting.</p>
+<p class="SettingName">&#160;<a name="Arc_current"></a>Arc Current</p>
+<p class="SettingBody">This read-only field specifies the amperage value 
+ for the plasma arc current needed to cut the material.&#160;This parameter 
+ can be used only with plasma systems that communicate with the CNC.</p>
+<h2>Soft Keys</h2>
+<p class="SettingName">Send Process to XPR<a name="send_process_to_xpr"></a></p>
+<p class="SettingBody">Press this soft key to send the cut chart currently 
+ shown on screen immediately to the power supply. This soft key appears 
+ only when an XPR power supply is selected in the <span style="font-weight: bold;">Station 
+ Configuration</span> screen.</p>
+<p class="SettingBody" style="color: #000000;"><span style="font-weight: bold;">Note:</span> 
+ Before a process can be sent to the XPR, each of the following conditions 
+ must be satisfied:</p>
+<ul style="list-style: disc;">
+	<li style="color: #000000;"><p>Connected network (field bus running)</p></li>
+	<li style="color: #000000;"><p>Enabled station</p></li>
+	<li style="color: #000000;"><p>XPR Ready</p></li>
+	<ul style="list-style: disc;">
+		<li style="color: #000000;"><p>Station must be in one of the following 
+		 two states: Initial-check (02) <span style="font-style: italic;">or</span> 
+		 Wait-For-Start (05). </p></li>
+		<li style="color: #000000;"><p>Make sure the XPR system is powered 
+		 ON, is done purging gas, and there are no errors present.</p></li>
+	</ul>
+</ul>
+<p class="SnippetBookmark"><a name="xpr_cutting_tips"></a> </p>
+<div>
+<h6>Cutting Tips</h6>
+<p class="SettingBody" style="margin-left: 12px;">This soft key displays 
+ cutting tips for the selected process.</p>
+</div>
+<p class="SnippetBookmark"><a name="xpr_help"></a> </p>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p class="SettingName">Load cut charts<a name="load_cut_charts"></a></p>
+<p class="SettingBody">This soft key loads cut charts from the USB memory 
+ stick.</p>
+<p class="SettingName">Change consumable<a name="change_consumable"></a></p>
+<p class="SettingBody">This soft key opens a screen that shows torch consumables 
+ and their part numbers.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

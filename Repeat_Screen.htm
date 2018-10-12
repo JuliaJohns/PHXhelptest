@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Repeat Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.4.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Current Part Options Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Repeat</h1>
+<p>Phoenix has 3 built-in automatic repeat types: <span style="font-weight: bold;">Straight</span>, 
+ <span style="font-weight: bold;">Staggered</span>, and <span style="font-weight: bold;">Nested</span>.</p>
+<p class="SettingName">Repeat Type</p>
+<p class="SettingBody">Select the type of repeat pattern that you want 
+ to use.</p>
+<p class="SettingName">Start Corner</p>
+<p class="SettingBody">Select the corner of the workpiece to start the 
+ shape repeat.</p>
+<p class="SettingName">Number of Rows</p>
+<p class="SettingBody">Enter the number of rows to cut.</p>
+<p class="SettingName">Number of Columns</p>
+<p class="SettingBody">Enter the number of columns to cut.</p>
+<p class="SettingName">X Pattern Offset/Y Pattern Offset</p>
+<p class="SettingBody">This option automatically calculates the pattern 
+ offset based on the dimension of the current part in memory.</p>
+<p class="SettingName">Scrap Clearance</p>
+<p class="SettingBody">This option inserts scrap clearance between parts 
+ in the grid pattern. The same value is used for X and Y dimensions.</p>
+<p class="SettingName">Pattern Offsets</p>
+<p class="SettingBody">This option automatically calculates the minimum 
+ spacing required between repeated parts. The spacing is based on the size 
+ of the part (including lead-in and lead-out), the kerf value, and the 
+ scrap clearance. This calculated spacing allows the part to be repeated 
+ without overlapping.</p>
+<p class="SettingBody">You can use this pre-calculated value or select 
+ new values manually. If you enter new pattern offset values, Phoenix automatically 
+ draws the new pattern with the new values.</p>
+<p class="SettingName">X Nest Distance/Y Nest Distance</p>
+<p class="SettingBody">This option automatically calculates the minimum 
+ spacing required between nested parts. The spacing is based on the size 
+ of the part (including lead-in and lead-out), the kerf value, and the 
+ scrap clearance. This calculated spacing allows the part to be repeated 
+ without overlapping.</p>
+<p class="SettingBody">You can choose to use this pre-calculated value 
+ or select new values manually. As you enter new offset values, the CNC 
+ automatically draws the new nested pattern with the new values.</p>
+<p><span class="Bold">Tips:</span> </p>
+<ul style="list-style: disc;">
+	<li>If you change <span style="font-weight: bold;">Nest Distance</span> 
+	 values manually, start with a simple nest (1 column, 1 row) and perform 
+	 adjustments based on the display. The pattern in the <span style="font-weight: bold;">Preview</span> 
+	 window changes as you change values. When the <span style="font-weight: bold;">Nest 
+	 Distance</span> is what you want, increase the nest size to a 2-column, 
+	 2-row nest, then adjust the X and Y pattern offsets again. When you 
+	 have the nest spacing that you want, increase the nest size to the 
+	 maximum that the plate allows.</li>
+	<li>You can use ProNest CNC to repeat parts and optimize spacing and 
+	 scrap clearance for optimal material usage.</li>
+</ul>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

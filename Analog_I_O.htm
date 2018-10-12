@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Analog I/O</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_6";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Analog I/O</h1>
+<p>Use the <span style="font-weight: bold;">Analog I/O</span> screen to 
+ assign analog inputs and outputs. Phoenix supports 32 analog inputs and 
+ 32 analog outputs. On the EtherCAT network, the first analog I/O point 
+ is found on the first drive on the network. If each drive in the network 
+ supports 1 analog input, then analog input 1 is on drive 1, analog input 
+ 2 is on drive 2, and so on. An I/O module&#160;follows in physical order 
+ after the drives (but before the plasma power supply). If there are 4 
+ drives in the network, then the I/O module analog inputs would start with 
+ 5. </p>
+<h2>Analog Inputs</h2>
+<p>If you are adding a hardware operator console to your CNC, use the analog 
+ inputs for speed potentiometers (speedpots). Assign the speedpot to an 
+ analog input. If you are not assigning the analog inputs to speedpots, 
+ then select <span style="font-weight: bold;">None</span>.</p>
+<h2>Analog Input Offset</h2>
+<p>The Analog Input Offset corrects for any imbalance in, or zeroes, the 
+ incoming analog voltage to the CNC. The CNC constantly applies this offset 
+ to the incoming analog signal. The CNC subtracts the analog input offset 
+ from the incoming voltage and shows this voltage in the Watch Window. 
+ </p>
+<h2>Analog Outputs</h2>
+<p>Phoenix provides analog outputs for controlling gas regulators in an 
+ oxyfuel cutting machine. Select the gas channel and assign an analog output 
+ and maximum pressure for it. The channels are listed in groups. Each channel 
+ in each group should be selected and matched with an analog output. Phoenix 
+ transfers these channels and pressures to the <a href="Oxy_Fuel_Screen.htm" 
+													 style="font-weight: bold;">Oxyfuel 
+ Process</a> screen.</p>
+<h2>PLC I/O</h2>
+<p>You can assign an analog I/O point to the PLC Connect or PLC Connect 
+ LT by selecting the <span style="font-weight: bold;">PLC</span> check 
+ box. For more information, see the <span class="emphasis">PLC Connect 
+ Application Note</span> (809570).</p>
+<h2>Speed Pots Enabled</h2>
+<p>When the CNC supports a factory-installed operator console, the speed 
+ pots are automatically enabled. If you install a CNC to which you are 
+ adding your own operator console, then you must enable the speed pots 
+ on the <span style="font-weight: bold;">Analog I/O</span> screen and assign 
+ the speed pots to analog inputs. Also, you must enable speed pots to use 
+ the sliding speed controls on the soft operator console (Soft Op Con).</p>
+<h2>Speed Overrides</h2>
+<p>The speed override ranges control the speed pot setting when the knob 
+ is turned completely counterclockwise or clockwise. Instead of 0% (fully 
+ counterclockwise) to 100%, (fully clockwise) the speed pot range can be 
+ set at 70% of the programmed cut speed (fully counterclockwise) to 130% 
+ (fully clockwise) of the programmed cut speed.</p>
+<h2>&#160;</h2>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

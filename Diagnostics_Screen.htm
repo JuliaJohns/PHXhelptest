@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Diagnostics Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.8.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Diagnostics Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Control Information (Diagnostics)</h1>
+<p>Use this screen to view information about the EDGE Connect CNC. This 
+ screen has <a href="#Field_Definitions">field definitions</a> and <a href="#Soft_Keys">soft 
+ keys</a>.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span> <span 
+	 style="font-weight: bold;">Main screen &gt; Setups &gt; Diagnostics</span></p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Hardware">Hardware</a></p></td>
+		<td><p><a href="#Firmware_versions">Firmware versions</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Control_Information">Control Information</a></p></td>
+		<td><p><a href="#Limited_Version">Limited version</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Software_Versions">Software Versions</a></p></td>
+		<td><p><a href="#OEM_Days_Left">OEM days left</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Software_Modules">Software Modules</a></p></td>
+		<td><p><a href="#7_More_Days">7 More Days</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Hardware" id="Hardware"></a>Hardware</p>
+<p class="SettingBody">This section shows the current hardware configuration 
+ which includes the Processor Type, Processor Speed, Memory Installed, 
+ Hard Drive Size, and Hard Drive Free.</p>
+<p class="SettingName"><a name="Control_Information" id="Control_Information"></a>Control 
+ Information</p>
+<p class="SettingBody">This section shows the <span style="font-weight: bold;">hardware 
+ key number</span>, the <span style="font-weight: bold;">CNC model number</span>, 
+ and <span style="font-weight: bold;">serial number</span>.</p>
+<p class="SettingName"><a name="Software_Versions" id="Software_Versions"></a>Software 
+ Versions</p>
+<p class="SettingBody">This section shows the current version of the CNC’s 
+ <span style="font-weight: bold;">operating system</span>, <span style="font-weight: bold;">Phoenix 
+ version</span>, and the <span style="font-weight: bold;">versions of other 
+ software</span> installed on the EDGE Connect.</p>
+<p class="SettingName"><a name="Software_Modules" id="Software_Modules"></a>Software 
+ Modules</p>
+<p class="SettingBody">This section shows software modules installed on 
+ the system.</p>
+<p class="SettingName"><a name="Firmware_versions" id="Firmware_versions"></a>Firmware 
+ versions</p>
+<p class="SettingBody">This field shows the <span style="font-weight: bold;">firmware 
+ version</span> of the HPRXD connected to the EtherCAT network when there 
+ is an active connection to the HPRXD.</p>
+<p class="SettingName"><a name="Limited_Version" id="Limited_Version"></a>Limited 
+ Version</p>
+<p class="SettingBody">This field displays if the CNC is operating on a 
+ trial version of the software. The version of software is available for 
+ 30 days. Contact your OEM to have this timer reset.</p>
+<p class="SettingName"><a name="OEM_Days_Left" id="OEM_Days_Left"></a>OEM 
+ Days Left</p>
+<p class="SettingBody">Contact your OEM to have this timer reset.</p>
+<p class="SettingName"><a name="7_More_Days"></a>7 More Days</p>
+<p class="SettingBody"><span style="font-weight: bold;">7 More Days</span> 
+ is a temporary password that enables all features on the CNC for 7 days, 
+ except for ProNest CNC with True Shape nesting, Connect PLC Advanced, 
+ and the True Hole Conversion tool.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<p class="SettingName">Control Information</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Control 
+ Information (Diagnostics)</span> screen.</p>
+</div>
+<div>
+<p class="SettingName">I/O</p>
+<p class="SettingBody">Choose this soft key and enter the Machine Setups 
+ password to open the <span style="font-weight: bold;">I/O</span> screen. 
+ The <span style="font-weight: bold;">I/O</span> screen shows the I/O assignments 
+ for general purpose I/O (1&#160;–&#160;512) 
+ and analog inputs (1&#160;–&#160;32). 
+ &#160;</p>
+</div>
+<div>
+<p class="SettingName">Oscilloscope</p>
+<p class="SettingBody">This soft key launches the oscilloscope function.<span 
+	 class="Bold"> </span></p>
+</div>
+<div>
+<p class="SettingName">HPR System</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">HPR 
+ System</span> screen and shows you the status for the power supply software 
+ revision, gas pressure, usage, I/O, and remote tools.</p>
+</div>
+<p class="SettingName">XPR System</p>
+<p class="SettingBody" style="color: #000000;">This soft key opens the 
+ XPR Diagnostics View where you can run gas tests, monitor the plasma power 
+ supply, and view diagnostic information for up to two XPR stations. For 
+ more details about the XPR Diagnostics View at the CNC, see <span style="font-style: italic;">Cut 
+ and Mark with an XPR</span><span style="font-style: italic;"> on an EDGE 
+ Connect CNC</span> (809900).</p>
+<p class="SettingBody" style="color: #000000;">To view XPR error details 
+ and monitor XPR diagnostics with your wireless device, see the instruction 
+ manual supplied with your XPR plasma power supply.</p>
+<p class="SettingName">Touch Screen Calibration</p>
+<p class="SettingBody">This soft key launches the touch screen calibration 
+ utility for tuning screen response.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

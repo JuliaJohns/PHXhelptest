@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Digital I/O</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Digital I/O</h1>
+<p>Use the <span style="font-weight: bold;">Digital I/O</span> screen to 
+ assign digital inputs and outputs. Phoenix supports up to 512 digital 
+ inputs and 512 digital outputs.</p>
+<h2>General purpose I/O</h2>
+<p>Use general purpose I/O (sometimes called <span class="emphasis">generic 
+ I/O</span>) for any cutting process to control both of the following:</p>
+<ul style="list-style: disc;">
+	<li>Cutting machine hardware (such as overtravel switches)</li>
+	<li>A single cutting station</li>
+</ul>
+<p>Select the I/O points from the <span style="font-weight: bold;">Inputs 
+ or Outputs</span> list and assign the function to the I/O point. On the 
+ EtherCAT network, the first I/O point is found on the first drive on the 
+ network. If Inputs 1&#160;–&#160;7 
+ are on drive 1, then 8&#160;–&#160;14 
+ are on drive 2, and so on. An I/O module follows in physical order after 
+ the drives (but before the plasma power supply). If there are 4 drives 
+ in the network, then the I/O module digital inputs would start with 29. 
+ </p>
+<p>In Phoenix, general purpose I/O is 1&#160;–&#160;512. 
+ Station I/O, which is automatically assigned when you configure a station 
+ in the <span style="font-weight: bold;">Station Configuration</span> screen, 
+ starts at I/O 129 and above. </p>
+<h2>Numbered I/O</h2>
+<p>Use numbered I/O to control multiple cutting stations. For example, 
+ assign the outputs Station Enable 1 and Cut Control 1 to Station 1 and 
+ assign the outputs Station Enable 2 and Cut Control 2 to Station 2, and 
+ so on. </p>
+<h2>Fixed Function I/O</h2>
+<p>Phoenix assigns fixed function I/O automatically when you select an 
+ HPR in the <a href="Station_Configurarion_Screen.htm" style="font-weight: bold;">Station 
+ Configuration</a> screen. Fixed function I/O for the HPR is not shown 
+ as assigned to any I/O points in the <span style="font-weight: bold;">Inputs 
+ or Outputs</span> lists on the <span style="font-weight: bold;">I/O</span> 
+ screen and does not appear in the <span style="font-weight: bold;">I/O 
+ Diagnostics</span> screen. You can view it in the Watch Window or Oscilloscope. 
+ </p>
+<p>Phoenix also assigns fixed function I/O to the factory-installed operator 
+ console on the EDGE Connect TC. </p>
+<h3>Fixed function I/O for HPRXD plasma supplies</h3>
+<p>Phoenix automatically assigns the I/O for HPRXD power supplies. The 
+ I/O appear in the Watch Window after input or output 512. </p>
+<table cellspacing="9" width="96%">
+	<col style="width: 49.022%;" />
+	<col style="width: 50.979%;" />
+	<tr>
+		<td><p><span class="Bold">Digital inputs</span></p></td>
+		<td><p><span class="Bold">Digital outputs</span></p></td>
+	</tr>
+	<tr>
+		<td><p>HPR Cut Sense</p></td>
+		<td><p>HPR Cut Control</p></td>
+	</tr>
+	<tr>
+		<td><p>HPR Not Ready to Start</p></td>
+		<td><p>HPR Hold Ignition</p></td>
+	</tr>
+	<tr>
+		<td><p>HPR Nozzle Contact Sense</p></td>
+		<td><p>HPR Pierce Control</p></td>
+	</tr>
+	<tr>
+		<td><p>HPR Process Ready</p></td>
+		<td><p>HPR Nozzle Contact Enable</p></td>
+	</tr>
+	<tr>
+		<td>&#160;</td>
+		<td><p>HPR Remote On</p></td>
+	</tr>
+</table>
+<table cellspacing="9" style="width:100%; max-width:56.632%">
+	<col style="width: 100%;" />
+	<tr style="height: 17px;">
+		<td><p><span class="Bold">Analog inputs</span></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Arc voltage</p></td>
+	</tr>
+</table>
+<h3>Fixed function I/O for XPR plasma supplies</h3>
+<p>Phoenix automatically assigns the I/O for XPR power supplies. The I/O 
+ appear in the Watch Window after input or output 512. </p>
+<p><span style="font-weight: bold;">Note:</span> As with an HPRXD, fixed 
+ function I/O for an XPR is not shown as assigned I/O on the <span style="font-weight: bold;">Digital 
+ I/O</span> setup screen. It also does not appear on the <span style="font-weight: bold;">I/O 
+ Diagnostics</span> screen.</p>
+<table cellspacing="9" width="100%">
+	<col style="width: 45.694%;" />
+	<col style="width: 54.306%;" />
+	<tr>
+		<td><p><span class="Bold">Digital inputs</span></p></td>
+		<td><p><span class="Bold">Digital outputs</span></p></td>
+	</tr>
+	<tr>
+		<td><p>XPR Cut Sense</p></td>
+		<td><p>XPR Cut Control</p></td>
+	</tr>
+	<tr>
+		<td><p>XPR Ready to Start</p></td>
+		<td><p>XPR Pierce Control</p></td>
+	</tr>
+	<tr>
+		<td><p>XPR Nozzle Contact Sense</p></td>
+		<td><p>XPR Hold Ignition</p></td>
+	</tr>
+	<tr>
+		<td><p>XPR Process Ready</p></td>
+		<td><p>XPR Nozzle Contact Enable</p></td>
+	</tr>
+</table>
+<h3>Fixed function I/O for the factory-installed operator console</h3>
+<p>Phoenix automatically assigns the operator console inputs. The inputs 
+ appear in the Watch Window after input 512. </p>
+<table cellspacing="9" width="100%">
+	<col style="width: 43.368%;" />
+	<col style="width: 56.632%;" />
+	<tr style="height: 20px;">
+		<td><p><span class="Bold">Digital inputs</span></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Raise Tool</p></td>
+		<td><p>Op-Panel DIP Option 1 (not used)</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Lower Tool</p></td>
+		<td><p>Op-Panel DIP Option 2 (not used)</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Joystick Up</p></td>
+		<td><p>Op-Panel DIP Option 3 (not used)</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Joystick Down</p></td>
+		<td><p>Op-Panel DIP Option 4 (not used)</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Joystick Left</p></td>
+		<td><p>Op-Panel Program Stop</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Joystick Right</p></td>
+		<td><p>Op-Panel Forward on Path</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Op-Panel Program Start</p></td>
+		<td><p>Op-Panel Back on Path</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<table cellspacing="9" style="width:100%; max-width:56.632%">
+	<col style="width: 100%;" />
+	<tr style="height: 17px;">
+		<td><p><span class="Bold">Analog inputs</span></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Cut speed potentiometer</p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p>Jog speed potentiometer</p></td>
+	</tr>
+</table>
+<h2>PLC I/O</h2>
+<p>You can assign an I/O point to the PLC Connect or PLC Connect LT by 
+ selecting the <span style="font-weight: bold;">PLC</span> checkbox. For 
+ more information, see the <span class="emphasis">PLC Connect Application 
+ Note</span> (809570).<br />
+</p>
+<p style="color: #000000;"><span style="font-weight: bold;">Note:</span> 
+ The Soft Op Con does not accurately reflect the state of I/O controlled 
+ with PLC, unless you check the <span style="font-weight: bold;">Op Con 
+ Read-Only</span> checkbox in addition to the <span style="font-weight: bold;">PLC</span> 
+ checkbox.</p>
+<h2 style="color: #000000;">Op Con Read-Only</h2>
+<p style="color: #000000;">The <span style="font-weight: bold;">Op Con 
+ Read-Only</span> checkbox is useful for inputs and outputs that are controlled 
+ by external hardware switches or PLC.<br />
+</p>
+<p style="color: #000000;">If you select this box:</p>
+<p style="color: #000000;">&#160;&#160;&#160;&#160;• &#160;The Soft Op 
+ Con <span style="font-style: italic;">cannot</span> control the selected 
+ I/O.</p>
+<p style="color: #000000;">&#160;&#160;&#160;&#160;• &#160;The Soft Op 
+ Con updates to reflect the state of the I/O selected with an external 
+ hardware switch or PLC.</p>
+<p style="margin-left: 40px; color: #000000;"><span style="font-weight: bold;">Example:</span> 
+ If the checkbox is selected, the Soft Op Con indicates that <span style="font-weight: bold;">Manual 
+ Select 9</span> is turned OFF after the CNC operator successfully turns 
+ OFF <span style="font-weight: bold;">Manual Select 9</span> with an external 
+ hardware switch or PLC.<br />
+</p>
+<p style="color: #000000;">If you do <span style="font-style: italic;">not</span> 
+ select this box:</p>
+<p style="color: #000000;">&#160;&#160;&#160;&#160;• &#160;The Soft Op 
+ Con can control the selected I/O.</p>
+<p style="color: #000000;">&#160;&#160;&#160;&#160;• &#160;If an external 
+ hardware switch or PLC changes the state of the selected I/O, the state 
+ of the I/O shown on the Soft Op Con does not update. </p>
+<p style="margin-left: 40px; color: #000000;"><span style="font-weight: bold;">&#160;Example:</span> 
+ If the checkbox is not selected, the Soft Op Con continues to indicate 
+ that <span style="font-weight: bold;">Auto Select 9</span> is ON after 
+ the CNC operator successfully turns OFF <span style="font-weight: bold;">Auto 
+ Select 9</span> with an external hardware switch or PLC.</p>
+<h2>Logic</h2>
+<p>The value in this field represents I/O points in the range selected 
+ (1&#160;–&#160;32, 
+ 33&#160;–&#160;64, 
+ and so on) that are set to normally closed.&#160;To see a bit-wise view 
+ of all of the inputs or outputs 1&#160;–&#160;32 
+ that have been set to normally closed, you can enter the decimal number 
+ into binary or hexadecimal with a calculator. These normally-closed inputs 
+ or outputs display as a ’1’ instead of a ‘0’.&#160;The least significant 
+ bit represents Input 1 (or the lowest input or output selected) and the 
+ most significant bit represents Input 32 (or the highest input or output 
+ selected). Every time you select a different group of 32 inputs or outputs, 
+ the number updates to reflect the currently selected group of 32 inputs 
+ or outputs.</p>
+<h2>Drive Enables</h2>
+<p>This option determines how the CNC&#160;responds to drive faults. After 
+ Phoenix disables the drives, it turns off the Drive Enable output.</p>
+<p class="SettingName">Series</p>
+<p class="SettingBody">Phoenix combines the individual fault ramp times 
+ (to a maximum of 2 seconds) before it disables the drives.</p>
+<p class="SettingName">Independent</p>
+<p class="SettingBody">Phoenix disables each drive individually when its 
+ axis fault ramp time elapses.</p>
+<h2>Initial Feedback Delay</h2>
+<p>This option allows the initial feedback from the drive system to be 
+ delayed after initial power up. This allows the drive system to become 
+ fully enabled before it enables the position loop.</p>
+<h2>Joystick Installed</h2>
+<p>This setting is automatically enabled for EDGE Connect TC. If you are 
+ adding your own operator console, you must enable the joystick on the 
+ <span style="font-weight: bold;">Digital I/O</span> screen. </p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

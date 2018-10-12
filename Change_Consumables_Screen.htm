@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Change Consumables Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.7.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Cut Charts" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Change Consumables</h1>
+<p>&#160;</p>
+<p>The Change Consumables screen for XPR is different than the Change Consumables 
+ screen for HPRXD and other power supplies.</p>
+<ul style="list-style: disc;">
+	<li><a href="#Change_consumable_XPR">XPR</a></li>
+	<li><a href="#Change_consumable_HPRXD_others">HPRXD or other power 
+	 supply</a></li>
+</ul>
+<h2><a name="Change_consumable_XPR"></a>Change Consumables for XPR</h2>
+<p>The <span style="font-weight: bold;">Change Consumables</span> screen 
+ for XPR shows the consumables and part numbers for the currently selected 
+ process. Consumable life data is not available for XPR.</p>
+<h3>Soft Keys</h3>
+<p class="SettingName">Change Instructions</p>
+<p class="SettingBody">Choose this soft key to learn how to change consumables.</p>
+<p class="SettingName">Manual Options</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Manual 
+ Options</span> screen, so that you can reposition the torch to change 
+ the consumables.</p>
+<p class="SettingName">Setups</p>
+<p class="SettingBody">This soft key only appears when cutting is paused. 
+ This soft key opens the <span style="font-weight: bold;">Cutting</span> 
+ (Setups) screen. The <span style="font-weight: bold;">Cutting</span> screen 
+ gives you access to the Process, Watch Window setup, Diagnostics, and 
+ the password-protected setup screens.</p>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<h2><a name="Change_consumable_HPRXD_others"></a>Change Consumables for 
+ HPRXD and Other Power Supplies</h2>
+<p>For HPRXD and all power supplies except XPR, this screen shows the consumables 
+ and part numbers for the currently selected process along with consumable 
+ life data for statistical analysis. This screen can use an output from 
+ the CNC to activate an indicator, such as a light or alarm, to tell the 
+ operator that a consumable has reached its expected life. This feature 
+ allows the operator to change the consumable and avoid a failure that 
+ can affect cut quality or damage the torch. The <span style="font-weight: bold;">Change 
+ Consumables</span> screen can only track consumable life data and offer 
+ features related to that data. The CNC cannot detect consumable condition 
+ or failures.</p>
+<p>&#160;</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Auto_update_max_consumable_life">Auto update max 
+		 consumable life</a></p></td>
+		<td><p><a href="#Oxy_Fuel_Torch">Oxy Fuel Torch 1 – 12</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Plasma_Torch">Plasma Torch 1 – 8</a></p></td>
+		<td><p><a href="#Minutes">Minutes</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierces">Pierces</a></p></td>
+		<td><p><a href="#Arc_errors_actual">Arc errors (actual)</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Inches_or_Millimeters">Inches or Millimeters</a></p></td>
+		<td><p><a href="#Minutes_per_pierce">Minutes/Pierce</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Volts_per_minute">Volts/Minute</a></p></td>
+		<td><p><a href="#Last_Torch_Tip_Installed">Last Torch Tip Installed</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Last_Nozzle_Installed">Last Nozzle Installed</a></p></td>
+		<td><p><a href="#Last_Electrode_Installed">Last Electrode Installed</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h3><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h3>
+<p class="SettingName"><a name="Auto_update_max_consumable_life" id="Auto_update_max_consumable_life"></a>Auto 
+ update max consumable life</p>
+<p class="SettingBody" style="background-color: Transparent;">This feature 
+ can be enabled or disabled on the<span style="font-weight: bold;"> Special 
+ Setups</span> screen. When this feature is enabled, it tracks the consumable 
+ life beyond the user-defined set point and assigns that maximum value 
+ as the new set point. If this feature is disabled, the user-defined set 
+ point remains the same until the user changes it manually.</p>
+<p class="SettingName"><a name="Oxy_Fuel_Torch" id="Oxy_Fuel_Torch"></a>Oxy 
+ Fuel Torch 1 – 12</p>
+<p class="SettingBody" style="background-color: Transparent;">Choose the 
+ Oxyfuel torch for which you want to track consumable life.</p>
+<p class="SettingName"><a name="Plasma_Torch" id="Plasma_Torch"></a>Plasma 
+ Torch 1 – 8</p>
+<p class="SettingBody" style="background-color: Transparent;">Choose the 
+ plasma torch for which you want to track consumable life.</p>
+<p class="SettingName"><a name="Minutes" id="Minutes"></a>Minutes</p>
+<p class="SettingBody">This field is the estimated life in minutes of the 
+ torch tip, nozzle, or electrode. This value increases to the maximum life 
+ or you can enter a maximum value.</p>
+<p class="SettingName"><a name="Pierces" id="Pierces"></a>Pierces</p>
+<p class="SettingBody">This field is the estimated life in pierces of the 
+ torch tip, nozzle, or electrode. This value increases to the maximum life 
+ or you can enter a maximum value.</p>
+<p class="SettingName"><a name="Arc_errors_actual" id="Arc_errors_actual"></a>Arc 
+ errors (actual)</p>
+<p class="SettingBody">Use the Arc Error Counter input to the CNC from 
+ the power supply to track arc errors. Refer to the <span style="font-style: italic;">HPRXD 
+ Instruction Manual</span> for information on errors reported by the power 
+ supply. </p>
+<p class="SettingName"><a name="Inches_or_Millimeters" id="Inches_or_Millimeters"></a>Inches 
+ or Millimeters</p>
+<p class="SettingBody">This field is the estimated life in inches or millimeters 
+ of the torch tip, nozzle, or electrode. This value increases to the maximum 
+ life or you can enter a maximum.</p>
+<p class="SettingName"><a name="Minutes_per_pierce" id="Minutes_per_pierce"></a>Minutes/Pierce</p>
+<p class="SettingBody">You can enter a value that the CNC adds to the overall 
+ minutes value for each pierce. When you enter this value, it provides 
+ a more accurate representation of overall consumable wear. Pierces cause 
+ additional wear on the consumables.</p>
+<p class="SettingName"><a name="Volts_per_minute" id="Volts_per_minute"></a>Volts/Minute</p>
+<p class="SettingBody">This value changes the THC Voltage Offset based 
+ on the minutes that have elapsed while cutting in <span style="font-weight: bold;">Plasma 
+ 1</span> or <span style="font-weight: bold;">Plasma 2</span> cut mode. 
+ The CNC adds a small fraction of a volt per minute of cutting to the THC 
+ voltage offset to compensate for consumable wear. <span style="font-weight: bold;">Volts 
+ per Minute</span> applies only to Station 1 or Station 2.</p>
+<p class="SettingBody">The <span style="font-weight: bold;">Volts per Minute</span> 
+ value increases the THC voltage offset until you reset the Volts per Minute 
+ to 0 and the THC voltage offset to 0.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Volts per Minute</span> 
+ is available for use only with the Sensor THC while you cut in <span style="font-weight: bold;">Set 
+ Arc Voltage</span> mode. If you are cutting in <span style="font-weight: bold;">Sample 
+ Arc Voltage</span> mode, set the <span style="font-weight: bold;">Volts 
+ per Minute</span> to <span style="font-weight: bold;">0</span>.</p>
+<p class="SettingName"><a name="Last_Torch_Tip_Installed" id="Last_Torch_Tip_Installed"></a>Last 
+ Torch Tip Installed</p>
+<p class="SettingBody">This field shows the date and time when you installed 
+ the selected torch tip.</p>
+<p class="SettingName"><a name="Last_Nozzle_Installed" id="Last_Nozzle_Installed"></a>Last 
+ Nozzle Installed</p>
+<p class="SettingBody">This field shows the date and time when you installed 
+ the selected nozzle.</p>
+<p class="SettingName"><a name="Last_Electrode_Installed" id="Last_Electrode_Installed"></a>Last 
+ Electrode Installed</p>
+<p class="SettingBody">This field shows the date and time when you installed 
+ the selected electrode.</p>
+<h3><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h3>
+<p class="SettingName">New Torch Tip</p>
+<p class="SettingBody">This soft key lets you select the torch tip you 
+ want to replace and update in the database.</p>
+<p class="SettingName">New Nozzle</p>
+<p class="SettingBody">This soft key lets you select the nozzle you want 
+ to replace and update in the database.</p>
+<p class="SettingName">New Electrode</p>
+<p class="SettingBody">This soft key lets you select which electrode you 
+ want to replace and update in the database.</p>
+<p class="SettingName">Change Instructions</p>
+<p class="SettingBody">Choose this soft key to learn how to change consumables.</p>
+<p class="SettingName">Manual Options</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Manual 
+ Options</span> screen, so that you can reposition the torch to change 
+ the consumables.</p>
+<p class="SettingName">Setups</p>
+<p class="SettingBody">This soft key only appears when cutting is paused. 
+ This soft key opens the <span style="font-weight: bold;">Cutting</span> 
+ screen which gives you access to the <span style="font-weight: bold;">Process</span>, 
+ <span style="font-weight: bold;">Watch Window setup</span>, <span style="font-weight: bold;">Diagnostics</span>, 
+ and the password-protected setup screens.</p>
+<p class="SettingName">Reset Database</p>
+<p class="SettingBody">This soft key resets the values in the database 
+ on the CNC and clears the torch tip, nozzle, or electrode information 
+ after you upload or save the database.</p>
+<p class="SettingName">Save Database</p>
+<p class="SettingBody">This field saves the current database to a USB memory 
+ stick.</p>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

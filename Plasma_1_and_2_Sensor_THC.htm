@@ -1,0 +1,614 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Plasma 1 and 2 Sensor THC</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.6.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Process Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1 class="SettingBody">Plasma 1 and Plasma 2 with Sensor THC Process</h1>
+<p>The options on this screen appear when you have selected<span class="Bold"> 
+ Sensor THC for the Lifter</span> in the <a href="Station_Configurarion_Screen.htm" 
+											 style="font-weight: bold;">Station 
+ Configuration</a> screen. &#160;</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>. </p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span><span 
+	 style="font-weight: bold;"> Main screen &gt; Setups &gt; Process &gt; 
+ Plasma 1 or Plasma 2</span></p>
+<p>Use the following parameters to customize and control the plasma process 
+ and torch:</p>
+<table class="FieldJumps" cellspacing="16px" width="100%">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Height_Control">Height Control (Manual/Automatic)</a></p></td>
+		<td><p><a href="#Preflow_During_IHS">Preflow 
+		 During IHS</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#IHS_In_Manual">IHS In Manual</a></p></td>
+		<td ><p><a href="#Offset_IHS">Offset IHS</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Sample_Voltage">Sample Voltage</a></p></td>
+		<td><p><a href="#IHS_Start_Height">IHS 
+		 Start Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Set_Arc_Voltage">Set Arc Voltage</a></p></td>
+		<td><p><a href="#Skip_IHS_Within">Skip IHS Within</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Set_Arc_Current">Set Arc Current</a></p></td>
+		<td><p><a href="#Transfer_Height">Transfer Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Height">Cut Height</a></p></td>
+		<td><p><a href="#Puddle_Jump_Height">Puddle Jump Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Height">Pierce Height</a></p></td>
+		<td><p><a href="#Creep_Time">Creep Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Time">Pierce Time</a></p></td>
+		<td><p><a href="#Cut_Height_Delay">Cut Height Delay</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Speed">Cut Speed</a></p></td>
+		<td><p><a href="#AVC_Delay">AVC Delay</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Nozzle_Contact_IHS">Nozzle Contact IHS</a></p></td>
+		<td><p><a href="#Cut_Off_Time">Cut Off Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Nozzle_Contact_Cutting">Nozzle Contact Cutting</a></p></td>
+		<td><p><a href="#Arc_Off_Time">Arc Off Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Auto_Kerf_Detect">Auto Kerf Detect</a></p></td>
+		<td><p><a href="#Stop_Time">Stop Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Auto_Kerf_Detect_Voltage">Auto Kerf Detect Voltage</a></p></td>
+		<td><p><a href="#Retract_Height">Retract Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Corner_Current_Percent">Corner Current Percent</a></p></td>
+		<td><p><a href="#Kerf_Reacquired_Time">Kerf Reacquire Time</a></p></td>
+	</tr>
+	<tr>
+		<td>&#160;</td>
+		<td><p><a href="#Default_All_Parameters">Default All Parameters</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Height_Control" id="Height_Control"></a></p>
+<div>
+<p class="SettingName">Height Control (Manual/Automatic)</p>
+<p class="SettingBody">Choose <span class="Bold">Manual</span> to control 
+ the THC with the Raise and Lower station controls on the CNC operator 
+ console or Soft Op Con. Before using <span style="font-weight: bold;">Manual</span> 
+ mode, make sure the torch is close enough to the workpiece to transfer 
+ the arc. After cutting starts the torch stays at the height where you 
+ positioned it. Manual torch height control enables the <span style="font-weight: bold;">IHS 
+ In Manual</span> option and disables <span style="font-weight: bold;">Sample 
+ Voltage</span>. </p>
+<p class="SettingBody">Choose <span class="Bold">Automatic</span> to allow 
+ Phoenix to control the height of the torch based on arc voltage feedback 
+ and the settings in this screen. </p>
+</div>
+<p class="SnippetBookmark"><a name="IHS_in_Manual" id="IHS_in_Manual"></a></p>
+<div>
+<p class="SettingName">IHS In Manual</p>
+<p class="SettingBody">If this setting is <span style="font-weight: bold;">ON</span>, 
+ Initial Height Sense (IHS) and the sequence of operations is automatic, 
+ but the torch height is not controlled by measured arc voltage.</p>
+<p class="SettingBody">If&#160;this setting is <span style="font-weight: bold;">OFF</span>, 
+ all operations are controlled manually.</p>
+</div>
+<p class="SnippetBookmark"><a name="Sample_Voltage" id="Sample_Voltage"></a></p>
+<div>
+<p class="SettingName">Sample Voltage</p>
+<p class="SettingBody">When this setting is <span style="font-weight: bold;">ON</span>, 
+ the THC measures the voltage at the end of the AVC Delay and uses the 
+ voltage as a set point for the remainder of the cut.</p>
+<p class="SettingBody">When this setting is<span style="font-weight: bold;"> 
+ OFF</span>, the <span style="font-weight: bold;">Set Arc Voltage</span> 
+ is used as the set point for torch height control.</p>
+</div>
+<p class="SnippetBookmark"><a name="Set_Arc_Voltage" id="Set_Arc_Voltage"></a></p>
+<div>
+<h5>Set Arc Voltage</h5>
+<p class="SettingBody">In the CNC, each plasma process has an arc voltage 
+ set point, called the <span style="font-weight: bold;">Set Arc Voltage</span>, 
+ for a given material thickness, cut height, cut speed, gas type, and current. 
+ When cutting starts, the CNC tracks the actual voltage drop across the 
+ arc and compares it to the <span style="font-weight: bold;">Set Arc Voltage</span>. 
+ When the actual arc voltage is higher or lower than the <span style="font-weight: bold;">Set 
+ Arc Voltage</span>, the CNC commands the lifter to move the torch down 
+ or up.</p>
+<ul style="list-style: disc;">
+	<li class="Bullet"><p>When the actual arc voltage is higher than the 
+	 arc voltage set point, the torch moves down.</p></li>
+	<li class="Bullet"><p>When the arc voltage is lower than the set point, 
+	 the torch moves up.</p></li>
+	<li class="Bullet"><p>The higher the arc voltage set point, the higher 
+	 the cut height.</p></li>
+</ul>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span>&#160;When 
+ you are using a ProNest part program with XPR, you cannot override the 
+ Set Arc Voltage field.</p>
+<p class="SnippetBookmark"><a name="Set_Arc_Current" id="Set_Arc_Current"></a></p>
+<div>
+<p class="SettingName">Set Arc Current</p>
+<p class="SettingBody" style="margin-left: 12px;">Enter the amperage needed 
+ to cut the material. This option can be used only with plasma systems 
+ that communicate with the CNC.</p>
+<p style="margin-left: 12px;">The <span style="font-weight: bold;">Set 
+ Arc Current</span> value comes from the cut chart. You can override the 
+ <span style="font-weight: bold;">Set&#160;Arc Current</span> value if 
+ you enter a different number in this field. If you change this option, 
+ it will revert to the original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> With 
+ XPR, this field is read-only.</p>
+<p class="SettingName"><a name="Cut_Height" id="Cut_Height"></a>Cut Height</p>
+<p class="SettingBody">This value is the height distance (in inches&#160;or 
+ millimeters) of the torch from the workpiece during cutting. This value 
+ can be temporarily fine-tuned on the <span style="font-weight: bold;">Process</span> 
+ screen.</p>
+<p class="SettingBody">You can use this field to override the default Cut 
+ Height. The default Cut Height value comes from the loaded cut chart. 
+ If you change this parameter, it will revert to the original cut chart 
+ value when the cut chart is loaded.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Notes:</span> </p>
+<ul style="list-style: disc;">
+	<li style="color: #000000;"><p class="SettingBody">When you are using 
+	 a ProNest part program with XPR, you cannot override this field.</p></li>
+	<li style="color: #000000;"><p class="SettingBody">When overriding 
+	 <span style="font-weight: bold;">Cut Height</span> on the <span style="font-weight: bold;">Process</span> 
+	 screen, <span style="font-weight: bold;">Pierce Height</span> and 
+	 <span style="font-weight: bold;">Transfer Height</span> automatically 
+	 adjust in proportion. If you want specific values for <span style="font-weight: bold;">Pierce 
+	 Height</span> and <span style="font-weight: bold;">Transfer Height</span>, 
+	 enter them as absolute values in inches or millimeters <span style="font-style: italic;">after</span> 
+	 adjusting the <span style="font-weight: bold;">Cut Height</span>.</p></li>
+</ul>
+<p class="SettingName"><a name="Pierce_Height" id="Pierce_Height"></a>Pierce 
+ Height</p>
+<p class="SettingBody">This value is the height distance (in inches or 
+ millimeters) of the torch from the workpiece during pierce. In general, 
+ thicker material requires a higher pierce height.</p>
+<p class="SettingBody">You can use this option to override the default 
+ Pierce Height. The default Pierce Height Value comes from the cut chart. 
+ If you change this option, it will revert to the original cut chart value 
+ when the cut chart is loaded.</p>
+<p class="SettingBody" style="font-weight: bold;">Notes:</p>
+<ul style="list-style: disc;">
+	<li style="color: #000000;"><p class="SettingBody">When you are using 
+	 a ProNest part program with XPR, you cannot override this field.</p></li>
+	<li style="color: #000000;"><p class="SettingBody">When overriding 
+	 <span style="font-weight: bold;">Cut Height</span> on the<span style="font-weight: bold;"> 
+	 Process</span> screen,<span style="font-weight: bold;"> Pierce Height</span> 
+	 and <span style="font-weight: bold;">Transfer Height</span> automatically 
+	 adjust in proportion. If you want specific values for <span style="font-weight: bold;">Pierce 
+	 Height</span> and<span style="font-weight: bold;"> Transfer Height</span>, 
+	 enter them as absolute values in inches or millimeters <span style="font-style: italic;">after</span> 
+	 adjusting the<span style="font-weight: bold;"> Cut Height</span>.</p></li>
+</ul>
+<a name="Pierce_Time" id="Pierce_Time"></a> 
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you cannot override this 
+ field.</p>
+<a name="Cut_Speed" id="Cut_Speed"></a> 
+<div>
+<h5>Cut Speed</h5>
+<p class="SettingBody">This field sets the cutting speed (also known as 
+ feed rate) for the material type and material thickness of the workpiece.</p>
+<p class="SettingBody">You can use this field to override the default Cut 
+ Speed. The default Cut Speed value (in inches per minute or mm per minute) 
+ comes from the cut chart. If you change this option, it reverts to the 
+ original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you cannot override this 
+ field.</p>
+<p class="SnippetBookmark"><a name="Nozzle_Contact_IHS" id="Nozzle_Contact_IHS"></a> 
+ </p>
+<div>
+<p class="SettingName">Nozzle Contact IHS</p>
+<p class="SettingBody">This feature requires that the <span style="font-weight: bold;">Height 
+ Control</span> be set to <span style="font-weight: bold;">Automatic</span>. 
+ When <span style="font-weight: bold;">ON</span>, the THC uses electrical 
+ ohmic contact to sense the workpiece.</p>
+<p class="SettingBody">When <span style="font-weight: bold;">OFF</span>, 
+ the THC uses stall force to sense the workpiece. Set to <span style="font-weight: bold;">OFF</span> 
+ on water tables or painted workpieces because of the unreliability of 
+ the electrical contact.</p>
+</div>
+<p class="SnippetBookmark"><a name="Nozzle_Contact_Cutting" id="Nozzle_Contact_Cutting"></a></p>
+<div>
+<p class="SettingName">Nozzle Contact Cutting</p>
+<p class="SettingBody">The THC uses Ohmic contact to sense and retract 
+ from the workpiece during marking. This option may be set to <span style="font-weight: bold;">OFF</span> 
+ for use with water tables, a dirty workpiece, or a cutting or marking 
+ process with a very low standoff.</p>
+</div>
+<p class="SnippetBookmark"><a name="Auto_Kerf_Detect" id="Auto_Kerf_Detect"></a></p>
+<div>
+<p class="SettingName">Auto Kerf Detect</p>
+<p class="SettingBody">To set this parameter, the THC must be in <span 
+	 style="font-weight: bold;">Automatic</span> mode. When <span style="font-weight: bold;">Auto 
+ Kerf Detect</span> is active, the THC looks for a rapid rise in the measured 
+ arc voltage that indicates that the torch is cutting across a previously 
+ cut kerf. This parameter temporarily disables the AVC and prevents the 
+ torch from diving into the workpiece.</p>
+</div>
+<p class="SnippetBookmark"><a name="Auto_Kerf_Detect_Voltage" id="Auto_Kerf_Detect_Voltage"></a></p>
+<div>
+<p class="SettingName">Auto Kerf Detect Voltage</p>
+<p class="SettingBody">The Auto Kerf Detect Voltage value (1&#160;– 10 volts) should be set high 
+ enough to detect normal kerf crossings, but low enough to prevent false 
+ kerf detection. In general, the lower the voltage, the higher the detection 
+ sensitivity. This parameter is active only if Auto Kerf Detect is ON.</p>
+</div>
+<p class="SnippetBookmark"><a name="Corner_Current_Percent" id="Corner_Current_Percent"></a></p>
+<div>
+<p class="SettingName">Corner Current Percent</p>
+<p class="SettingBody">Enter a percentage of the <span style="font-weight: bold;">Set 
+ Arc Current</span>. This option reduces the arc current to a percentage 
+ that is 50%&#160;– 100% of the <span style="font-weight: bold;">Set Arc 
+ Current</span> value. Reduced arc current when cutting corners can improve 
+ corner cut quality. </p>
+</div>
+<p class="SnippetBookmark"><a name="Preflow_During_IHS" id="Preflow_During_IHS"></a></p>
+<div>
+<p class="SettingName">Preflow During IHS</p>
+<p class="SettingBody">This parameter is used for Rapid Part cutting. When 
+ this parameter is active (On), the CNC issues the Start and Hold Ignition 
+ signals to the plasma system early to allow the gas preflow to occur while 
+ the THC is performing an IHS operation. This reduces the time required 
+ to move to the next part and start cutting.</p>
+</div>
+<p class="SettingName"><a name="Offset_IHS" id="Offset_IHS"></a>Offset 
+ IHS</p>
+<p class="SettingBody">This parameter enables a remote probe for workpiece 
+ detection and initial height sense. If this feature is used, the CNC reads 
+ the offset values for <span style="font-weight: bold;">Marker Offset 9</span> 
+ set on the <a href="Setups_Screen.htm"><span style="font-weight: bold;">Cutting</span></a> 
+ screen (<span style="font-weight: bold;">Main &gt; Setups &gt; Cutting</span>). 
+ An <span style="font-weight: bold;">Offset IHS</span> is often used when 
+ cutting a pre-pierced workpiece so that the torch doesn’t perform an IHS 
+ on a pierce point. The torch moves the distance of the offset, performs 
+ the IHS, and returns to the pierce location. The Z position of the marker 
+ offset coordinates height differences between the torch and the probe.</p>
+<p class="SnippetBookmark"><a name="IHS_Start_Height" id="IHS_Start_Height"></a></p>
+<div>
+<p class="SettingName">IHS Start Height </p>
+<p class="SettingBody">This value is the height above the workpiece where 
+ the THC starts the initial height sense process. When the torch reaches 
+ this distance above the workpiece the following actions occur:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet"><p>Speed slows from Maximum THC Speed to Fast IHS 
+	 Speed.</p></li>
+	<li class="Bullet"><p>THC Torque Limit and Nozzle Contact Enable outputs 
+	 turn on.</p></li>
+	<li class="Bullet"><p>The CNC monitors the Nozzle Contact Sense input. 
+	 This input activates when the torch touches the workpiece, so the 
+	 CNC knows the height of the workpiece.</p></li>
+	<li class="Bullet"><p>The CNC monitors the axis following error which 
+	 the CNC compares to the stall force. When the following error exceeds 
+	 the stall force, the CNC knows the height of workpiece.</p></li>
+	<li class="Bullet"><p>Setting: 2.54&#160;– 
+	 50.8 mm (0.1&#160;– 
+	 2.0 in)</p></li>
+</ul>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override the <span 
+	 style="font-weight: bold;">IHS Start Height</span> field.</p>
+<p class="SnippetBookmark"><a name="Skip_IHS_Within" id="Skip_IHS_Within"></a> 
+ </p>
+<div>
+<p class="SettingName">Skip IHS Within</p>
+<p class="SettingBody">This setting disables initial height sense at pierce 
+ points if IHS falls within the selected distance. This setting increases 
+ cutting productivity. The distance is measured from the end point of the 
+ cut segment to the next pierce point. Choose the check box to automatically 
+ set this parameter to the default value.</p>
+<p class="SettingBody">If you de-select the check box, you can enter a 
+ different <span style="font-weight: bold;">Skip IHS Within</span> value 
+ here.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override the <span 
+	 style="font-weight: bold;">Skip IHS Within</span> field.</p>
+<p class="SettingName"><a name="Transfer_Height" id="Transfer_Height"></a>Transfer 
+ Height</p>
+<p class="SettingBody">When the arc transfers to the workpiece, it may 
+ be “stretched” to the pierce height. Enter the <span style="font-weight: bold;">Transfer 
+ Height</span> as a percentage of the cut height (or as an actual transfer 
+ height distance for XPR). The percentage can be 50%– 
+ 400% of Cut Height; commonly it is 150%.</p>
+<p class="SettingBody">Choose the check box to automatically set this parameter 
+ to the default value. If you de-select the check box, you can enter a 
+ different <span style="font-weight: bold;">Transfer Height</span> value 
+ here.</p>
+<p class="SettingBody">The transfer height is lower than the pierce height 
+ because initiating arc transfer at a high pierce height may cause the 
+ arc to not transfer to the workpiece.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Notes:</span> </p>
+<ul style="list-style: disc;">
+	<li style="color: #000000;"><p class="SettingBody">When overriding 
+	 <span style="font-weight: bold;">Cut Height</span> on the <span style="font-weight: bold;">Process</span> 
+	 screen, Pierce Height and Transfer Height automatically adjust in 
+	 proportion. If you want specific values for Pierce Height and Transfer 
+	 Height, enter them as absolute values in inches or millimeters <span 
+	 style="font-style: italic;">after</span> adjusting the Cut Height.</p></li>
+	<li style="color: #000000;"><p class="SettingBody">When you are using 
+	 a ProNest part program with XPR, you cannot override the <span style="font-weight: bold;">Transfer 
+	 Height</span> field.</p></li>
+</ul>
+<p class="SettingName"><a name="Puddle_Jump_Height" id="Puddle_Jump_Height"></a>Puddle 
+ Jump Height</p>
+<p class="SettingBody">This value determines the height above the workpiece 
+ where the torch is raised after pierce and before lowering to Cut Height 
+ so that the torch clears the top dross puddle that can form during the 
+ pierce. Enter a percentage of the Cut Height. The torch remains at this 
+ height until the Cut Height Delay has elapsed. The percentage can range 
+ between 50% to 500% of Cut Height. If you are not using Puddle Jump Height, 
+ set this parameter to 100%.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override the <span 
+	 style="font-weight: bold;">Puddle Jump Height</span> field.</p>
+<p class="SnippetBookmark"><a name="Creep_Time" id="Creep_Time"></a> </p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you cannot override 
+ the Creep Time field.</p>
+<p class="SettingName"><a name="Cut_Height_Delay" id="Cut_Height_Delay"></a>Cut 
+ Height Delay</p>
+<p class="SettingBody">This value is the time (in seconds) that the torch 
+ remains at the Puddle Jump Height before it transitions to the Cut Height. 
+ <span style="font-weight: bold;">Cut Height Delay</span> helps the torch 
+ to clear the top dross puddle that can form during a pierce. If you are 
+ not using <a href="#Puddle_Jump_Height">Puddle Jump Height</a>, set this 
+ parameter to 0.</p>
+<p class="SettingBody">You can use this field to override the default <span 
+	 style="font-weight: bold;">Cut Height Delay</span> (0&#160;– 10 seconds). If you change this 
+ parameter, it reverts to the original cut chart value when the cut chart 
+ is loaded.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you cannot override the 
+ <span style="font-weight: bold;">Cut Height Delay</span> field.</p>
+<p class="SnippetBookmark"><a name="AVC_Delay" id="AVC_Delay"></a> </p>
+<div>
+<p class="SettingName">AVC Delay</p>
+<p class="SettingBody">This value is the duration (in seconds) to allow 
+ the power supply&#160;to achieve steady-state operation at the cut height 
+ before automatic voltage control begins. When <span style="font-weight: bold;">AVC 
+ Delay</span> ends, the AVC is enabled for the remainder of the cut. If 
+ the THC is in <span style="font-weight: bold;">Sample Voltage</span> mode, 
+ the arc voltage sample is taken after this delay.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override the <span 
+	 style="font-weight: bold;">AVC Delay</span> field.</p>
+<p class="SnippetBookmark"><a name="Cut_Off_Time" id="Cut_Off_Time"></a> 
+ </p>
+<div>
+<p class="SettingName">Cut Off Time</p>
+<p class="SettingBody">This value is the time (-1&#160;– 2 seconds) that Cut Control output 
+ stays on after a cut and before the arc turns off.</p>
+<p class="SettingBody">This value turns off the plasma arc before or after 
+ the end of the cut to improve edge quality. A negative value turns off 
+ the arc before the end of the cutting machine motion. A positive value 
+ turns off the arc after motion stops. The <span style="font-weight: bold;">Cut 
+ Off Time</span> minimizes notches in part edges that can occur when motion 
+ stops with the arc on.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override the <span 
+	 style="font-weight: bold;">Cut Off Time</span> field.</p>
+<p class="SnippetBookmark"><a name="Arc_Off_Time" id="Arc_Off_Time"></a> 
+ </p>
+<div>
+<p class="SettingName">Arc Off Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ (0&#160;– 2 seconds) 
+ that torch motion continues if the arc is lost while cutting. This option 
+ allows motion to continue to the next pierce point. Torch motion stops 
+ when <span style="font-weight: bold;">Arc Off Time</span> ends.</p>
+</div>
+<p class="SettingBody"><span class="Bold">N</span><span style="font-weight: bold;">ote:</span> 
+ When you are using a ProNest part program with XPR, you can override the 
+ <span style="font-weight: bold;">Arc Off Time</span> field.</p>
+<p class="SnippetBookmark"><span class="Bold"><a name="Stop_Time" id="Stop_Time"></a></span> 
+ </p>
+<div>
+<p class="SettingName">Stop Time</p>
+<p class="SettingBody">This value is the time (0&#160;–&#160;10 seconds) that the CNC 
+ delays X/Y motion at the end of a cut before it moves to the next pierce 
+ point. This time can be used to retract the torch to avoid tip-ups.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you can override the 
+ <span style="font-weight: bold;">Stop Time</span> field.</p>
+<p class="SnippetBookmark"><a name="Retract_Height" id="Retract_Height"></a></p>
+<div>
+<p class="SettingName">Retract Height</p>
+<p class="SettingBody">This value is the height above the workpiece to 
+ which the torch retracts at the end of a cut.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you can override the 
+ <span style="font-weight: bold;">Retract Height</span> field.</p>
+<p class="SettingName"><a name="Kerf_Reacquired_Time" id="Kerf_Reacquired_Time"></a>Kerf 
+ Reacquire Time</p>
+<p class="SettingBody">When <a href="#Auto_Kerf_Detect">Auto Kerf Detect</a> 
+ detects a sudden drop in voltage, it activates the Torch Height Disable 
+ output for the Kerf Reacquire Time. When the Kerf Reacquire Time elapses, 
+ the CNC turns off the Torch Height Disable output and the THC starts to 
+ track voltage again.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you can override the 
+ <span style="font-weight: bold;">Kerf Reacquire Time</span> field.</p>
+<p class="SnippetBookmark"><a name="Default_All_Parameters"></a></p>
+<div>
+<p class="SettingName">Default All Parameters</p>
+<p class="SettingBody">The CNC can automatically estimate the values for 
+ the plasma or marking process. Choose the <span style="font-weight: bold;">Default 
+ All Parameters</span> soft key to load the estimated values. Under most 
+ conditions, these estimated values yield good results. However, you can 
+ override any of these values for special conditions. To override an estimated 
+ value, clear the check box for that parameter and enter a new value. The 
+ CNC displays your entered value in blue.</p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<p class="SettingName">Load Data/Save Data</p>
+<p class="SettingBody">Use these soft keys to save the settings from the<span 
+	 style="font-weight: bold;"> Process</span> screen. The CNC saves the 
+ file on either the CNC hard drive or on a USB memory stick. You can then 
+ transfer this file to another CNC or save a copy as a backup.</p>
+</div>
+<div>
+<p class="SettingName">Load Data</p>
+<p class="SettingBody">This soft key allows you to import a process.</p>
+</div>
+<div>
+<p class="SettingName">Oxyfuel</p>
+<p class="SettingBody" style="margin-left: 12px;">This soft key opens the 
+ <span style="font-weight: bold;">Oxyfuel</span> screen where you can customize 
+ and control torch motion and the processes for oxyfuel 
+ cutting/marking.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Marker 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 1</span> screen and process parameters are not available for XPR, 
+ but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Marker 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 2</span> &#160;screen and process parameters are not available 
+ for XPR, but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Timing Diagram</p>
+<p class="SettingBody">This soft key shows&#160;the activation and deactivation 
+ of I/O for each type of process. </p>
+</div>
+<div>
+<p class="SettingName">Test Lifter</p>
+<p class="SettingBody">This soft key lets you perform an initial height 
+ sense starting from the THC axis home position.</p>
+</div>
+<div>
+<h6>Cutting Tips</h6>
+<p class="SettingBody" style="margin-left: 12px;">This soft key displays 
+ cutting tips for the selected process.</p>
+</div>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p class="SettingBody">&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

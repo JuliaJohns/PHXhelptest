@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Cutting Screen</title>
+<link rel="stylesheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.5.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Setups Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Setups</h1>
+<p>On the <span style="font-weight: bold;">Setups</span> (Cutting) screen 
+ you can adjust the parameters for the cut mode you want to use: <span 
+	 style="font-weight: bold;">Trial motion</span> (without cutting), 
+ <span style="font-weight: bold;">Plasma</span>, and <span style="font-weight: bold;">Oxyfuel</span>. 
+ </p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span> <span 
+	 style="font-weight: bold;">Main screen &gt; Setups</span></p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Cut_Mode">Cut Mode</a></p></td>
+		<td><p><a href="#Kerf">Kerf</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Kerf_Variable">Kerf Variable, Kerf Value</a></p></td>
+		<td><p><a href="#Plasma_2_Cut_Speed">Plasma 2 Cut Speed</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Plasma_Speed">Speeds: Plasma/Trial/Oxy Fuel</a></p></td>
+		<td><p><a href="#Plate_Size">Plate Size</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Speed">Marker 1 Speed and Marker 2 Speed</a></p></td>
+		<td><p><a href="#Market_Offset_9">Marker Offset 9</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Offset_1-8">Marker Offset 1&#160;–&#160;8</a></p></td>
+		<td><p><a href="#Vent_Control_1-50">Vent Control 1&#160;– 50</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Offset_10-12">Marker Offset 10&#160;–&#160;12</a></p></td>
+		<td><p><a href="#Arc_Radial_Error">Arc Radial Error</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Dwell_Time">Dwell Time</a></p></td>
+		<td><p><a href="#Retain_Skew_Adjustment">Retain Skew Adjustment</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Show_Traverse_Segments">Show Traverse Segments</a></p></td>
+		<td><p><a href="#Material_Thickness">Material Thickness</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Mirror_Traverse_2">Mirror Transverse 2</a></p></td>
+		<td>&#160;</td>
+	</tr>
+	<tr>
+		<td><p><a href="#THC_Voltage_Offsets">THC Voltage Offsets</a></p></td>
+		<td>&#160;</td>
+	</tr>
+</table>
+<h2>Status and Program Code Options</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr style="height: 17px;">
+		<td><p><a href="#Dwell_Override">Dwell Override</a></p></td>
+		<td><p><a href="#Optional_Program_Stop">Optional Program Stop</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#EIA_I_J_Codes">EIA I &amp; J Codes</a></p></td>
+		<td><p><a href="#EIA_Kerf_Override">EIA Kerf Override</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#EIA_G59_Code_Override">EIA G59 Code Override</a></p></td>
+		<td><p><a href="#EIA_M07_M09_HS_IHS_Override">EIA M07/M09 HS IHS 
+		 Override</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#EIA_M08_M10_Retract_Override">EIA M08/M10 Retract 
+		 Override</a></p></td>
+		<td><p><a href="#EIA_F-Code_Override">EIA F-Code Override</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Speed-_Affects_F-Codes">Speed+/- Affects F-Codes</a></p></td>
+		<td><p><a href="#EIA_Single_Decimal_Shift">EIA Single Decimal Shift</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Process_Select_Override">Process Select Override</a></p></td>
+		<td><p><a href="#Station_Select_Override">Station Select Override</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Auto_Torch_Spacing_Override">Auto Torch Spacing 
+		 Override</a></p></td>
+		<td><p><a href="#G97_Loop_Count_Prompt">G97 Loop Count Prompt</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#ESAB_Multi_Torch_Support">ESAB Multi Torch Support</a></p></td>
+		<td><p><a href="#Force_G40_Disable_Kerf">Force G40 Disable Kerf</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#G40_Used_in_Simple_Shapes">G40 Used in Simple 
+		 Shapes</a></p></td>
+		<td><p><a href="#Auto_Start_after_APA">Auto Start after APA</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#EIA_Code_2_Decimal_Shift">EIA Code 2 Decimal Shift</a></p></td>
+		<td><p><a href="#M17_M18_Used_as_Cut_Codes">M17 and M18 Used as 
+		 Cut Codes</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#M76_Rotary_Shortest_Path">M76 Rotary Shortest 
+		 Path</a></p></td>
+		<td><p><a href="#Move_to_Mark_Points">Move to Mark Points</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Parallel_Kerf_Enable">Parallel Kerf Enable</a></p></td>
+		<td><p><a href="#ESSI_F_Code_Decimal_Shift">ESSI F Code Decimal 
+		 Shift</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Stop_on_Single_Arc_Lost">Stop on Single Arc Lost</a></p></td>
+		<td><p><a href="#M03_M05_Sets_Oxy_Fuel_Mode">M03 and M05 Sets Oxy 
+		 Fuel Mode</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Manual_Centerline_Spacing">Manual Centerline Spacing</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Cut_Mode" id="Cut_Mode"></a>Cut Mode</p>
+<p class="SettingBody">This field specifies the current cut mode: <span 
+	 style="font-weight: bold;">Plasma</span>, <span style="font-weight: bold;">Oxyfuel</span>, 
+ or <span style="font-weight: bold;">Trial</span>. In <span style="font-weight: bold;">Trial</span> 
+ mode, you can run the part program without cutting.</p>
+<p class="SettingName"><a name="Kerf" id="Kerf"></a>Kerf</p>
+<p class="SettingBody">This field specifies the amount of kerf to apply&#160;to 
+ the current part program. </p>
+<p class="SettingBody">To view the kerf compensated cut path after entering 
+ a kerf value, press the <span style="font-weight: bold;">Kerf</span> soft 
+ key under the <span style="font-weight: bold;">Part Options</span> menu.</p>
+<p class="SettingBody" style="font-weight: bold;">Notes:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">Select a kerf value carefully because this 
+	 parameter can generate invalid geometries. For example, adding a kerf 
+	 of 12.7 mm (0.5 inch) to an arc with a radius of 6.35 mm (0.25 inch) 
+	 results in an invalid cut path.</p></li>
+	<li><p class="SettingBody">When using ProNest with XPR, you cannot 
+	 modify the kerf setting in Phoenix. You can modify the kerf in ProNest.</p></li>
+</ul>
+<p class="SettingName"><a name="Kerf_Variable" id="Kerf_Variable"></a>Kerf 
+ Variable, Kerf Value</p>
+<p class="SettingBody">This field creates a kerf variable table that assigns 
+ a variable to a kerf value. You can enter up to 200 variables to create 
+ a reference table.</p>
+<p class="SettingBody">This kerf variable can be used within a part program 
+ to define the kerf value and as torch parts wear, the kerf value changes. 
+ If the kerf variable value is updated as the consumable wears and changes, 
+ the new value is called by the kerf variable command with all programs 
+ loaded that use the variable.</p>
+<p class="NormalIndent">The EIA-274D part code for left kerf variable is 
+ the G43 code. In the following example, G43 D1 X0.06:</p>
+<p 
+	 class="NormalIndent"><span class="rls-1-Bullets"><span style="font-family:'Symbol'">&#183;</span></span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>G43 is the kerf variable setting</p>
+<p 
+	 class="NormalIndent"><span class="rls-1-Bullets"><span style="font-family:'Symbol'">&#183;</span></span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>D1 is the kerf variable, from 1 – 200</p>
+<p 
+	 class="NormalIndent"><span class="rls-1-Bullets"><span style="font-family:'Symbol'">&#183;</span></span><span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>X0.06 is the selected kerf value</p>
+<p class="SettingName"><a name="Plasma_Speed" id="Plasma_Speed"></a>Speeds: 
+ Plasma/Trial/Oxy Fuel</p>
+<p class="SettingBody">This field specifies the speed for the current cut 
+ mode. These speeds are saved independently for trialing and cutting. Both 
+ speeds are limited to the maximum machine speed. Cut and trial speeds 
+ can also be executed by the F-code in a part program.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ using ProNest with XPR, you cannot modify the Plasma Speed setting in 
+ Phoenix. You can modify the<span style="font-weight: bold;"> Plasma Speed</span> 
+ setting in ProNest.</p>
+<p class="SettingName"><a name="Plasma_2_Cut_Speed" id="Plasma_2_Cut_Speed"></a>Plasma 
+ 2 Cut Speed</p>
+<p class="SettingBody">This field specifies the speed for Plasma 2 process.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ using ProNest with XPR, you cannot modify the Plasma 2 Cut Speed setting 
+ in Phoenix. You can modify the <span style="font-weight: bold;">Plasma 
+ 2 Cut Speed</span> setting in ProNest.</p>
+<p class="SettingName"><a name="Marker_Speed" id="Marker_Speed"></a>Marker 
+ 1 Speed and Marker 2 Speed</p>
+<p class="SettingBody">This field specifies the speed for the marker 1 
+ and 2 process. These speeds are saved independently for each marker process 
+ and are executed through the marker process selection within a part program.</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">Marker 1 is activated by EIA RS-274D M09 
+	 and M10, or an ESSI 9 and 10.</p></li>
+	<li><p class="SettingBody">Marker 2 is activated by EIA RS-274D M013 
+	 and M14, or an ESSI 13 and 14.</p></li>
+</ul>
+<p class="SettingBody"><span style="font-weight: bold;">Notes:</span> </p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">The XPR cutting processes automatically 
+	 include marking process settings. Marker Speed fields are not applicable 
+	 for XPR when the XPR is used for marking. The XPR does not use the 
+	 Marker 1 or Marker 2 process, but the XPR still supports marking. 
+	 </p></li>
+	<li><p class="SettingBody">When using ProNest with XPR, you cannot 
+	 override the marker speed field.</p></li>
+</ul>
+<p class="SettingName"><a name="Plate_Size" id="Plate_Size"></a>Plate Size</p>
+<p class="SettingBody">This field specifies the dimensions of the current 
+ plate. This dimension is used when loading a part to determine if the 
+ part will fit on the plate. The dimension is also used for viewing the 
+ part in screen view.</p>
+<p class="SettingName"><a name="Marker_Offset_1-8" id="Marker_Offset_1-8"></a>Marker 
+ Offset 1&#160;–&#160;8</p>
+<p class="SettingBody">Enter values for up to twelve programmable marker 
+ offsets. The machine is offset by this amount at maximum speed when the 
+ appropriate marker offset code is detected.</p>
+<p class="SettingName"><a name="Market_Offset_9" id="Market_Offset_9"></a>Marker 
+ Offset 9</p>
+<p class="SettingBody">This field is only for use with the Offset IHS parameter 
+ on the <span style="font-weight: bold;">Sensor THC/Plasma 1 and 2 Process</span> 
+ screens. By entering a value for <span style="font-weight: bold;">Marker 
+ Offset 9</span>, the torch will move from its current position to the 
+ marker offset distance, perform IHS, then return to its previous position. 
+ An Offset IHS is often used when cutting a pre-pierced workpiece so that 
+ the torch doesn’t perform an IHS on a pierce point.</p>
+<p class="SettingName"><a name="Marker_Offset_10-12" id="Marker_Offset_10-12"></a>Marker 
+ Offset 10&#160;–&#160;12</p>
+<p class="SettingBody">If values other than 1 are entered for marker offsets 
+ 10, 11 or 12, the Align Wizard and CutPro Wizard will automatically allow 
+ you to select the laser pointer or the torch for alignment.</p>
+<p class="SettingName"><a name="Vent_Control_1-50" id="Vent_Control_1-50"></a>Vent 
+ Control 1&#160;–&#160;50</p>
+<p class="SettingBody">Enter rail values for up to fifty programmable zones 
+ for fume extraction damper control. Based on the rail position, the vent 
+ controls digital outputs activate dampers at the selected zone for increased 
+ performance.</p>
+<p class="SettingName"><a name="Dwell_Time" id="Dwell_Time"></a>Dwell Time</p>
+<p class="SettingBody">This field specifies the amount of dwell (delay) 
+ that is inserted into the current part program when an appropriate RS-274D 
+ program block is reached. </p>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> Dwell 
+ time can be overridden in the part program. For example, in EIA programming 
+ a G04 X3 causes a three second dwell to be inserted at the current program 
+ block. A G04 without an X-code inserts a dwell with the current Dwell 
+ Time parameter.</p>
+<p class="SettingName"><a name="Arc_Radial_Error" id="Arc_Radial_Error"></a>Arc 
+ Radial Error</p>
+<p class="SettingBody">Arc Radial Error is used to make sure that the starting 
+ and ending radial vectors are within tolerance to describe a valid geometry. 
+ This field specifies the arc error tolerance to be used when checking 
+ the current segment for dimensional accuracy. All ESSI or EIA programs 
+ are comprised of lines, arcs, and circles.</p>
+<p class="SettingName"><a name="Show_Traverse_Segments" id="Show_Traverse_Segments"></a>Show 
+ Traverse Segments</p>
+<p class="SettingBody">This field allows traverse segment lines (displayed 
+ in yellow) to be turned<span style="font-weight: bold;"> OFF</span> or 
+ <span style="font-weight: bold;">ON</span> during all part preview displays.</p>
+<p class="SettingName"><a name="Retain_Skew_Adjustment" id="Retain_Skew_Adjustment"></a>Retain 
+ Skew Adjustment</p>
+<p class="SettingBody">This field retains the last calculated plate skew 
+ for all subsequent parts that are loaded. If disabled, any new part that 
+ is loaded will remove any previously calculated plate skew.</p>
+<p class="SettingName"><a name="Mirror_Traverse_2" id="Mirror_Traverse_2"></a>Mirror 
+ Transverse 2</p>
+<p class="SettingBody" style="background-color: Transparent;">This option 
+ appears when you have a Dual Transverse axis (also called Transverse 2) 
+ selected in Machine Setups. Select <span style="font-weight: bold;">Mirror 
+ Transverse 2</span> to perform mirror cutting where Transverse 2 moves 
+ in the opposite direction as the Transverse axis.</p>
+<p class="SettingName"><a name="Material_Thickness" id="Material_Thickness"></a>Material 
+ Thickness</p>
+<p class="SettingBody">This option changes the display of material thickness 
+ in the <span style="font-weight: bold;">Cut Chart</span> screen between 
+ gauge, fraction, and decimal. This option only displays when the CNC is 
+ using English units.</p>
+<p class="SettingName"><a name="THC_Voltage_Offsets" id="THC_Voltage_Offsets"></a>THC 
+ Voltage Offsets</p>
+<p class="SettingBody">This parameter adds or subtracts voltage from the 
+ arc voltage set point. Any value you enter for a voltage offset stays 
+ in effect until you change it. Use a voltage offset to compensate for 
+ electrode wear in the torch. As the electrode wears, the arc voltage set 
+ point needs to increase to maintain a consistent cut height.</p>
+<p class="SettingBody">Phoenix can automatically increase the voltage offset 
+ if you have set the Volts/Min parameter on the Change Consumables screen. 
+ As time accumulates on the electrode on the Change Consumables screen, 
+ Phoenix increases the voltage offset value. To prevent a voltage offset 
+ from accumulating automatically, choose <span style="font-weight: bold;">Change 
+ Consumables</span> from the<span style="font-weight: bold;"> Main screen</span>, 
+ and set <span style="font-weight: bold;">Volts/Min</span> to<span style="font-weight: bold;"> 
+ 0</span>. </p>
+<p class="SettingBody">To reset the Voltage Offset, choose <span style="font-weight: bold;">Setups</span> 
+ from the <span style="font-weight: bold;">Main Screen</span> and set the 
+ <span style="font-weight: bold;">voltage offset</span> to<span style="font-weight: bold;"> 
+ 0</span>. </p>
+<p class="SettingBody" style="font-weight: bold;">Notes:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">The <span style="font-weight: bold;">voltage 
+	 offset</span> does not reset to <span style="font-weight: bold;">0</span> 
+	 if you change consumables or load a new cut chart.</p></li>
+	<li><p class="SettingBody">The <span style="font-weight: bold;">Volts/Min</span> 
+	 parameter and consumable life data is not available on the <span style="font-weight: bold;">Change 
+	 Consumables screen for XPR</span>.</p></li>
+	<li><p class="SettingBody">While cutting, pressing the <span style="font-weight: bold;">Raise 
+	 </span>and<span style="font-weight: bold;"> Lower station</span> buttons 
+	 on the operator console of the EDGE Pro or EDGE Pro Ti changes the 
+	 voltage offset for the selected station by 0.5 per button press.</p></li>
+</ul>
+<h2>Status and Program Code list</h2>
+<p class="SettingName"><a name="Dwell_Override" id="Dwell_Override"></a>Dwell 
+ Override</p>
+<p class="SettingBody">When this parameter is enabled, embedded dwell G04 
+ X value codes in an RS-274D program override the operator-entered dwell 
+ time.</p>
+<p class="SettingName"><a name="Optional_Program_Stop" id="Optional_Program_Stop"></a>Optional 
+ Program Stop</p>
+<p class="SettingBody">This setting allows overriding of the optional program 
+ stop code M01 in the current part program. If enabled, an M01 code operates 
+ identically to M00. If disabled, the M01 code is ignored.</p>
+<p class="SettingName"><a name="EIA_I_J_Codes" id="EIA_I_J_Codes"></a>EIA 
+ I &amp; J Codes</p>
+<p class="SettingBody">This setting selects absolute or incremental RS-274D 
+ programming mode. In<span style="font-weight: bold;"> Incremental</span> 
+ mode, all offsets for X, Y, I and J are relative to the current block. 
+ In <span style="font-weight: bold;">Absolute</span> mode, all offsets 
+ for X, Y, I and J are relative to an absolute reference point unless they 
+ are changed by using a G92 (set axis presets) program code.</p>
+<p class="SettingName"><a name="EIA_Kerf_Override" id="EIA_Kerf_Override"></a>EIA 
+ Kerf Override</p>
+<p class="SettingBody">If this setting is disabled, all kerf value codes 
+ and the <span style="font-weight: bold;">Load Kerf Table</span> variable 
+ are ignored. This parameter is enabled by default and cannot be changed 
+ while the part program is paused. This is useful when a process is used 
+ at a cutting machine that is different from the one that was used to create 
+ the part program.</p>
+<p class="SettingName"><a name="EIA_G59_Code_Override" id="EIA_G59_Code_Override"></a>EIA 
+ G59 Code Override</p>
+<p class="SettingBody">When enabled, this option allows codes in the part 
+ program to select the following:</p>
+<ul style="list-style: disc; color: #000000;">
+	<li style="color: #000000;"><p class="SettingBody">Cut chart process 
+	 variables (G59 V500 codes for most plasma power supplies and G59 V509 
+	 codes for XPR)</p></li>
+	<li style="color: #000000;"><p class="SettingBody">Cut chart process 
+	 parameter overrides (V600 codes for most plasma power supplies and 
+	 process overrides on the M07 line for XPR)</p></li>
+</ul>
+<p class="SettingBody">This option is enabled by default, so that part 
+ program codes take precedence over cut chart selections made at the CNC. 
+ If the <span style="font-weight: bold;">G59 Code Override</span> is disabled, 
+ the CNC ignores all G59 codes and M07 process overrides in the part program 
+ (except for N2 and AR when marking with XPR). </p>
+<p class="SettingBody" style="color: #000000;"><span style="font-weight: bold;">Note:</span> 
+ When cutting or marking with an XPR, Hypertherm strongly recommends&#160;using 
+ a part program created specifically for XPR. Hypertherm does <span style="font-style: italic;">not</span> 
+ recommend using ProNest part programs for HPRXD when cutting or marking 
+ with an XPR.</p>
+<p class="SettingName"><a name="EIA_M07_M09_HS_IHS_Override" id="EIA_M07_M09_HS_IHS_Override"></a>EIA 
+ M07/M09 HS IHS Override</p>
+<p class="SettingBody">When this option is enabled, M07 HS and M09 HS codes 
+ in the part program force an IHS when the pierce point is within the <span 
+	 style="font-weight: bold;">Skip IHS Distance</span> set on the <span 
+	 style="font-weight: bold;">Process screen</span> for the ArcGlide 
+ THC and Sensor THC.</p>
+<p class="SettingName"><a name="EIA_M08_M10_Retract_Override" id="EIA_M08_M10_Retract_Override"></a>EIA 
+ M08/M10 Retract Override</p>
+<p class="SettingBody">When this option is enabled, M08 RT and M10 RT codes 
+ in the part program cause the torch to retract to the transfer height 
+ when the cut is complete. When disabled, the torch retracts to the retract 
+ height.</p>
+<p class="SettingName"><a name="EIA_F-Code_Override" id="EIA_F-Code_Override"></a>EIA 
+ F-Code Override</p>
+<p class="SettingBody">When this parameter is enabled, embedded F-codes 
+ in a part program override any operator-entered cut speed.</p>
+<p class="SettingName"><a name="Speed-_Affects_F-Codes" id="Speed-_Affects_F-Codes"></a>Speed 
+ +/- Affects F-Codes</p>
+<p class="SettingBody">When this parameter is enabled, the control applies 
+ the speed increase/decrease percentage to all embedded F-codes that are 
+ encountered in the part program.</p>
+<p class="SettingName"><a name="EIA_Single_Decimal_Shift" id="EIA_Single_Decimal_Shift"></a>EIA 
+ Single Decimal Shift</p>
+<p class="SettingBody">Some programming styles are structured so that the 
+ decimal point in the EIA positioning affecting part sizing is assumed. 
+ The EIA decimal shift parameter allows the operator to select the location 
+ of the decimal point when translating parts by selecting <span style="font-weight: bold;">Normal</span> 
+ or <span style="font-weight: bold;">Single</span> for the correct translation. 
+ The selection should be set to <span style="font-weight: bold;">Normal</span> 
+ unless your part programs have only a single digit to the right of the 
+ decimal point.</p>
+<p class="SettingName"><a name="Process_Select_Override" id="Process_Select_Override"></a>Process 
+ Select Override</p>
+<p class="SettingBody">When enabled, this feature allows the part program 
+ to override the process select input.</p>
+<p class="SettingName"><a name="Station_Select_Override" id="Station_Select_Override"></a>Station 
+ Select Override</p>
+<p class="SettingBody">When enabled, this feature allows the part program 
+ to override the currently selected station select input.</p>
+<p class="SettingName"><a name="Auto_Torch_Spacing_Override" id="Auto_Torch_Spacing_Override"></a>Auto 
+ Torch Spacing Override</p>
+<p class="SettingBody">When enabled, this feature allows the part program 
+ to override the manually selected torch spacing inputs.</p>
+<p class="SettingName"><a name="G97_Loop_Count_Prompt" id="G97_Loop_Count_Prompt"></a>G97 
+ Loop Count Prompt</p>
+<p class="SettingBody">When enabled, this feature posts a message on the 
+ screen to enter the number of loops or repeats to be selected when an 
+ EIA G97 code without a “T” value is encountered in the part program.</p>
+<p class="SettingName"><a name="ESAB_Multi_Torch_Support" id="ESAB_Multi_Torch_Support"></a>ESAB 
+ Multi Torch Support</p>
+<p class="SettingBody">When enabled, this feature allows ESAB-style ESSI 
+ part programs to map codes to specific station selects.</p>
+<table style="margin-left: 12px; border-collapse: separate; border-collapse: separate;" 
+		 cellspacing="0" width="96%" border="1">
+	<col style="width: 20.849%;" />
+	<col style="width: 20.626%;" />
+	<col style="width: 58.525%;" />
+	<tr>
+		<td><p style="font-weight: bold;">ESSI Code</p></td>
+		<td><p style="font-weight: bold;">EIA Code</p></td>
+		<td><p style="font-weight: bold;">Description</p></td>
+	</tr>
+	<tr>
+		<td><p>7</p></td>
+		<td><p>M37 T1</p></td>
+		<td><p>Select station 1</p></td>
+	</tr>
+	<tr>
+		<td><p>8</p></td>
+		<td><p>M38 T1</p></td>
+		<td><p>Deselect station 1</p></td>
+	</tr>
+	<tr>
+		<td><p>13</p></td>
+		<td><p>M37 T2</p></td>
+		<td><p>Select station 2</p></td>
+	</tr>
+	<tr>
+		<td><p>14</p></td>
+		<td><p>M38 T2</p></td>
+		<td><p>Deselect station 2</p></td>
+	</tr>
+	<tr>
+		<td><p>15</p></td>
+		<td><p>M37 T3</p></td>
+		<td><p>Select station 3</p></td>
+	</tr>
+	<tr>
+		<td><p>16</p></td>
+		<td><p>M38 T3</p></td>
+		<td><p>Deselect station 3</p></td>
+	</tr>
+</table>
+<p class="SettingName"><a name="Force_G40_Disable_Kerf" id="Force_G40_Disable_Kerf"></a>Force 
+ G40 Disable Kerf</p>
+<p class="SettingBody">In a part program, kerf is enabled and disabled 
+ using EIA G41/G42 and G40 codes. Standard operation is to disable kerf 
+ at the cut off even if the G40 kerf disable is not in a program. With 
+ this parameter, you can turn off the “forced” G40 kerf disable if no G40 
+ is used in the program by disabling the parameter.</p>
+<p class="SettingName"><a name="G40_Used_in_Simple_Shapes" id="G40_Used_in_Simple_Shapes"></a>G40 
+ Used in Simple Shapes</p>
+<p class="SettingBody">This parameter is used with the<span style="font-weight: bold;"> 
+ Force Kerf Disable</span> parameter. Disable this parameter if you want 
+ to omit the G40 code that is normally inserted into a simple shape from 
+ the shape library and has not been processed through ProNest CNC.</p>
+<p class="SettingName"><a name="Auto_Start_after_APA" id="Auto_Start_after_APA"></a>Auto 
+ Start after APA</p>
+<p class="SettingBody">This parameter is used with the <span style="font-weight: bold;">Automatic 
+ Plate Alignment</span> feature to allow cutting to begin automatically 
+ after completion of the automatic plate alignment.</p>
+<p class="SettingName"><a name="EIA_Code_2_Decimal_Shift" id="EIA_Code_2_Decimal_Shift"></a>EIA 
+ Code 2 Decimal Shift</p>
+<p class="SettingBody">Some programming styles are structured so that the 
+ decimal point in the EIA positioning affecting part sizing is assumed. 
+ The EIA Code 2 Decimal Shift parameter allows you to select the location 
+ of the decimal point when translating parts by selecting <span style="font-weight: bold;">Normal</span> 
+ or <span style="font-weight: bold;">Single</span> for correct translation. 
+ The selection should be set to <span style="font-weight: bold;">Normal</span> 
+ unless your part programs require two decimal shift to the right of the 
+ decimal point.</p>
+<p class="SettingName"><a name="M17_M18_Used_as_Cut_Codes" id="M17_M18_Used_as_Cut_Codes"></a>M17 
+ and M18 Used as Cut Codes</p>
+<p class="SettingBody">When enabled, this setting allows the EIA-274D M17 
+ and M18 codes to be used for cut on and off commands.</p>
+<p class="SettingName"><a name="M76_Rotary_Shortest_Path" id="M76_Rotary_Shortest_Path"></a>M76 
+ Rotary Shortest Path</p>
+<p class="SettingBody">When enabled, this setting disables tilt and rotate 
+ software overtravels for dual tilt-style bevel heads and allows the EIA-274D 
+ M76 <span style="font-weight: bold;">Rotate go to Home</span> command 
+ to select shortest path. </p>
+<p class="SettingBody">When disabled, this setting allows motion by the 
+ longest path when homing. This is advantageous for some bevel head designs.</p>
+<p class="SettingName"><a name="Move_to_Mark_Points" id="Move_to_Mark_Points"></a>Move 
+ to Mark Points</p>
+<p class="SettingBody" style="background-color: Transparent;">When enabled, 
+ this setting allows you to use the <span style="font-weight: bold;">Move 
+ to Pierce</span> function to move to the <span style="font-weight: bold;">Cut 
+ On</span> locations and the <span style="font-weight: bold;">Marker On</span> 
+ locations with the part program.</p>
+<p class="SettingName"><a name="Parallel_Kerf_Enable" id="Parallel_Kerf_Enable"></a>Parallel 
+ Kerf Enable</p>
+<p class="SettingBody" style="background-color: Transparent;">Instead of 
+ moving to an orthogonal index to the kerf width prior to cutting, the 
+ torch instead moves to the kerf width during the first cut segment (in 
+ parallel or synchronized with cut motion). This shows up as a diagonal 
+ move away from the original cut path to the cut path with kerf.</p>
+<p class="SettingName"><a name="ESSI_F_Code_Decimal_Shift" id="ESSI_F_Code_Decimal_Shift"></a>ESSI 
+ F Code Decimal Shift</p>
+<p class="SettingBody" style="background-color: Transparent;">If using 
+ ESSI shipbuilding part program codes when this parameter is enabled, there 
+ are 2 implied decimal positions for F Codes in English parts and 1 implied 
+ decimal position in Metric parts. If this setting is disabled, the ESSI 
+ F Code is read directly as is with no decimal shift.</p>
+<p class="SettingName"><a name="Stop_on_Single_Arc_Lost" id="Stop_on_Single_Arc_Lost"></a>Stop 
+ on Single Arc Lost</p>
+<p class="SettingBody">When this setting is enabled, any Cut Sense input 
+ that is lost for longer than the <span style="font-weight: bold;">Arc 
+ Off time</span> during the cut pauses the part program with a Cut Sense 
+ Lost message. &#160;</p>
+<p class="SettingBody" style="color: #000000;">When this setting is disabled:</p>
+<ul style="list-style: disc;">
+	<li style="color: #000000;"><p class="SettingBody" style="color: #000000;">If 
+	 a single Cut Sense input is lost, the part program continues and the 
+	 Cut Sense Lost message does not display.</p></li>
+	<li style="color: #000000;"><p class="SettingBody" style="color: #000000;">If 
+	 Cut Sense inputs are lost on all cutting tools for longer than the 
+	 <span style="font-weight: bold;">Arc Off time</span>, the part program 
+	 pauses with a Cut Sense Lost message.</p></li>
+</ul>
+<p class="SettingName"><a name="M03_M05_Sets_Oxy_Fuel_Mode" id="M03_M05_Sets_Oxy_Fuel_Mode"></a>M03 
+ and M05 Sets Oxy Fuel Mode</p>
+<p class="SettingBody">This setting allows M03 or M05 codes to switch the 
+ <span style="font-weight: bold;">Cut Mode</span> to <span style="font-weight: bold;">Oxyfuel</span> 
+ while the CNC runs the part program. This setting is rarely used in specialty 
+ part programs.</p>
+<p class="SettingName"><a name="Manual_Centerline_Spacing" id="Manual_Centerline_Spacing"></a>Manual 
+ Centerline Spacing</p>
+<p class="SettingBody">When enabled, this setting spaces the tool stations 
+ by the distance that you enter for <span style="font-weight: bold;">Torch 
+ Spacing</span> in the <a href="Manual_Options_Screen.htm" style="font-weight: bold;">Manual 
+ Options</a> screen.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<h4>Cutting</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Cutting 
+ </span>screen.</p>
+</div>
+<div>
+<h4>Process</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Process</span> 
+ screen.</p>
+</div>
+<div>
+<h4>Disable Control/Enable Control</h4>
+<p class="SettingBody">This soft key disables the drives by turning off 
+ the <span style="font-weight: bold;">Drive Enable</span> <span style="font-weight: bold;">bit</span> 
+ for each axis. It also turns off the <span style="font-weight: bold;">Drive 
+ Enable output</span> if assigned. </p>
+</div>
+<div>
+<h4>Watch</h4>
+<p class="SettingBody">This soft key allows you to set up Watch Windows.</p>
+</div>
+<div>
+<h4>Password</h4>
+<p class="SettingBody">This soft key allows you to enter a password.</p>
+</div>
+<div>
+<h4>Diagnostics</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Control 
+ Information (Diagnostics)</span> screen.</p>
+</div>
+<div>
+<h4>Change to Metric Units/Change to English Units</h4>
+<p class="SettingBody">This soft key changes all measurements from <span 
+	 style="font-weight: bold;">English</span> units to<span style="font-weight: bold;"> 
+ Metric</span>, or from <span style="font-weight: bold;">Metric</span> 
+ units to <span style="font-weight: bold;">English</span> throughout the 
+ Phoenix software. The changes take place immediately after you choose 
+ the soft key, but you must choose <span style="font-weight: bold;">Save 
+ Changes</span> when you exit the <span style="font-weight: bold;">Setups</span> 
+ screen.</p>
+</div>
+<p>&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Laser Mapping</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_14";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Laser Mapping</h1>
+<p>Laser Mapping is a feature that improves the linear positioning accuracy 
+ of a cutting table if there are mechanical inaccuracies on the axes. A 
+ laser interferometer records several positions along the rail, transverse, 
+ and dual gantry axes. The CNC uses the data from the interferometer to 
+ compensate the commanded position to each axis and reduce position errors 
+ to 0 (zero).</p>
+<p>To allow Phoenix to compensate for position inaccuracies on an axis, 
+ complete the following steps:</p>
+<ol style="list-style: decimal;">
+	<li class="Bullet" style="list-style: decimal;">Map the axis.</li>
+	<li class="Bullet" style="list-style: decimal;">Create a compensation 
+	 data file for the axis.</li>
+	<li class="Bullet" style="list-style: decimal;">Load the data file 
+	 into the CNC.</li>
+	<li class="Bullet" style="list-style: decimal;">Turn on <span style="font-weight: bold;">Laser 
+	 Compensation</span> in the <span style="font-weight: bold;">Transverse</span>, 
+	 <span style="font-weight: bold;">Rail</span>, or <span style="font-weight: bold;">Dual 
+	 Gantry</span> screens.</li>
+	<li class="Bullet" style="list-style: decimal;">Repeat these steps 
+	 for each axis you want to map.</li>
+</ol>
+<p>&#160;</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Transverse_or_Rail_First_Run">Transverse or Rail 
+		 First Run</a></p></td>
+		<td><p><a href="#Number_of_Targets">Number of Targets</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Reversal_Distance">Reversal Distance</a></p></td>
+		<td><p><a href="#Target_Dwell">Target Dwell</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Target_Distance">Target Distance</a></p></td>
+		<td><p><a href="#Mapping_Speed">Mapping Speed</a></p></td>
+	</tr>
+	<tr>
+		<td>&#160;</td>
+		<td><p><a href="#Number_of_Runs_">Number of Runs</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Transverse_or_Rail_First_Run" id="Transverse_or_Rail_First_Run"></a>Transverse 
+ or Rail First Run</p>
+<p class="SettingBody">This value is the direction of the first run on 
+ the axis. Select the direction of motion from the home position.</p>
+<p class="SettingName"><a name="Reversal_Distance" id="Reversal_Distance"></a>Reversal 
+ Distance</p>
+<p class="SettingBody">Enter the distance of travel in the opposite direction 
+ at the beginning and end of a run to remove mechanical backlash before 
+ mapping. Reverse motion removes mechanical backlash before mapping the 
+ axis.</p>
+<p class="SettingName"><a name="Target_Distance" id="Target_Distance"></a>Target 
+ Distance</p>
+<p class="SettingBody">Set the distance between targets. Set this value 
+ in larger distances (508 mm, 20 inches) for a rough mapping and in much 
+ smaller distances (25 – 50 mm, 1 – 2 inches) for more precise motion compensation.</p>
+<p class="SettingName"><a name="Number_of_Targets" id="Number_of_Targets"></a>Number 
+ of Targets</p>
+<p class="SettingBody">Enter the number of positions on each run where 
+ the laser interferometer measures the physical position of the axis. The 
+ part program that the CNC creates for mapping includes a pause at each 
+ of these positions. Enter values between 2 and 1000. Enter a larger number 
+ of targets for more precise motion compensation.</p>
+<p class="SettingName"><a name="Target_Dwell" id="Target_Dwell"></a>Target 
+ Dwell</p>
+<p class="SettingBody">Enter the amount of time that motion pauses at each 
+ target to allow the interferometer to take each measurement and record 
+ the results. Refer to the instruction manual for your laser interferometer 
+ to determine how to set this value.</p>
+<p class="SettingName"><a name="Mapping_Speed" id="Mapping_Speed"></a>Mapping 
+ Speed</p>
+<p class="SettingBody">Set the program speed of the part program that the 
+ CNC creates for mapping.</p>
+<p class="SettingName"><a name="Number_of_Runs_" id="Number_of_Runs_"></a>Number 
+ of Runs</p>
+<p class="SettingBody">Enter the number of times that the part program 
+ runs on an axis. Set this to an even number between 2 and 1000 because 
+ the interferometer must travel to the end of the axis and then return. 
+ Enter a larger number of runs for more precise the motion compensation.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">Map Transverse</p>
+<p class="SettingBody">This soft key starts the laser mapping program for 
+ the Transverse axis. Phoenix opens the <span style="font-weight: bold;">Main 
+ screen</span> and loads the mapping program into the <span style="font-weight: bold;">Preview</span> 
+ window.</p>
+<p class="SettingName">Map Rail</p>
+<p class="SettingBody">This soft key starts the laser mapping program for 
+ the Rail axis. Phoenix opens the <span style="font-weight: bold;">Main 
+ screen</span> and loads the mapping program into the <span style="font-weight: bold;">Preview</span> 
+ window.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

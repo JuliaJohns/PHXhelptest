@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Plasma Cut Chart Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.7.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Cut Charts" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Plasma Cut Chart</h1>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span style="font-weight: bold;">Note:</span> The<span style="font-weight: bold;"> 
+ </span><a href="Plasma_Cut_Chart_for_XPR.htm"><span style="font-weight: bold;">Plasma 
+ Cut Chart </span>screen for XPR</a> is different than the <span style="font-weight: bold;">Plasma 
+ Cut Chart </span>screen described on this page for HPRXD and other power 
+ supplies.</p>
+<p>Each cutting tool, such as individual plasma power supplies, has its 
+ own cut charts.</p>
+<p>The default cut charts that are loaded into the CNC at the factory provide 
+ values for all remaining parameters for the cut chart and these are displayed 
+ on the right of the <span style="font-weight: bold;">Cut Chart</span> 
+ screen.</p>
+<h2>Process Selection Fields</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Torch_Type">Torch Type</a></p></td>
+		<td><p><a href="#Material_Type">Material Type</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Specific_Material">Specific Material</a></p></td>
+		<td><p><a href="#Process_Current.">Process Current</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Plasma_Shield_Gases">Plasma/Shield Gases</a></p></td>
+		<td><p><a href="#Cutting_Surface">Cutting Surface</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Material_Thickness">Material Thickness</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2>Other Parameter Fields</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Preflow_Setting_and_Cutflow_Setting">Preflow Setting 
+		 and Cutflow Setting</a></p></td>
+		<td><p><a href="#Mixed_Gas">Mixed Gas</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Speed">Cut Speed</a></p></td>
+		<td><p><a href="#Kerf">Kerf</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Time">Pierce Time</a></p></td>
+		<td><p><a href="#Cut_Height_Delay">Cut Height Delay</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Creep_Time">Creep Time</a></p></td>
+		<td><p><a href="#Cut_Height">Cut Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Transfer_Height">Transfer Height</a></p></td>
+		<td><p><a href="#Pierce_Height">Pierce Height</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Set_Arc_Voltage">Set Arc Voltage</a></p></td>
+		<td><p><a href="#Set_Arc_Current">Set Arc Current</a></p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Torch_Type" id="Torch_Type"></a></p>
+<div>
+<h5>Torch Type</h5>
+<p class="SettingBody">Select the torch that you are using on the cutting 
+ table. If a power supply has only one torch available, the <span style="font-weight: bold;">Torch 
+ Type</span> selection will not be available.</p>
+</div>
+<p class="SnippetBookmark"><a name="Material_Type" id="Material_Type"></a></p>
+<div>
+<h5>Material Type</h5>
+<p class="SettingBody">This field displays the type of material for this 
+ cut chart: <span style="font-weight: bold;">mild steel</span>, <span style="font-weight: bold;">stainless 
+ steel</span>, or <span style="font-weight: bold;">aluminum</span>.</p>
+</div>
+<p class="SnippetBookmark"><a name="Specific_Material" id="Specific_Material"></a></p>
+<div>
+<h5>Specific Material</h5>
+<p class="SettingBody">This value identifies a custom cut chart.</p>
+</div>
+<p class="SettingName"><a name="Process_Current." id="Process_Current."></a>Process 
+ Current</p>
+<p class="SettingBody">Enter the current set point for the material thickness 
+ and material type or specific material selected.</p>
+<p class="SettingName"><a name="Plasma_Shield_Gases" id="Plasma_Shield_Gases"></a>Plasma/Shield 
+ Gases</p>
+<p class="SettingBody">Select the gas types for the shield and for cutting.</p>
+<p class="SettingName"><a name="Cutting_Surface" id="Cutting_Surface"></a></p>
+<div>
+<h5>Cutting Surface</h5>
+<p class="SettingBody">Choose whether the workpiece will be cut above or 
+ below water. This selection is available only for XPR and HPRXD power 
+ supplies.</p>
+</div>
+<p class="SnippetBookmark"><a name="Material_Thickness" id="Material_Thickness"></a></p>
+<div>
+<h5>Material Thickness</h5>
+<p class="SettingBody">This field shows the workpiece thickness for the 
+ cut chart. Select a different material thickness to change the cut chart.</p>
+</div>
+<p class="SettingName"><a name="Preflow_Setting_and_Cutflow_Setting" id="Preflow_Setting_and_Cutflow_Setting"></a>Preflow 
+ Setting and Cutflow Setting</p>
+<p class="SettingBody">Set the plasma and shield gas preflow and cutflow. 
+ Use these settings for plasma systems that support an autogas console. 
+ For plasma systems without autogas, these values display only for reference.</p>
+<p class="SettingName"><a name="Mixed_Gas" id="Mixed_Gas"></a>Mixed Gas</p>
+<p class="SettingBody">This field shows the percentages of gases used for 
+ mixed-gas cutting processes, such as for stainless steel cutting. </p>
+<p class="SnippetBookmark"><a name="Cut_Speed" id="Cut_Speed"></a></p>
+<div>
+<h5>Cut Speed</h5>
+<p class="SettingBody">This field sets the cutting speed (also known as 
+ feed rate) for the material type and material thickness of the workpiece.</p>
+<p class="SettingBody">You can use this field to override the default Cut 
+ Speed. The default Cut Speed value (in inches per minute or mm per minute) 
+ comes from the cut chart. If you change this option, it reverts to the 
+ original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SnippetBookmark"><a name="Kerf" id="Kerf"></a></p>
+<div>
+<h5>Kerf</h5>
+<p class="SettingBody">Kerf is the width of the cut that the tool&#160;removes 
+ as it cuts the material. The CNC automatically offsets the motion path 
+ by half the kerf dimension to make sure that the part is cut at the correct 
+ size.</p>
+</div>
+<p class="SnippetBookmark"><a name="Pierce_Time" id="Pierce_Time"></a></p>
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SettingName"><a name="Cut_Height_Delay" id="Cut_Height_Delay"></a>Cut 
+ Height Delay</p>
+<p class="SettingBody">This field specifies the amount of time, in seconds, 
+ that the torch spends between pierce height and cut height while X and 
+ Y motion advances.</p>
+<p class="SnippetBookmark"><a name="Creep_Time" id="Creep_Time"></a></p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<p class="SettingName"><a name="Cut_Height" id="Cut_Height"></a>Cut Height</p>
+<p class="SettingBody">This field determines the height at which the torch 
+ cuts the workpiece. This value can be temporarily fine-tuned on the <span 
+	 style="font-weight: bold;">Process</span> screen.</p>
+<p class="SettingName"><a name="Transfer_Height" id="Transfer_Height"></a>Transfer 
+ Height</p>
+<p class="SettingBody">When the arc transfers to the workpiece, it can 
+ be “stretched” to the pierce height. The transfer height is lower than 
+ the pierce height because initiating arc transfer at a high pierce height 
+ may result in the arc not transferring to the workpiece at all. Enter 
+ the <span style="font-weight: bold;">Transfer Height</span> as a percentage 
+ of the cut height or as an actual transfer height distance.</p>
+<p class="SettingName"><a name="Pierce_Height" id="Pierce_Height"></a>Pierce 
+ Height</p>
+<p class="SettingBody">This field specifies the height of the torch during 
+ pierces. This value can be entered as a percentage of the cut height or 
+ an actual pierce height distance. A common guideline is that thicker material 
+ requires a higher pierce height.</p>
+<p class="SnippetBookmark"><a name="Set_Arc_Voltage" id="Set_Arc_Voltage"></a></p>
+<div>
+<h5>Set Arc Voltage</h5>
+<p class="SettingBody">In the CNC, each plasma process has an arc voltage 
+ set point, called the <span style="font-weight: bold;">Set Arc Voltage</span>, 
+ for a given material thickness, cut height, cut speed, gas type, and current. 
+ When cutting starts, the CNC tracks the actual voltage drop across the 
+ arc and compares it to the <span style="font-weight: bold;">Set Arc Voltage</span>. 
+ When the actual arc voltage is higher or lower than the <span style="font-weight: bold;">Set 
+ Arc Voltage</span>, the CNC commands the lifter to move the torch down 
+ or up.</p>
+<ul style="list-style: disc;">
+	<li class="Bullet"><p>When the actual arc voltage is higher than the 
+	 arc voltage set point, the torch moves down.</p></li>
+	<li class="Bullet"><p>When the arc voltage is lower than the set point, 
+	 the torch moves up.</p></li>
+	<li class="Bullet"><p>The higher the arc voltage set point, the higher 
+	 the cut height.</p></li>
+</ul>
+</div>
+<p class="SettingBody">Enter the arc voltage for the material selected. 
+ This is part of automatic voltage control (AVC) Auto height. In general, 
+ the higher the arc voltage is set, the higher the torch will be from the 
+ plate while cutting.</p>
+<p class="SettingName"><a name="Set_Arc_Current" id="Set_Arc_Current"></a>Set 
+ Arc Current</p>
+<p class="SettingBody">This is the value for the plasma arc current. Enter 
+ the amperage needed to cut the material. This value also appears on the<span 
+	 style="font-weight: bold;"> Process</span> screen. This parameter 
+ can be used only with plasma systems that communicate with the CNC.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<h6>Save Process</h6>
+<p class="SettingBody">This soft key saves the current process settings 
+ to the hard drive.</p>
+</div>
+<div>
+<h6>Reset Process</h6>
+<p class="SettingBody">This soft key resets the cut chart to factory defaults 
+ based on the process variables selected. The CNC retrieves these settings 
+ from the cut chart file ending in .fac.</p>
+</div>
+<div>
+<h6>Save Cut Charts</h6>
+<p class="SettingBody">This soft key copies the current user and factory 
+ cut chart files to USB memory stick. User files have an .usr file extension 
+ and the factory files have a .fac file extension.</p>
+<p class="SettingBody">Examples of user and factory file name are<span 
+	 style="font-style: italic;"> Mild Steel-HPR XD-HPR.</span>usr and 
+ <span style="font-style: italic;">Mild Steel-HPR XD-HPR.</span>fac.</p>
+<p class="SettingBody">If you have changed any cut charts, be sure to use 
+ this feature to back up your cut charts before you load a cut chart update 
+ (cutchart.exe). Contact your OEM or system integrator if you need to update 
+ your cut charts.</p>
+</div>
+<div>
+<h6>Load Cut Charts</h6>
+<p class="SettingBody">This soft key loads cut charts from the USB memory 
+ stick.</p>
+</div>
+<div>
+<h6>Change Consumables</h6>
+<p class="SettingBody">This soft key shows the torch consumables and their 
+ part numbers. For power supplies except XPR, this screen also shows the 
+ accumulated cutting time on the plasma nozzle and electrode or oxyfuel 
+ torch tip.</p>
+</div>
+<p class="SettingName">Send Process to HPR</p>
+<p class="SettingBody">This soft key sends the cut chart currently shown 
+ on screen immediately to the power supply. This soft key appears only 
+ when an HPR power supply is selected in the Station Configuration screen.</p>
+<div>
+<h6>Cutting Tips</h6>
+<p class="SettingBody" style="margin-left: 12px;">This soft key displays 
+ cutting tips for the selected process.</p>
+</div>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p class="SettingBody">&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

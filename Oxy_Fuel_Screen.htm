@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Oxy Fuel Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.6.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Process Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Oxyfuel Process</h1>
+<p>Use the following parameters to customize and control plasma process 
+ and torch height.</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span> <span 
+	 style="font-weight: bold;">Main screen &gt; Setups &gt; Process &gt; 
+ Oxyfuel</span></p>
+<table class="FieldJumps" cellspacing="16px" width="100%">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Ignition_Time">Ignition Time</a></p></td>
+		<td><p><a href="#Ignitors">Ignitors</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Low_Preheat_Time">Low Preheat Time</a></p></td>
+		<td><p><a href="#Low_Preheat_During_Cut">Low Preheat During Cut</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#High_Preheat_Time">High Preheat Time</a></p></td>
+		<td><p><a href="#Preheat_During_Cut">Preheat During Cut</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Staged_Pierce">Staged Pierce</a></p></td>
+		<td><p><a href="#Torch_Down_During_Cut">Torch Down During Cut</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Time">Pierce Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Moving_Pierce_Time">Moving Pierce Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Creep_Time">Creep Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Primary_Torch_Up_Time">Primary Torch Up Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Primary_Torch_Down_Time">Primary Torch Down Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Torch_Up_Time">Pierce Torch Up Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Torch_Down_Time">Pierce Torch Down Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Off_Time">Cut Off Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Bleedoff_Time">Bleed-off Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Control_Delay">Cut Control Delay</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Lifter_Low_Speed">Lifter Low Speed</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Ignition_Time" id="Ignition_Time"></a></p>
+<div>
+<p class="SettingName">Ignition Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value sets the time 
+ that the oxyfuel igniter is held on at each ignition of the flame.</p>
+</div>
+<p class="SnippetBookmark"><a name="Low_Preheat_Time" id="Low_Preheat_Time"></a></p>
+<div>
+<p class="SettingName">Low Preheat Time</p>
+<p class="SettingBody">This value sets the time interval in which the Low 
+ Preheat Control output is on. When you enter a <span style="font-weight: bold;">Low 
+ Preheat Time</span>, it activates the Low Preheat Gas Valve.</p>
+</div>
+<p class="SnippetBookmark"><a name="High_Preheat_Time" id="High_Preheat_Time"></a></p>
+<div>
+<p class="SettingName">High Preheat Time</p>
+<p class="SettingBody" style="background-color: Transparent;">This value 
+ turns on the high preheat gas valve and sets the time for preheating the 
+ workpiece before piercing. When you run the part, you can use the <span 
+	 style="font-weight: bold;">Set</span>, <span style="font-weight: bold;">Extend</span>, 
+ or <span style="font-weight: bold;">Release</span> soft keys to change 
+ the preheat time. When a part is being cut, use the<span style="font-weight: bold;"> 
+ Set</span>, <span style="font-weight: bold;">Extend</span>, or<span style="font-weight: bold;"> 
+ Release</span> soft keys to change the <span style="font-weight: bold;">High 
+ Preheat Time</span>. To bypass the preheat timer, press <span style="font-weight: bold;">Start</span> 
+ 2 times.</p>
+</div>
+<p class="SnippetBookmark"><a name="Staged_Pierce" id="Staged_Pierce"></a></p>
+<div>
+<p class="SettingName">Staged Pierce</p>
+<p class="SettingBody">This feature performs the pierce in a timed progression 
+ of outputs that can control oxygen pressure. When you select this option, 
+ the Staged Pierce Time 1 – 3 parameters replace the <span style="font-weight: bold;">Pierce 
+ Time</span>, <span style="font-weight: bold;">Moving Pierce Time</span>, 
+ and <span style="font-weight: bold;">Creep Time</span> parameters. Set 
+ the timer for each staged pierce output.</p>
+</div>
+<p class="SnippetBookmark"><a name="Pierce_Time" id="Pierce_Time"></a></p>
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SnippetBookmark"><a name="Moving_Pierce_Time" id="Moving_Pierce_Time"></a></p>
+<div>
+<p class="SettingName">Moving Pierce Time</p>
+<p class="SettingBody">This field sets the amount of time&#160;that the 
+ pierce control output remains ON and allows X/Y motion while piercing.</p>
+</div>
+<p class="SnippetBookmark"><a name="Creep_Time" id="Creep_Time"></a></p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<p class="SnippetBookmark"><a name="Primary_Torch_Up_Time" id="Primary_Torch_Up_Time"></a></p>
+<div>
+<p class="SettingName">Primary Torch Up Time</p>
+<p class="SettingBody">This field sets the amount of time to raise the 
+ torch after completing a cut. After each cut, the torch continues to raise 
+ until the Primary Torch Up Time ends or until the lifter reaches a limit 
+ switch, which activates the Torch Up Sense input.</p>
+</div>
+<p class="SettingName"><a name="Primary_Torch_Down_Time" id="Primary_Torch_Down_Time"></a>Primary 
+ Torch Down Time</p>
+<p class="SettingBody">This field sets the amount of time of time to lower 
+ the torch after the torch ignites. At the beginning of each cut, the torch 
+ continues to lower until the Primary Torch Down Time ends or until the 
+ lifter reaches a limit switch that activates the Torch Down Sense input.</p>
+<p class="SettingName"><a name="Pierce_Torch_Up_Time" id="Pierce_Torch_Up_Time"></a>Pierce 
+ Torch Up Time</p>
+<p class="SettingBody">This field sets the amount of time to raise the 
+ torches after it pierces the workpiece, to clear a pierce puddle.</p>
+<p class="SettingName"><a name="Pierce_Torch_Down_Time" id="Pierce_Torch_Down_Time"></a>Pierce 
+ Torch Down Time</p>
+<p class="SettingBody">This field sets the amount of time to lower the 
+ torch to cut height.</p>
+<p class="SettingName"><a name="Cut_Off_Time" id="Cut_Off_Time"></a>Cut 
+ Off Time</p>
+<p class="SettingBody">This field sets the amount of time that the Cut 
+ Control output remains on at the end of a cut. <span style="font-weight: bold;">Cut 
+ Off Time</span> allows the torch to finish its cut and removed any lag 
+ (a slight angle that is created when the flame meets metal and bends). 
+ Use this parameter to add time for the flame to become perpendicular before 
+ it is turned off.</p>
+<p class="SettingName"><a name="Bleedoff_Time" id="Bleedoff_Time"></a>Bleed-off 
+ Time</p>
+<p class="SettingBody">At the end of a cut, this value is the time that 
+ the torch pauses to purge gas before the torch travels to the next cut. 
+ The <span style="font-weight: bold;">Bleed-off Time</span> can overlap 
+ the Primary Torch Up Time.</p>
+<p class="SettingName"><a name="Cut_Control_Delay" id="Cut_Control_Delay"></a>Cut 
+ Control Delay</p>
+<p class="SettingBody">While the workpiece is being pierced, this field 
+ sets the time that the CNC waits before it activates the Cut Control output.</p>
+<p class="SettingName"><a name="Lifter_Low_Speed" id="Lifter_Low_Speed"></a>Lifter 
+ Low Speed</p>
+<p class="SettingBody">Lifter Low Speed works only with multiple torch 
+ systems. This timer turns on with the Torch Up and Torch Down outputs 
+ and shuts off after the Lifter Low Speed time ends. The value for the 
+ Lifter Low Speed timer should be less than the value for the Primary Torch 
+ Up Time and Primary Torch Down Time.</p>
+<p class="SettingName"><a name="Ignitors" id="Ignitors"></a>Ignitors</p>
+<p class="SettingBody">Set<span style="font-weight: bold;"> Ignitors</span> 
+ to <span style="font-weight: bold;">No</span> and <span style="font-weight: bold;">Ignition 
+ Time</span> to <span style="font-weight: bold;">0</span> to activate the 
+ Low Preheat Control output at the end of a cut. Set <span style="font-weight: bold;">Ignitors</span> 
+ to <span style="font-weight: bold;">Yes</span> to turn off the Low Preheat 
+ Control output and re-ignite the flame at each next pierce point.</p>
+<p class="SnippetBookmark"><a name="Low_Preheat_During_Cut" id="Low_Preheat_During_Cut"></a></p>
+<div>
+<p class="SettingName">Low Preheat During Cut</p>
+<p class="SettingBody">When set to <span style="font-weight: bold;">Yes</span>, 
+ this feature sets the Low Preheat Control output to ON during cutting. 
+ </p>
+</div>
+<p class="SnippetBookmark"><a name="Preheat_During_Cut" id="Preheat_During_Cut"></a></p>
+<div>
+<p class="SettingName">Preheat During Cut</p>
+<p class="SettingBody">When set to<span style="font-weight: bold;"> Yes</span>, 
+ this option sets the Preheat Control output to ON during cutting. </p>
+</div>
+<p class="SnippetBookmark"><a name="Torch_Down_During_Cut" id="Torch_Down_During_Cut"></a></p>
+<div>
+<p class="SettingName">Torch Down During Cut</p>
+<p class="SettingBody">This setting specifies whether Torch Down is left 
+ on during cutting. Use this parameter for a pneumatic lifter.</p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<p class="SettingName">Oxyfuel Cut Chart</p>
+<p class="SettingBody">Choose Oxyfuel Cut Chart to go to the <span style="font-weight: bold;">Oxyfuel 
+ Process</span> screen where you can view, customize, and control torch 
+ motion and processes for oxyfuel cutting/marking.</p>
+</div>
+<div>
+<p class="SettingName">Load Data/Save Data</p>
+<p class="SettingBody">Use these soft keys to save the settings from the<span 
+	 style="font-weight: bold;"> Process</span> screen. The CNC saves the 
+ file on either the CNC hard drive or on a USB memory stick. You can then 
+ transfer this file to another CNC or save a copy as a backup.</p>
+</div>
+<div>
+<p class="SettingName">Load Data</p>
+<p class="SettingBody">This soft key allows you to import a process.</p>
+</div>
+<div>
+<p class="SettingName">Oxyfuel</p>
+<p class="SettingBody" style="margin-left: 12px;">This soft key opens the 
+ <span style="font-weight: bold;">Oxyfuel</span> screen where you can customize 
+ and control torch motion and the processes for oxyfuel 
+ cutting/marking.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Marker 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 1</span> screen and process parameters are not available for XPR, 
+ but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Marker 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 2</span> &#160;screen and process parameters are not available 
+ for XPR, but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Timing Diagram</p>
+<p class="SettingBody">This soft key shows&#160;the activation and deactivation 
+ of I/O for each type of process. </p>
+</div>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

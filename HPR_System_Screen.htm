@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>HPR System Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.8.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Diagnostics Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>HPR System</h1>
+<p><span style="font-weight: bold;">Note:</span> For XPR diagnostic information 
+ and gas tests, open the XPR Diagnostics View (<span style="font-weight: bold;">Setups 
+ &gt; Diagnostics &gt;</span><span style="color: #ff0000; font-weight: bold;"> 
+ </span><span style="font-weight: bold;"><a href="Diagnostics_Screen.htm#Soft_Keys">XPR 
+ System</a></span>).</p>
+<p>&#160;</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<h2>Power Supply Status</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Line_Voltage">Line Voltage</a></p></td>
+		<td><p><a href="#Current_Setpoint">Current Setpoint</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Coolant_Flow">Coolant Flow</a></p></td>
+		<td><p><a href="#State">State</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Error">Error</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2>Arc On Statistics</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Arc_On_Time">Arc On Time</a></p></td>
+		<td><p><a href="#System_On_Time">System On Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Total_Starts">Total Starts</a></p></td>
+		<td><p><a href="#Total_Start_Errors">Total Start Errors</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Total_Ramp_Errors">Total Ramp Errors</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2>Software Revisions</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Power_Supply">Power Supply</a></p></td>
+		<td><p><a href="#Gas_Console">Gas Console</a></p></td>
+	</tr>
+</table>
+<h2>Temperatures</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Chopper_1">Chopper 1</a></p></td>
+		<td><p><a href="#Coolant">Coolant</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Transformer">Transformer</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2>Gas Types</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Plasma">Plasma (Type)</a></p></td>
+		<td><p><a href="#Shield">Shield (Type)</a></p></td>
+	</tr>
+</table>
+<h2>Gas Pressures</h2>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Plasma2">Plasma (Pressure)</a></p></td>
+		<td><p><a href="#Shield2">Shield (Pressure)</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Line_Voltage" id="Line_Voltage"></a>Line 
+ Voltage</p>
+<p class="SettingBody">This field is the level of incoming power to the 
+ power supply. </p>
+<p class="SettingName"><a name="Current_Setpoint" id="Current_Setpoint"></a>Current 
+ Setpoint</p>
+<p class="SettingBody">This field is the amperage set for the power supply.</p>
+<p class="SettingName"><a name="Coolant_Flow" id="Coolant_Flow"></a>Coolant 
+ Flow</p>
+<p class="SettingBody">This field is the rate at which coolant is flowing.</p>
+<p class="SettingName"><a name="State" id="State"></a>State</p>
+<p class="SettingBody">This field is the active state of the power supply.</p>
+<p class="SettingName"><a name="Error" id="Error"></a>Error</p>
+<p class="SettingBody">This field is the code and description identifying 
+ the system error that has occurred, if any. For a more detailed description 
+ of each error and for possible corrective actions you can take, see the 
+ power supply instruction manual.</p>
+<p class="SettingName"><a name="Arc_On_Time" id="Arc_On_Time"></a>Arc On 
+ Time</p>
+<p class="SettingBody">This field is the time that the power supply has 
+ been producing an arc.</p>
+<p class="SettingName"><a name="System_On_Time" id="System_On_Time"></a>System 
+ On Time</p>
+<p class="SettingBody">This field is the time the power supply has been 
+ ON.</p>
+<p class="SettingName"><a name="Total_Starts" id="Total_Starts"></a>Total 
+ Starts</p>
+<p class="SettingBody">This field is the number of arc transfers.</p>
+<p class="SettingName"><a name="Total_Start_Errors" id="Total_Start_Errors"></a>Total 
+ Start Errors</p>
+<p class="SettingBody">This field is the number of times the arc failed 
+ to transfer.</p>
+<p class="SettingName"><a name="Total_Ramp_Errors" id="Total_Ramp_Errors"></a>Total 
+ Ramp Errors</p>
+<p class="SettingBody">This field is the number of times the power supply 
+ failed to ramp-down current.</p>
+<p class="SettingName"><a name="Power_Supply" id="Power_Supply"></a>Power 
+ Supply</p>
+<p class="SettingBody">This field is the plasma power supply software revision 
+ number.</p>
+<p class="SettingName"><a name="Gas_Console" id="Gas_Console"></a>Gas Console</p>
+<p class="SettingBody">This field is the gas console software revision 
+ number.</p>
+<p class="SettingName"><a name="Chopper_1" id="Chopper_1"></a>Chopper 1</p>
+<p class="SettingBody">This field is the temperature reading for the chopper, 
+ coolant, transformer, and inductors. If this temperature exceeds a maximum 
+ threshold, it will display in red. When this occurs, the power supply 
+ cannot be operated until the condition is resolved.</p>
+<p class="SettingName"><a name="Coolant" id="Coolant"></a>Coolant</p>
+<p class="SettingBody">This field is the temperature reading for the coolant. 
+ If this temperature exceeds a maximum threshold, it will display in red. 
+ When this occurs, the power supply cannot be operated until the condition 
+ is resolved.</p>
+<p class="SettingName"><a name="Transformer" id="Transformer"></a>Transformer</p>
+<p class="SettingBody">This field is the temperature reading for the transformer. 
+ If this temperature exceeds a maximum threshold, it will display in red. 
+ When this occurs, the power supply cannot be operated until the condition 
+ is resolved.</p>
+<p class="SettingName"><a name="Plasma" id="Plasma"></a>Plasma (Type)</p>
+<p class="SettingBody">This field is the plasma gas type.</p>
+<p class="SettingName"><a name="Shield" id="Shield"></a>Shield (Type)</p>
+<p class="SettingBody">This field is the shield gas type.</p>
+<p class="SettingName"><a name="Plasma2" id="Plasma2"></a>Plasma (Pressure)</p>
+<p class="SettingBody">This field is the plasma gas pressure. The set value 
+ shows the target gas pressure set in the power supply. The measured value 
+ displays as zero by default, but you can watch the values in this field 
+ to monitor the plasma gas pressure when you activate the diagnostic modes 
+ on the screen.</p>
+<p class="SettingName"><a name="Shield2" id="Shield2"></a>Shield (Pressure)</p>
+<p class="SettingBody">This field is the shield gas pressure. The set value 
+ shows the target gas pressure set in the power supply. The measured value 
+ displays as zero by default, but you can watch the values in this field 
+ to monitor the shield gas pressure when you activate the diagnostic modes 
+ on the screen.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">Test Preflow and Test Cutflow</p>
+<p class="SettingBody">Use these tests to bring up the inlet gas pressures 
+ to the recommended level. These tests can also help determine if the gas 
+ system can sustain the recommended pressure levels. </p>
+<p class="SettingName">Test Gas Console</p>
+<p class="SettingBody">This soft key performs automated tests for the autogas 
+ console. Contact an authorized service agent for use of these tests.</p>
+<p class="SettingName">Coolant Override</p>
+<p class="SettingBody">This soft key overrides a coolant error and tests 
+ the coolant pump. This is useful for bypassing the error and purging air 
+ bubbles from the coolant line when power is turned ON.</p>
+<div>
+<p class="SettingName">Inputs</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Inputs</span> 
+ screen for the plasma power supply or gas console.</p>
+</div>
+<div>
+<p class="SettingName">Outputs</p>
+<p class="SettingBody">This soft key is password protected and opens the 
+ <span style="font-weight: bold;">Outputs</span> screen for the plasma 
+ power supply or gas console. Operating these outputs can initiate the 
+ real-time signal that could, for example, fire the torch. </p>
+</div>
+<div>
+<p class="SettingName">HPR Information</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">HPR 
+ Information</span> screen.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

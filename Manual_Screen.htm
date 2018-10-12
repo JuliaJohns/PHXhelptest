@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Manual Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.1.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Manual Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Manual</h1>
+<p>Use the <span style="font-weight: bold;">Manual</span> screen for rip 
+ cutting, homing axes, or accessing manual options such as laser pointer 
+ offset or torch spacing. To open the Manual screen, choose any of the 
+ following:</p>
+<ul style="list-style: disc;">
+	<li><span style="font-weight: bold;">Manual</span> soft key on the 
+	 <span style="font-weight: bold;">Main screen</span><br />
+	<img src="Art/ManualKey.jpg" alt="" style=" border:none; width:100%; max-width:120px;" border="0" /></li>
+	<li><span style="font-weight: bold;">Manual</span> soft key on the 
+	 Soft Op Con</li>
+	<li><span style="font-weight: bold;">F11</span> on a keyboard </li>
+</ul>
+<p>&#160;</p>
+<p><span class="Bold">Notes:</span></p>
+<ul style="list-style: disc;">
+	<li>If Phoenix shows a field bus error, press the <span style="font-weight: bold;">Manual</span> 
+	 soft key to restart the EtherCAT network.</li>
+	<li>To activate Latch Manual Keys (enabled on the <span style="font-weight: bold;">Special 
+	 Setups</span> screen), press the <span style="font-weight: bold;">Manual</span> 
+	 key twice.</li>
+</ul>
+<h2>Soft Keys</h2>
+<p class="SettingName">Return to Start</p>
+<p class="SettingBody">When you open the <span style="font-weight: bold;">Manual</span> 
+ screen, Phoenix saves the Transverse and Rail positions. After rip cutting 
+ or other manual operations, use <span style="font-weight: bold;">Return 
+ to Start</span> to return to this position.</p>
+<p class="SettingName">Move/Mark/Cut Distance</p>
+<p class="SettingBody">The name of this soft key changes depending on the 
+ manual mode you select with the <span style="font-weight: bold;">Change 
+ Manual Mode</span> soft key.</p>
+<p class="SettingBody">Use <span style="font-weight: bold;">Move Distance</span> 
+ to move to a specific X/Y location by entering a Transverse and Rail distance.</p>
+<p class="SettingBody">Use <span style="font-weight: bold;">Cut Distance</span> 
+ to create a rip cut from the current torch location.<span style="font-weight: bold;"> 
+ Rip Cut</span> mode makes a cut along a specified linear path. Motion 
+ stops and cutting action ceases when the new position is reached or when 
+ the <span style="font-weight: bold;">STOP</span> key is pressed.</p>
+<p class="SettingName">Manual Options</p>
+<p class="SettingBody">This soft key opens the <a href="Manual_Options_Screen.htm" 
+													 style="font-weight: bold;">Manual 
+ Options</a> screen so that you can set up a laser pointer or use torch 
+ spacing.</p>
+<p class="SettingName">Home Axes</p>
+<p class="SettingBody">This soft key opens the <a href="Home_Axes_Screen.htm" 
+													 style="font-weight: bold;">Home 
+ Axes</a> screen where you can set up to 12 home positions and home all 
+ of the axes.</p>
+<div>
+<p class="SettingName">View Part/View Sheet</p>
+<p class="SettingBody">This soft key toggles the display of the part in 
+ the <span style="font-weight: bold;">Preview</span> window. </p>
+<ul>
+	<li class="Bullet"><span style="font-weight: bold;">View Part</span> 
+	 zooms in to show only the part.</li>
+	<li class="Bullet"><span style="font-weight: bold;">View Sheet</span> 
+	 zooms out to show the part in relationship to the entire workpiece. 
+	 Phoenix shows the sheet dimensions that you entered in the <a href="Setups_Screen.htm" 
+	 style="font-weight: bold;">Cutting</a> screen.</li>
+</ul>
+</div>
+<p class="SettingName">Change Manual Mode</p>
+<p class="SettingBody">This soft key cycles through the <span style="font-weight: bold;">Move 
+ Only</span>, <span style="font-weight: bold;">Rip Cut</span>, and<span 
+	 style="font-weight: bold;"> Rip Mark</span> modes.</p>
+<p class="SettingName">Change Move Speed</p>
+<p class="SettingBody">This soft key cycles through the following four 
+ Move Speeds from the <a href="Speeds_screen.htm" style="font-weight: bold;">Speeds</a> 
+ screen:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">maximum machine speed</p></li>
+	<li><p class="SettingBody">high jog speed</p></li>
+	<li><p class="SettingBody">medium jog speed</p></li>
+	<li><p class="SettingBody">low jog speed</p></li>
+</ul>
+<p class="SettingName">Zero Positions</p>
+<p class="SettingBody">This soft key returns all axes positions to 0 (zero).</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

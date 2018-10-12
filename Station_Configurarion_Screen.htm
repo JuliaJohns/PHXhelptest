@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Station Configuration</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.11.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Station Configuration" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Station Configuration</h1>
+<p>The <span style="font-weight: bold;">Station Configuration</span> screen 
+ lets you assign the process to each station in the cutting system. In 
+ this screen, you select the type of torch height control and the model 
+ of the tool (<span style="font-weight: bold;">plasma</span> or <span style="font-weight: bold;">marker</span>) 
+ for the station. When you select the torch height and tool, Phoenix customizes 
+ the <span style="font-weight: bold;">Process</span> screen to your selections 
+ and enables the cut charts for the tool. Phoenix also displays the instruction 
+ manual for a Hypertherm plasma system when you choose the <span style="font-weight: bold;">Technical 
+ Documentation</span> soft key on the <span style="font-weight: bold;">Main</span> 
+ screen.</p>
+<p>To open the <span style="font-weight: bold;">Station Configuration</span> 
+ screen, choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+ Station Configuration</span>.</p>
+<h2>Guidelines for using the Station Configuration screen</h2>
+<p>Follow these general guidelines to determine whether you need to make 
+ selections in the<span style="font-weight: bold;"> Station Configuration</span> 
+ screen:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">When using the Sensor THC for a lifter, assign the 
+	 Sensor THC to an axis on the <a href="Machine_Setup_screen.htm" style="font-weight: bold;">Machine 
+	 Setups</a> screen first, and then select it as a lifter in this screen. 
+	 Torch height control parameters specific to the Sensor THC lifter 
+	 become available in the <span style="font-weight: bold;">Process</span> 
+	 screen so that you can optimize cutting performance. </li>
+	<li class="Bullet">Select the process used by the tool on the station. 
+	 For example, when you select HPR for Plasma 1, the HPR cut charts 
+	 become available for the process.</li>
+	<li class="Bullet"><span>When you select an HPR or XPR, Phoenix automatically 
+	 assigns fixed function I/O for the power supply.</span> This I/O is 
+	 assigned above number 512. It can be viewed only in the <a href="Watch_Screen.htm"><span 
+	 style="font-weight: bold;">Watch Window</span></a>.<br />
+	<span style="font-weight: bold;">Note:</span> Phoenix currently does 
+	 not support an HPRXD plasma power supply and an XPR plasma power supply 
+	 on the same cutting system.</li>
+	<li class="Bullet">After setting up the stations and exiting the <span 
+	 style="font-weight: bold;">Station Configuration</span> screen, the 
+	 stations appear in the Soft Op Con and Phoenix automatically assigns 
+	 the Station I/O to I/O points 129 and above.</li>
+	<li class="Bullet">Oxyfuel systems DO NOT require a selection in the 
+	 <span style="font-weight: bold;">Station Configuration</span> screen. 
+	 Oxyfuel cut charts are available after you select Oxyfuel as a Tool 
+	 Installed in the Special Setups screen (<span style="font-weight: bold;">Setups 
+	 &gt; Password &gt; Special Setups</span>).</li>
+	<li class="Bullet">Use the soft keys to open the <span style="font-weight: bold;">Station 
+	 Configuration</span> screen for Stations 1&#160;–&#160;2, 3&#160;–&#160;4, 5&#160;–&#160;6, 7&#160;–&#160;8.</li>
+	<li class="Bullet">Use the <span style="font-weight: bold;">Reset All</span> 
+	 soft key to return all settings for all stations to <span style="font-weight: bold;">None</span>.</li>
+</ul>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

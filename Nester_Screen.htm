@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Nester Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.2.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Shape Manager Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Manual Nester</h1>
+<p>Use the manual nester for nesting simple shapes. The manual nester does 
+ not include any process information with the nested shapes. Use ProNest 
+ CNC to create nests that include process information.</p>
+<p>In the Preview window, the edge of the workpiece is displayed in dark 
+ green.&#160;The workpiece size displayed is based on the dimensions that 
+ have been entered in the <a href="Setups_Screen.htm"><span style="font-weight: bold;">Cutting</span></a> 
+ screen (<span style="font-weight: bold;">Main screen</span> <span style="font-weight: bold;">&gt;</span> 
+ <span style="font-weight: bold;">Setups</span>).</p>
+<p>The upper-right corner of the <span style="font-weight: bold;">Manual 
+ Nester</span> screen displays the parts list for the nest in the order 
+ the parts will be cut. When you highlight a part in the list, the part 
+ displays as red in the main viewing area. In the lower right, you can 
+ view and manipulate the part position and orientation information for 
+ the selected part program.</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Files">Files</a></p></td>
+		<td><p><a href="#X_Offset">X Offset</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Y_Offset">Y Offset</a></p></td>
+		<td><p><a href="#Rotate_Angle">Rotate Angle</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Mirror_X_Mirror_Y">Mirror X/Mirror Y</a></p></td>
+		<td><p><a href="#Scale_Factor">Scale Factor</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Files" id="Files"></a>Files</p>
+<p class="SettingBody">This field displays the part program list for the 
+ nest in the order that the parts will be cut.</p>
+<p class="SettingName"><a name="X_Offset" id="X_Offset"></a>X Offset</p>
+<p class="SettingBody">Enter the distance to move the part in the X axis.</p>
+<p class="SettingName"><a name="Y_Offset" id="Y_Offset"></a>Y Offset</p>
+<p class="SettingBody">Enter the distance to move the part in the Y axis.</p>
+<p class="SnippetBookmark"><a name="Rotate_Angle" id="Rotate_Angle"></a></p>
+<div>
+<p class="SettingName">Rotate Angle</p>
+<p class="SettingBody">Enter a positive or negative rotational angle for 
+ the selected part. </p>
+</div>
+<p class="SnippetBookmark"><a name="Mirror_X_Mirror_Y" id="Mirror_X_Mirror_Y"></a></p>
+<div>
+<p class="SettingName">Mirror X/Mirror Y</p>
+<p class="SettingBody">Select the check boxes to flip the part horizontally 
+ or vertically.</p>
+</div>
+<p class="SnippetBookmark"><a name="Scale_Factor" id="Scale_Factor"></a></p>
+<div>
+<p class="SettingName">Scale Factor</p>
+<p class="SettingBody">Enter a size factor to enlarge or reduce the size 
+ of the selected part. Phoenix redraws the part and shows the new dimensions. 
+ The scale factor must be greater than zero (0) for the X and Y offsets 
+ to work. </p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">Add Part</p>
+<p class="SettingBody">This soft key allows you to select a part program 
+ from a selected source and to add it to the nest.</p>
+<p class="SettingName">Remove Part</p>
+<p class="SettingBody">This soft key removes the selected part from the 
+ nest parts list.</p>
+<p class="SettingName">Cut Earlier</p>
+<p class="SettingBody">This soft key moves the selected part to an earlier 
+ position in the part cut list. The order in which the parts are cut changes, 
+ but the part location in the nest does not change.</p>
+<p class="SettingName">Cut Later</p>
+<p class="SettingBody">This soft key moves the selected part to a later 
+ position in the part cut list. The order in which the parts are cut changes, 
+ but the part location in the nest does not change.</p>
+<div>
+<p class="SettingName">View Part/View Sheet</p>
+<p class="SettingBody">This soft key toggles the display of the part in 
+ the <span style="font-weight: bold;">Preview</span> window. </p>
+<ul>
+	<li class="Bullet"><span style="font-weight: bold;">View Part</span> 
+	 zooms in to show only the part.</li>
+	<li class="Bullet"><span style="font-weight: bold;">View Sheet</span> 
+	 zooms out to show the part in relationship to the entire workpiece. 
+	 Phoenix shows the sheet dimensions that you entered in the <a href="Setups_Screen.htm" 
+	 style="font-weight: bold;">Cutting</a> screen.</li>
+</ul>
+</div>
+<p class="SettingName">Arrow Key (Distance)</p>
+<p class="SettingBody">This soft key selects 1 of 5 different preset move 
+ distances when you use the arrow keys to move parts in the nest. You define 
+ these 5 distances in the <span style="font-weight: bold;"><a href="Nester_Setups_Screen.htm">Nester 
+ Setup</a> </span><span>screen</span>.</p>
+<p class="SettingName">Clear Nest</p>
+<p class="SettingBody">This soft key deletes all of the parts located in 
+ the nested parts list from temporary memory.</p>
+<p class="SettingName">Setup</p>
+<p class="SettingBody">This soft key opens the<span style="font-weight: bold;"> 
+ <a href="Nester_Setups_Screen.htm" style="font-weight: bold;">Nester Setup</a></span> 
+ screen.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

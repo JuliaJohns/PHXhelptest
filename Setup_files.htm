@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Phoenix Setup files</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.10.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Special Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Phoenix setup files</h1>
+<p>Phoenix saves the values that you enter on each screen in the setup 
+ file named Phoenix.ini. This file is stored in the C:\Phoenix folder. 
+ Phoenix saves the file when you make a change to a value and exit a screen. 
+ Phoenix also saves a backup version of the setup file, Phoenix.bak, in 
+ the D:\Setups folder on the CNC hard drive.</p>
+<p>Setup files can be copied to other EDGE Connect CNCs. After configuring 
+ a CNC to run a particular cutting system, you can use that setup file 
+ for the next installation of a CNC, table, and tool. When you load a setup 
+ file into a CNC, that setup file overwrites both Phoenix.ini and Phoenix.bak.</p>
+<p><span class="Bold">CAUTION!</span> Do not load a setup file from an 
+ EDGE Pro, MicroEDGE Pro, or EDGE Pro Ti onto the EDGE Connect. Doing so 
+ could make the cutting machine inoperable. </p>
+<h2>About setup files</h2>
+<p>The CNC stores multiple copies of the Phoenix.ini setup file.</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">Phoenix.ini is always the active setup file. Each 
+	 time you make a change on a screen on the CNC, the changes are saved 
+	 to Phoenix.ini. In the <span style="font-weight: bold;">Special Setups</span> 
+	 screen, you can save a copy of Phoenix.ini with a different name for 
+	 a backup or to use on another CNC. When you load a setup file with 
+	 another name, the contents of the file overwrite the contents of Phoenix.ini 
+	 and Phoenix.bak. Phoenix.ini is stored in the C:\Phoenix folder.</li>
+	<li class="Bullet">Phoenix.bak is an identical copy of Phoenix.ini. 
+	 The CNC saves Phoenix.bak each time it saves Phoenix.ini. If Phoenix.ini 
+	 becomes corrupted, the CNC loads the settings in Phoenix.bak and creates 
+	 a new Phoenix.ini. Phoenix.bak is stored in the C:\Phoenix folder.</li>
+	<li class="Bullet">Default.ini is an important backup of Phoenix.ini 
+	 and is used to restore settings if both Phoenix.ini and Phoenix.bak 
+	 become corrupted. Hypertherm recommends that you create the Default.ini 
+	 when you commission a cutting system. Default.ini is stored in the 
+	 C:\Phoenix\Setups folder.</li>
+	<li class="Bullet">Factory settings represent the contents of the Phoenix.ini 
+	 file as it was shipped from the factory. Each CNC has factory settings 
+	 that represent the available features and axes on that CNC.</li>
+	<li class="Bullet">Factory settings are stored internally in Phoenix 
+	 software but are not stored in a specific file. Factory settings may 
+	 be very different from the settings on a CNC when it is commissioned 
+	 in a cutting system at a manufacturing site.</li>
+</ul>
+<h2>Setup files from previous versions of Phoenix</h2>
+<p>New versions of Phoenix software contain new features with settings 
+ that are saved to the Phoenix.ini file. When you load a setup file from 
+ a previous version of Phoenix, a message displays that shows you the new 
+ settings that are not in your setup file. Phoenix loads its factory settings 
+ for those settings.</p>
+<p>After you load a setup file from a previous version of Phoenix, make 
+ sure that you save a new version of the setup file in the new version 
+ of Phoenix. By saving the Phoenix.ini in the new version, the you make 
+ sure that the setup file has settings for all new features in the Phoenix 
+ software.</p>
+<h2>Save and load the setup file</h2>
+<p>Hypertherm recommends saving the setup file three times when first commissioning 
+ a cutting system:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">Save the setup file to a memory stick with the name 
+	 <span style="font-weight: bold;">EndUserDate.ini</span>.</li>
+	<li class="Bullet">Save the setup file to the HD Backup location (D:\Setups) 
+	 that you select the drop-down of the save dialog box, and name the 
+	 file <span style="font-weight: bold;">EndUserDateBak.ini</span>.</li>
+	<li class="Bullet">Save the setup file as <span style="font-weight: bold;">Default.ini</span> 
+	 on the CNC hard drive root folder C:\.</li>
+</ul>
+<h4>Save a setup file without using a password</h4>
+<p>The CNC can gather the Phoenix.ini, LastPart.txt, and SystemErrors.log 
+ into a single zip file (Phoenix.zip). Use this procedure to save the setup 
+ file or to gather files to send to Hypertherm Technical Service. Since 
+ this method does not require a password, it provides a convenient way 
+ for an end user to save the Phoenix.ini without being exposed to password-protected 
+ settings.</p>
+<ol style="list-style: decimal;">
+	<li>From the <span style="font-weight: bold;">Main screen</span>, choose 
+	 <span style="font-weight: bold;">Files &gt; Save to Disk &gt; Save 
+	 System files to Disk</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Save All to Zip</span>. 
+	 The CNC creates Phoenix.zip and saves it on the memory stick.</li>
+</ol>
+<h4>Save a setup file with a different name</h4>
+<p>When you save a setup file under a different name, the CNC continues 
+ to use Phoenix.ini and does not update your saved setup file.</p>
+<ol style="list-style: decimal;">
+	<li>Choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+	 Special Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Save Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Hard Drive</span>, <span 
+	 style="font-weight: bold;">HD Backups</span>, or <span style="font-weight: bold;">Memory 
+	 Stick</span> for the location.</li>
+	<li>Enter a <span style="font-weight: bold;">file name</span>.</li>
+	<li>Choose <span style="font-weight: bold;">OK</span>.</li>
+</ol>
+<p>The CNC saves the file in the hard drive root folder (C:\), D:\Setups, 
+ or the memory stick root folder.</p>
+<h4>Load a setup file</h4>
+<p>The setup file that you load becomes Phoenix.ini.</p>
+<ol style="list-style: decimal;">
+	<li>Choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+	 Special Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Load Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Hard Drive</span> or <span 
+	 style="font-weight: bold;">Memory Stick</span> for the location. The 
+	 CNC lists only the <span style="font-weight: bold;">*.ini</span> files 
+	 that are present in the root folder of the hard drive or the memory 
+	 stick.</li>
+	<li>Enter a <span style="font-weight: bold;">file name</span>.</li>
+	<li>Choose <span style="font-weight: bold;">OK</span>.</li>
+</ol>
+<h2>Save and load default settings</h2>
+<p>The CNC uses Default.ini to restore settings if both Phoenix.ini and 
+ Phoenix.bak become corrupted.</p>
+<h4>Save Default.ini</h4>
+<ol style="list-style: decimal;">
+	<li>Choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+	 Special Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Save Setups</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Hard Drive</span> for the 
+	 location.</li>
+	<li>Enter the Default for the file name.</li>
+	<li>Choose <span style="font-weight: bold;">OK</span>.</li>
+</ol>
+<p>The CNC creates Default.ini in the hard drive root folder (C:\).</p>
+<h4>Load Default.ini</h4>
+<p>Default.ini must exist in C:\. If no Default.ini exists, the CNC provides 
+ an option to reload factory settings instead.</p>
+<ol style="list-style: decimal;">
+	<li>Choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+	 Special Setups &gt; System</span>.</li>
+	<li>Choose the <span style="font-weight: bold;">Default Setups</span> 
+	 soft key.</li>
+</ol>
+<p>If you haven’t saved a Default.ini file, then the soft key reads <span 
+	 style="font-weight: bold;">Reset Setups</span> and allows you to reset 
+ the CNC to factory settings instead.</p>
+<h4>Reset setups</h4>
+<p>If your system is experiencing motion or other problems for which you 
+ cannot find a solution, reloading the factory settings provides you with 
+ a known starting point for configuring the CNC to work with your cutting 
+ machine.</p>
+<p><span class="Bold">Caution!</span> Reloading the factory settings changes 
+ the setup on the CNC. The cutting machine may no longer be capable of 
+ motion and the I/O may not work. Only use this procedure if you do not 
+ have a backup setup file.</p>
+<ol style="list-style: decimal;">
+	<li>Choose <span style="font-weight: bold;">Setups &gt; Password &gt; 
+	 Special Setups &gt; System</span>.</li>
+	<li>Choose <span style="font-weight: bold;">Reset Setups</span>.</li>
+</ol>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

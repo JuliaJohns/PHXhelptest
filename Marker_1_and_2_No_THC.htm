@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Marker 1 and 2 No THC</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.6.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Process Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Marker 1 and Marker 2 without Sensor THC Process</h1>
+<p><span style="font-weight: bold;">Note:</span> The XPR cutting processes 
+ automatically include marking process settings. <span style="font-weight: bold;">Marker 
+ 1</span> and <span style="font-weight: bold;">Marker 2</span> <span style="font-weight: bold;">Process</span> 
+ screens are not applicable for XPR, but marking is still supported.</p>
+<p>To run the Marker 1 or Marker 2 process, the part program must contain 
+ the M36 T3 or M36 T4 process selection code. This code works like the 
+ <span style="font-weight: bold;">Cut Mode</span> parameter on the <a href="Main_Screen.htm" 
+	 style="font-weight: bold;">Main</a> and <a href="Setups_Screen.htm" 
+												 style="font-weight: bold;">Cutting</a> 
+ screens. Marker part programs require this code because marker processes 
+ are not available in the <span style="font-weight: bold;">Cut Mode</span> 
+ selection. </p>
+<p>In addition:</p>
+<ul style="list-style: disc;">
+	<li class="Bullet">A<span style="font-weight: bold;"> Marker Offset</span> 
+	 is set on the <span style="font-weight: bold;">Cutting</span> screen 
+	 so the CNC can position the marker and then reposition the other cutting 
+	 tool.</li>
+	<li class="Bullet">Because a marking tool is always used with another 
+	 tool, you will need to use numbered I/O to control the marker.</li>
+</ul>
+<p>&#160;</p>
+<p>The options on this screen appear when you have selected<span class="Bold"> 
+ None or Other for the Lifter</span> in the <a href="Station_Configurarion_Screen.htm" 
+												 style="font-weight: bold;">Station 
+ Configuration</a> screen. This screen has <a href="#Field_Definitions">field 
+ definitions</a> and <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span> <span 
+	 style="font-weight: bold;">Main screen &gt; Setups &gt; Process &gt; 
+ Marker 1</span> or <span style="font-weight: bold;">Marker 2</span></p>
+<p>From here, you can customize and control the marking process and torch 
+ for the 2nd station of a dual-torch system where each torch has a different 
+ type of power supply. Use the following parameters to customize and control 
+ the plasma process and torch:</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 49.731%;" />
+	<col style="width: 50.269%;" />
+	<tr>
+		<td><p><a href="#Marker_Down_Time">Marker Down Time</a></p></td>
+		<td><p><a href="#Ignition">Ignition</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Ignition_Time">Ignition Time</a></p></td>
+		<td><p><a href="#Arc_On_Feedback">Arc On Feedback</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_On_Time">Marker On Time</a></p></td>
+		<td><p><a href="#Partial_Raise">Partial Raise</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Off_Time">Marker Off Time</a></p></td>
+		<td><p><a href="#Down_On_During_Mark">Down On During Mark</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Up_Time">Marker Up Time</a></p></td>
+		<td><p><a href="#Down_On_Between_Marks">Down On Between Marks</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Marker_Partial_Up_Time">Marker Partial Up Time</a></p></td>
+		<td><p><a href="#Cut_Control_Used_for_Marking">Cut Control Used 
+		 for Marking</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Arc_Off_Time">Arc Off Time</a></p></td>
+		<td><p><a href="#Marker_Down_Up_with_Each_Marker_On_Off">Marker 
+		 Down/Up with Each Marker On/Off</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Set_Arc_Current">Set Arc Current</a></p></td>
+		<td><p><a href="#Preheat">Preheat</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Corner_Current_Percent">Corner Current Percent</a></p></td>
+		<td><p><a href="#Use_Marker_1_Data__Off_:">Use Marker 1 Data</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SnippetBookmark"><a name="Marker_Down_Time" id="Marker_Down_Time"></a></p>
+<div>
+<p class="SettingName">Marker Down Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ interval (in seconds) to lower the marker tool to the marking height, 
+ at the beginning of each mark. When you set a <span style="font-weight: bold;">Marker 
+ Down Time</span>, it activates the <span style="font-weight: bold;">Torch 
+ Down Output</span>.</p>
+</div>
+<p class="SnippetBookmark"><a name="Ignition_Time" id="Ignition_Time"></a></p>
+<div>
+<p class="SettingName">Ignition Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value sets the time 
+ that the oxyfuel igniter is held on at each ignition of the flame.</p>
+</div>
+<p class="SnippetBookmark"><a name="Marker_On_Time" id="Marker_On_Time"></a></p>
+<div>
+<p class="SettingName">Marker On Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value sets the time 
+ interval (in seconds) that elapses before torch motion starts.</p>
+</div>
+<p class="SnippetBookmark"><a name="Marker_Off_Time" id="Marker_Off_Time"></a></p>
+<div>
+<p class="SettingName">Marker Off Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value sets the time 
+ interval (in seconds) that elapses before torch motion stops.</p>
+</div>
+<p class="SnippetBookmark"><a name="Marker_Up_Time" id="Marker_Up_Time"></a></p>
+<div>
+<p class="SettingName">Marker Up Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value sets the time 
+ interval (in seconds) necessary to raise the marking tool to the travel 
+ limit of the lifter. When you set the <span style="font-weight: bold;">Marker 
+ Up Time</span>, it activates the Torch Up output LINK.</p>
+</div>
+<p class="SnippetBookmark"><a name="Marker_Partial_Up_Time" id="Marker_Partial_Up_Time"></a></p>
+<div>
+<p class="SettingName">Marker Partial Up Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ to partially raise the marking tool parallel with the travel distance 
+ of the lifter. When you set the <span style="font-weight: bold;">Marker 
+ Partial Up Time</span>, it enables the Torch Up output.</p>
+</div>
+<p class="SnippetBookmark"><a name="Arc_Off_Time" id="Arc_Off_Time"></a></p>
+<div>
+<p class="SettingName">Arc Off Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ (0&#160;– 2 seconds) 
+ that torch motion continues if the arc is lost while cutting. This option 
+ allows motion to continue to the next pierce point. Torch motion stops 
+ when <span style="font-weight: bold;">Arc Off Time</span> ends.</p>
+</div>
+<p class="SnippetBookmark"><a name="Set_Arc_Current" id="Set_Arc_Current"></a></p>
+<div>
+<p class="SettingName">Set Arc Current</p>
+<p class="SettingBody" style="margin-left: 12px;">Enter the amperage needed 
+ to cut the material. This option can be used only with plasma systems 
+ that communicate with the CNC.</p>
+<p style="margin-left: 12px;">The <span style="font-weight: bold;">Set 
+ Arc Current</span> value comes from the cut chart. You can override the 
+ <span style="font-weight: bold;">Set&#160;Arc Current</span> value if 
+ you enter a different number in this field. If you change this option, 
+ it will revert to the original cut chart value when the cut chart is loaded.</p>
+</div>
+<p class="SnippetBookmark"><a name="Corner_Current_Percent" id="Corner_Current_Percent"></a></p>
+<div>
+<p class="SettingName">Corner Current Percent</p>
+<p class="SettingBody">Enter a percentage of the <span style="font-weight: bold;">Set 
+ Arc Current</span>. This option reduces the arc current to a percentage 
+ that is 50%&#160;– 100% of the <span style="font-weight: bold;">Set Arc 
+ Current</span> value. Reduced arc current when cutting corners can improve 
+ corner cut quality. </p>
+</div>
+<p class="SnippetBookmark"><a name="Ignition" id="Ignition"></a></p>
+<div>
+<p class="SettingName">Ignition</p>
+<p class="SettingBody" style="margin-left: 12px;">This option enables use 
+ of the Ignition output for igniting the torch. If your plasma power supply 
+ requires a separate ignition signal, set<span style="font-weight: bold;"> 
+ Ignition</span> to <span style="font-weight: bold;">ON</span>. If not, 
+ set this option <span style="font-weight: bold;">OFF</span>. Typically, 
+ Hypertherm power supplies do not require this signal.</p>
+</div>
+<p class="SnippetBookmark"><a name="Arc_On_Feedback" id="Arc_On_Feedback"></a></p>
+<div>
+<p class="SettingName">Arc On Feedback</p>
+<p class="SettingBody" style="margin-left: 12px;">Set this option to <span 
+	 style="font-weight: bold;">ON</span> to use the Cut/Mark Sense input. 
+ The CNC doesn’t start motion until the Cut/Mark Sense input activates.</p>
+</div>
+<p class="SnippetBookmark"><a name="Partial_Raise" id="Partial_Raise"></a></p>
+<div>
+<p class="SettingName">Partial Raise</p>
+<p class="SettingBody" style="margin-left: 12px;">This setting raises the 
+ torch at the end of the cut for the time specified by Partial Up Time.</p>
+</div>
+<p class="SnippetBookmark"><a name="Down_On_During_Mark" id="Down_On_During_Mark"></a></p>
+<div>
+<p class="SettingName">Down On During Mark</p>
+<p class="SettingBody" style="margin-left: 12px;">Choose <span style="font-weight: bold;">Off</span> 
+ to disable the <span style="font-weight: bold;">Down On During Mark</span> 
+ field. Choose <span style="font-weight: bold;">On</span> to enable the 
+ <span style="font-weight: bold;">Down On During Mark</span> field.</p>
+</div>
+<p class="SnippetBookmark"><a name="Down_On_Between_Marks" id="Down_On_Between_Marks"></a></p>
+<div>
+<p class="SettingName">Down On Between Marks</p>
+<p style="margin-left: 12px;">Choose <span style="font-weight: bold;">Off</span> 
+ to disable the <span style="font-weight: bold;">Down On Between Marks</span> 
+ field. Choose <span style="font-weight: bold;">On</span> to enable the 
+ <span style="font-weight: bold;">Down On During Mark</span> field.</p>
+</div>
+<p class="SnippetBookmark"><a name="Cut_Control_Used_for_Marking" id="Cut_Control_Used_for_Marking"></a></p>
+<div>
+<p class="SettingName">Cut Control Used for Marking</p>
+<p class="SettingBody">The CNC uses the Cut Control output to activate 
+ the marking tool. When you choose <span style="font-weight: bold;">Off</span>, 
+ it disables the Marker Control used for marking. When you choose <span 
+	 style="font-weight: bold;">On</span>, it enables the Marker Control 
+ used for marking.</p>
+</div>
+<p class="SnippetBookmark"><a name="Marker_Down_Up_with_Each_Marker_On_Off" 
+								 id="Marker_Down_Up_with_Each_Marker_On_Off"></a></p>
+<div>
+<p class="SettingName">Marker Down/Up with Each Marker On/Off</p>
+<p class="SettingBody">Marker On/Off refers to these part program codes:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">M09 Marker 1 Enable and M10 Marker 1 Disable</p></li>
+	<li><p class="SettingBody">M13 Marker 2 Enable and M14 Marker 2 Disable</p></li>
+</ul>
+<p class="SettingBody">When the CNC reads the M09 in part program, it turns 
+ on the Torch Down output. When the CNC reads the M10 code, it turns on 
+ the Torch Up output.</p>
+</div>
+<p class="SnippetBookmark"><a name="Preheat" id="Preheat"></a></p>
+<div>
+<p class="SettingName">Preheat</p>
+<p class="SettingBody">When marking with plasma, turn off<span style="font-weight: bold;"> 
+ Preheat</span>. This output is usually used with oxyfuel or zinc markers.</p>
+</div>
+<p class="SettingName"><a name="Use_Marker_1_Data__Off_:" id="Use_Marker_1_Data__Off_:"></a>Use 
+ Marker 1 Data </p>
+<p class="SettingBody">Turn <span style="font-weight: bold;">ON</span> 
+ to set all parameters on the <span style="font-weight: bold;">Marker 2 
+ Process</span> screen to the same values as the <span style="font-weight: bold;">Marker 
+ 1 Process</span> screen, and to disable all controls on the<span style="font-weight: bold;"> 
+ Marker 2 Process</span> screen. </p>
+<h2><span class="Bold"><a name="Soft_Keys" id="Soft_Keys"></a></span>Soft 
+ Keys</h2>
+<div>
+<p class="SettingName">Oxyfuel</p>
+<p class="SettingBody" style="margin-left: 12px;">This soft key opens the 
+ <span style="font-weight: bold;">Oxyfuel</span> screen where you can customize 
+ and control torch motion and the processes for oxyfuel 
+ cutting/marking.</p>
+</div>
+<div>
+<p class="SettingName">Load Data/Save Data</p>
+<p class="SettingBody">Use these soft keys to save the settings from the<span 
+	 style="font-weight: bold;"> Process</span> screen. The CNC saves the 
+ file on either the CNC hard drive or on a USB memory stick. You can then 
+ transfer this file to another CNC or save a copy as a backup.</p>
+</div>
+<div>
+<p class="SettingName">Load Data</p>
+<p class="SettingBody">This soft key allows you to import a process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Marker 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 1</span> screen and process parameters are not available for XPR, 
+ but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Marker 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 2</span> &#160;screen and process parameters are not available 
+ for XPR, but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Timing Diagram</p>
+<p class="SettingBody">This soft key shows&#160;the activation and deactivation 
+ of I/O for each type of process. </p>
+</div>
+<div>
+<h6>Cutting Tips</h6>
+<p class="SettingBody" style="margin-left: 12px;">This soft key displays 
+ cutting tips for the selected process.</p>
+</div>
+<div>
+<h6>Help</h6>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Phoenix 
+ Help</span> window and displays information about the current screen.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

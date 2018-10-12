@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Machine Setups</title>
+<link rel="stylesheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Machine Setups</h1>
+<p>Use the <span style="font-weight: bold;">Machine Setups</span> screen 
+ to define the machine orientation, choose the axes you have on your cutting 
+ system, and enter the number of torch height controls. </p>
+<p>&#160;</p>
+<p>Navigation: <span style="font-weight: bold;">Setups &gt; Password &gt; 
+ Machine Setups</span>. This screen has <a href="#Field_Definitions">field 
+ definitions</a> and <a href="#Soft_keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#X_axis_orientation">X axis orientation</a></p></td>
+		<td><p><a href="#Table_size">Table size</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Up_direction">Up direction</a></p></td>
+		<td><p><a href="#Key_logging">Key press logging</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Right_direction">Right direction</a></p></td>
+		<td><p><a href="#Sensor_THCs_installed">Sensor THCs installed</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#X_and_Y_motor_encoder">X and Y motor/encoder</a></p></td>
+		<td><p><a href="#THC_installed_on_axis_and_output">THC installed 
+		 on axis and input</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Dual_gantry_installed">Dual gantry installed</a></p></td>
+		<td><p><a href="#Ignore_torch_collision_during_IHS">Ignore torch 
+		 collision during IHS</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#CBH_installed">CBH installed</a></p></td>
+		<td><p><a href="#Auto_torch_spacing">Auto torch spacing</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Tilt_rotator_installed">Tilt rotator installed</a></p></td>
+		<td><p><a href="#Minimum_torch_spacing">Minimum torch spacing</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Dual_tilt_rotator_installed">Dual tilt rotator 
+		 installed</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Auto_home_at_power_up">Auto home at power up</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Follower_initially">Follower Initially</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Scaled_rotator_motion">Scaled rotator motion</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Scale_factor">Scale factor</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Dual_tilting_rotator">Dual tilting rotator</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Dual_transverse">Dual transverse</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Transformation">Transformation</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<h2><a name="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="X_axis_orientation" id="X_axis_orientation"></a>X 
+ axis orientation</p>
+<p class="SettingBody">This field specifies the X axis as the <span style="font-weight: bold;">Transverse</span> 
+ or <span style="font-weight: bold;">Rail</span> axis. The default setting 
+ is <span style="font-weight: bold;">Transverse</span>.</p>
+<p class="SettingName"><a name="Up_direction" id="Up_direction"></a>Up 
+ direction</p>
+<p class="SettingBody">This field defines the machine motion when you press 
+ the ­up arrow key in manual mode.</p>
+<p class="SettingName"><a name="Right_direction" id="Right_direction"></a>Right 
+ direction</p>
+<p class="SettingBody">This field defines the machine motion when you press 
+ the right arrow key in manual mode.</p>
+<p class="SettingName"><a name="X_and_Y_motor_encoder" id="X_and_Y_motor_encoder"></a>X 
+ and Y motor/encoder</p>
+<p class="SettingBody">Set this field to <span style="font-weight: bold;">Normal</span> 
+ for EtherCAT cutting machines.</p>
+<p class="SettingName"><a name="Dual_gantry_installed" id="Dual_gantry_installed"></a>Dual 
+ gantry installed</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">Yes</span> 
+ to enable the Dual Gantry axis for a second side drive. The Dual Gantry 
+ axis is always parallel to the Rail axis.</p>
+<p class="SettingName"><a name="CBH_installed" id="CBH_installed"></a>CBH 
+ installed</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">Yes</span> 
+ to enable the Oxyfuel contour bevel head (CBH) axis. CBH can only be installed 
+ on axis 4. If this selection is not available, make sure that you do not 
+ have a Sensor THC assigned to axis 4.</p>
+<p class="SettingName"><a name="Tilt_rotator_installed" id="Tilt_rotator_installed"></a>Tilt 
+ rotator installed</p>
+<p class="SettingBody">Tilt Rotator describes an ACXYZ bevel head, which 
+ has a rotational axis (C) combined with a tilt axis (A). Choose this option 
+ when your cutting system has this type of bevel head installed.</p>
+<p class="SettingName"><a name="Dual_tilt_rotator_installed" id="Dual_tilt_rotator_installed"></a>Dual 
+ tilt rotator installed</p>
+<p class="SettingBody">Choose this option when the cutting system has a 
+ second ACXYZ bevel head. Choosing this option also enables a second transverse 
+ axis that can be used for a second straight torch, or for a chuck to turn 
+ round pipe or rectangular tube stock.</p>
+<p class="SnippetBookmark"><a name="Auto_home_at_power_up" id="Auto_home_at_power_up"></a></p>
+<div>
+<p class="SettingName">Auto home at power up</p>
+<p class="SettingBody">This field determines whether the contour bevel 
+ head (CBH) and tilt or rotate axes automatically go into the homing routine 
+ when the CNC powers up.</p>
+</div>
+<p class="SnippetBookmark"><a name="Follower_initially" id="Follower_initially"></a></p>
+<div>
+<p class="SettingName">Follower initially</p>
+<p class="SettingBody">This field determines whether the CBH and rotate 
+ features are always enabled after power up or are enabled through the 
+ part program.</p>
+</div>
+<p class="SnippetBookmark"><a name="Scaled_rotator_motion" id="Scaled_rotator_motion"></a></p>
+<div>
+<p class="SettingName">Scaled rotator motion</p>
+<p class="SettingBody">A bevel head does not have a 1:1 relationship between 
+ the commanded C angle rotation to the bevel head and the physical output 
+ rotation of the bevel head.</p>
+</div>
+<p class="SnippetBookmark"><a name="Scale_factor" id="Scale_factor"></a></p>
+<div>
+<p class="SettingName">Scale factor</p>
+<p class="SettingBody">This scale factor is used only with bevel heads. 
+ The scale factor depends on the bevel head designs. Frequently, this parameter 
+ is not needed when proprietary bevel equations have been incorporated 
+ into Phoenix. The Scale Factor must be greater than 1.</p>
+</div>
+<p class="SnippetBookmark"><a name="Dual_tilting_rotator" id="Dual_tilting_rotator"></a></p>
+<div>
+<p class="SettingName">Dual tilting rotator</p>
+<p class="SettingBody">Dual Tilting Rotator describes an ABXYZ bevel head 
+ which has two tilt axes (A and B). Choose this option when your cutting 
+ system has this type of bevel head installed. The <span style="font-weight: bold;">Tilt 
+ Rotator Installed</span> option must be selected to make the <span style="font-weight: bold;">Dual 
+ Tilting Rotator</span> option available. </p>
+</div>
+<p class="SettingName"><a name="Dual_transverse" id="Dual_transverse"></a>Dual 
+ transverse</p>
+<p class="SettingBody">This option enables the Transverse 2 axis for use 
+ with a second cutting station or as an axis for a chuck for holding pipe 
+ or tube stock.</p>
+<p class="SettingName"><a name="Transformation" id="Transformation"></a>Transformation</p>
+<p class="SettingBody">AC-style bevel head requires transformation equations 
+ for the A and C axes. These equations must be supplied by the Channel 
+ Partner to Hypertherm. This option does not apply to ABXYZ-style bevel 
+ heads.</p>
+<p class="SettingName"><a name="Table_size" id="Table_size"></a>Table size</p>
+<p class="SettingBody">Enter this value between the X overtravel switches 
+ and the Y overtravel switches. The X and Y dimensions represent the cutting 
+ area of the table and limit the workpiece size dimensions set in the <span 
+	 style="font-weight: bold;">Cutting</span> screen.</p>
+<p class="SettingName"><a name="Key_logging" id="Key_logging"></a>Key press 
+ logging</p>
+<p class="SettingBody">This option records key press and other related 
+ information in a daily log file. Service technicians use this log file 
+ to review events before a fault. When <span style="font-weight: bold;">key 
+ press logging</span> is enabled, the log file is saved to the hard drive 
+ so it can be retrieved by transfer to a USB memory stick. Usually this 
+ parameter is set to <span style="font-weight: bold;">No</span>.</p>
+<p class="SettingName"><a name="Sensor_THCs_installed" id="Sensor_THCs_installed"></a>Sensor 
+ THCs installed</p>
+<p class="SettingBody">This field defines the total number of Sensor THC 
+ axes assigned to the CNC.</p>
+<p class="SettingName"><a name="THC_installed_on_axis_and_output" id="THC_installed_on_axis_and_output"></a>THC 
+ installed on axis and input</p>
+<p class="SettingBody">Select the THC, which axis it is installed on, and 
+ the analog input to use for arc voltage feedback. </p>
+<p class="SettingName"><a name="Ignore_torch_collision_during_IHS" id="Ignore_torch_collision_during_IHS"></a>Ignore 
+ torch collision during IHS</p>
+<p class="SettingBody">This option allows the system to ignore input about 
+ a torch collision during the initial height sense cycle. This can be helpful 
+ for some THC mechanics.</p>
+<p class="SettingName"><a name="Auto_torch_spacing" id="Auto_torch_spacing"></a>Auto 
+ torch spacing</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">Yes</span> 
+ to enable the automatic torch spacing feature. This feature uses embedded 
+ part program codes and dedicated outputs to control individual torch stations 
+ to set spacing and clamping of direct and mirrored cutting.</p>
+<p class="SettingName"><a name="Minimum_torch_spacing" id="Minimum_torch_spacing"></a>Minimum 
+ torch spacing</p>
+<p class="SettingBody">If <span style="font-weight: bold;">Manual Centerline 
+ Spacing</span> is disabled in the<span style="font-weight: bold;"> <a 
+	 href="Setups_Screen.htm">Cutting</a> </span>screen, the <span style="font-weight: bold;">Minimum 
+ Torch Spacing</span> value accounts for the width of each torch station.</p>
+<p class="SettingBody">Minimum Torch Spacing helps to make sure that the 
+ torch stations do not collide during Torch Spacing in the <a href="Manual_Options_Screen.htm"><span 
+	 style="font-weight: bold;">Manual Options</span></a> screen. Otherwise, 
+ Phoenix does not use the <span style="font-weight: bold;">Minimum Torch 
+ Spacing</span> value.</p>
+<h2><a name="Soft_keys" id="Soft_keys"></a>Soft Keys</h2>
+<p class="SettingName">Machine</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Machine 
+ Setups</span> screen.</p>
+<p class="SettingName">Speeds</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Speeds</span> 
+ screen.</p>
+<p class="SettingName">Digital I/O</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Digital 
+ I/O</span> screen.</p>
+<p class="SettingName">Analog I/O</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Analog 
+ I/O</span> screen.</p>
+<p class="SettingName">EtherCAT</p>
+<p class="SettingBody">This soft key launches Hypertherm EtherCAT Studio 
+ for network setup and creation of the Phoenix.xml file and network troubleshooting.</p>
+<p class="SettingName">Axes 1&#160;–&#160;6</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Transverse</span> 
+ screen which allows you to navigate to the <span style="font-weight: bold;">Rail</span>, 
+ <span style="font-weight: bold;">Sensor THC</span>,<span style="font-weight: bold;"> 
+ Rotate</span>, and <span style="font-weight: bold;">Tilt</span> screens 
+ if available. Phoenix only shows soft keys for the axes that the system 
+ supports.</p>
+<p class="SettingName">Axes 7&#160;–&#160;12</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Transverse 
+ 2</span> screen. You can navigate to the<span style="font-weight: bold;"> 
+ Rotate 2</span>, <span style="font-weight: bold;">Tilt 2</span>, and additional 
+ <span style="font-weight: bold;">Sensor THC</span> screens if available. 
+ Phoenix only shows soft keys for the axes that the system supports.</p>
+<p class="SettingName">Laser Mapping</p>
+<p class="SettingBody">Choose this soft key to set<span style="font-weight: bold;"> 
+ Laser Mapping</span> parameters. Laser Mapping is a feature of Phoenix 
+ that improves the linear positioning accuracy of a cutting table if there 
+ are mechanical inaccuracies on the axes. </p>
+<p class="SettingBody">A laser interferometer records a number of positions 
+ along the rail, transverse, and dual gantry axes. The CNC uses the data 
+ from the interferometer to compensate the commanded position to each drive 
+ axis and reduce position errors to 0. </p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

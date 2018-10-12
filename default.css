@@ -1,0 +1,287 @@
+﻿/*Created with Adobe RoboHelp 2015.*/
+body {
+	font-family: "Segoe UI", sans-serif;
+	background-color: #ffffff;
+}
+h1 {
+	margin-bottom: 5pt;
+	font-family: "Segoe UI";
+	padding: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #000000;
+	z: ;
+	font-weight: normal;
+	margin-top: 5px;
+	font-size: 18pt;
+	page-break: avoid;
+}
+h2 {
+	margin: 6px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: "Segoe UI", sans-serif;
+	margin-top: 18px;
+	page-break: avoid;
+}
+h3 {
+	margin: 6px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: solid 0px;
+	font-weight: bold;
+	margin-top: 16px;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 10pt;
+	page-break: avoid;
+}
+h4 {
+	margin: 0;
+	margin-bottom: 12px;
+	font-family: "Segoe UI", sans-serif;
+	font-weight: normal;
+	page-break: avoid;
+	font-size: 10pt;
+	color: #000080;
+	margin-top: 5pt;
+	x-next-class: SettingBody;
+	x-next-type: p;
+}
+h5 {
+	font-size: 10.0pt;
+	margin-bottom: 5pt;
+	page-break: avoid;
+	color: #000080;
+	margin-top: 5px;
+	x-next-class: SettingBody;
+	x-next-type: p;
+	font-weight: normal;
+	font-style: normal;
+}
+h6 {
+	font-size: 10pt;
+	margin: 0;
+	margin-bottom: 6px;
+	page-break: avoid;
+	font-family: "Segoe UI";
+	color: #000080;
+	margin-top: 5pt;
+	font-weight: normal;
+	font-style: normal;
+}
+p {
+	margin-left: 0pt;
+	margin-top: 0pt;
+	font-family: "Segoe UI", sans-serif;
+	sans-serif: ;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+}
+a.expandspot {
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+span.expandtext {
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+a.dropspot {
+	cursor: hand;
+	color: #008000;
+	font-style: italic;
+	text-decoration: none;
+}
+a.glossterm {
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+span.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+ol,
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 9pt;
+	font-family: "Segoe UI", sans-serif;
+}
+span.Bold {
+	font-weight: bold;
+}
+li.Bullet {
+	list-style: disc;
+	margin-bottom: 4pt;
+	margin-top: 6pt;
+}
+table.Equation {
+	text-align: Center;
+}
+span.emphasis {
+	font-style: italic;
+}
+span.Superscript {
+	vertical-align: super;
+	font-size: 8pt;
+}
+rh-list.Bullets {
+	x-lvl-1-type: disc;
+	x-lvl-1-format: "<x>";
+	x-lvl-2-type: square;
+	x-lvl-2-format: "<x>";
+	x-lvl-2-margin: 20px;
+	x-lvl-3-type: circle;
+	x-lvl-3-format: "<x>";
+	x-lvl-3-margin: 40px;
+	x-lvl-4-type: diamond;
+	x-lvl-4-format: "<x>";
+	x-lvl-4-margin: 60px;
+	x-lvl-5-type: disc;
+	x-lvl-5-format: "<x>";
+	x-lvl-5-margin: 80px;
+	x-lvl-6-type: square;
+	x-lvl-6-format: "<x>";
+	x-lvl-6-margin: 100px;
+	x-lvl-7-type: circle;
+	x-lvl-7-format: "<x>";
+	x-lvl-7-margin: 120px;
+	x-lvl-8-type: diamond;
+	x-lvl-8-format: "<x>";
+	x-lvl-8-margin: 140px;
+	x-level-count: 9;
+	x-lvl-9-type: disc;
+	x-lvl-9-format: "<x>";
+	x-lvl-9-margin: 160px;
+	x-lvl-9-pfx-class: rls-9-Bullets;
+	x-lvl-1-pfx-class: rls-1-Bullets;
+	x-lvl-2-pfx-class: rls-2-Bullets;
+	x-lvl-3-pfx-class: rls-3-Bullets;
+	x-lvl-4-pfx-class: rls-4-Bullets;
+	x-lvl-5-pfx-class: rls-5-Bullets;
+	x-lvl-6-pfx-class: rls-6-Bullets;
+	x-lvl-7-pfx-class: rls-7-Bullets;
+	x-lvl-8-pfx-class: rls-8-Bullets;
+}
+span.rls-9-Bullets {
+	font-size: 8pt;
+}
+span.rls-1-Bullets {
+	font-size: 12pt;
+}
+span.rls-2-Bullets {
+	font-size: 12pt;
+}
+span.rls-3-Bullets {
+	font-size: 12pt;
+}
+span.rls-4-Bullets {
+	font-size: 12pt;
+}
+span.rls-5-Bullets {
+	font-size: 10pt;
+}
+span.rls-6-Bullets {
+	font-size: 10pt;
+}
+span.rls-7-Bullets {
+	font-size: 10pt;
+}
+span.rls-8-Bullets {
+	font-size: 10pt;
+}
+p.NormalIndent {
+	font-family: "Segoe UI", sans-serif;
+	background-color: #ffffff;
+	margin-bottom: 0pt;
+	margin-top: 6pt;
+	margin-left: 18pt;
+}
+p.SettingName {
+	font-style: normal;
+	margin-bottom: 2pt;
+	mc-next-tag: p;
+	font-family: "Segoe UI", sans-serif;
+	font-weight: normal;
+	font-size: 10pt;
+	color: #000080;
+	page-break: avoid;
+	x-next-class: SettingBody;
+	x-next-type: p;
+	margin-top: 5pt;
+}
+p.SettingBody {
+	margin-bottom: 12pt;
+	margin-left: 8pt;
+}
+p.SnippetBookmark {
+	visibility: hidden;
+}
+table.FieldJumps {
+	x-border-spacing: 16px;
+	width: 100%;
+}
+p.BackToTopFloat {
+	position: fixed;
+	background-color: #d8e4f8;
+	border: 2px solid #b0c4de;
+	padding: 5px;
+	right: 12px;
+	bottom: 5px;
+	z-index: 1;
+}
+@media only print{
+	h1 {
+		font-family: "Akzidenz-Grotesk Pro Regular";
+		x-next-class: ;
+		x-next-type: p;
+	}
+	}
+
+@media only print{
+	h2 {
+		font-family: "Akzidenz-Grotesk Pro Med";
+		x-next-class: ;
+		x-next-type: p;
+	}
+	}
+
+@media only print{
+	h3 {
+		font-family: "Akzidenz-Grotesk Pro Med";
+		x-next-class: ;
+		x-next-type: p;
+	}
+	}
+
+//styles to switch from tables to divs,
+not used now //div.FieldLeft {
+	//float: left;
+	//padding: 5px;
+	//width: 49%;
+	//}: "//div.FieldRight" "{" "//float:" right;
+	//padding: 5px;
+	//width: 49%;
+	//background: #000000;
+	//}: "//div.FieldJumps{" "//width:" 100%;
+	//margin: auto;
+	//}: ;
+}
+li.Note {
+}
+li.Numbered {
+	list-style: decimal;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+}
+p.Part_Number_Copyright {
+	font-size: 7pt;
+}

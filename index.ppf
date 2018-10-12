@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="MasterEndUserHelp" type="4">
+ <windowlist defaultwindow="NewWindow">
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+  <contextentry id="406" page="Nester_Setups_Screen.htm">
+  </contextentry>
+  <contextentry id="701" page="Gas_Console_Inputs_Screen.htm">
+  </contextentry>
+  <contextentry id="360" page="System.htm">
+  </contextentry>
+  <contextentry id="1853" page="Marker_1_and_2_Sensor_THC.htm">
+  </contextentry>
+  <contextentry id="702" page="Power_Supply_Inputs_Screen.htm">
+  </contextentry>
+  <contextentry id="24" page="Remnant_Trace_Screen.htm">
+  </contextentry>
+  <contextentry id="294" page="Setups_Screen.htm">
+  </contextentry>
+  <contextentry id="268" page="Files_or_Load_From_Disk_Screen.htm">
+  </contextentry>
+  <contextentry id="289" page="Transverse_or_Rail_axis.htm">
+  </contextentry>
+  <contextentry id="703" page="Gas_Console_Inputs_Screen.htm">
+  </contextentry>
+  <contextentry id="286" page="Plasma_1_and_2_No_THC.htm">
+  </contextentry>
+  <contextentry id="403" page="Sensor_THC_axis.htm">
+  </contextentry>
+  <contextentry id="550" page="Save_System_Files_Screen.htm">
+  </contextentry>
+  <contextentry id="700" page="Power_Supply_Inputs_Screen.htm">
+  </contextentry>
+  <contextentry id="383" page="CBH_axis.htm">
+  </contextentry>
+  <contextentry id="547" page="Station_Configurarion_Screen.htm">
+  </contextentry>
+  <contextentry id="106" page="Shape_Manager_or_Shape_Library_Screen.htm">
+  </contextentry>
+  <contextentry id="393" page="Nester_Screen.htm">
+  </contextentry>
+  <contextentry id="337" page="Align_Screen.htm">
+  </contextentry>
+  <contextentry id="324" page="Dual_Gantry.htm">
+  </contextentry>
+  <contextentry id="270" page="Current_Part_Options_Screen.htm">
+  </contextentry>
+  <contextentry id="299" page="Manual_Options_Screen.htm">
+  </contextentry>
+  <contextentry id="452" page="Tilt_and_Tilt_2_axes.htm">
+  </contextentry>
+  <contextentry id="418" page="Oscilloscope_Screen.htm">
+  </contextentry>
+  <contextentry id="1852" page="Plasma_1_and_2_Sensor_THC.htm">
+  </contextentry>
+  <contextentry id="279" page="Diagnostics_Screen.htm">
+  </contextentry>
+  <contextentry id="438" page="Plasma_Cut_Chart_Screen.htm">
+  </contextentry>
+  <contextentry id="381" page="Marker_1_and_2_No_THC.htm">
+  </contextentry>
+  <contextentry id="285" page="Oxy_Fuel_Screen.htm">
+  </contextentry>
+  <contextentry id="451" page="Rotate_and_Rotate_2_axes.htm">
+  </contextentry>
+  <contextentry id="108" page="Text_Editor_Screen.htm">
+  </contextentry>
+  <contextentry id="398" page="Laser_Mapping.htm">
+  </contextentry>
+  <contextentry id="481" page="Plasma_Cut_Chart_for_XPR.htm">
+  </contextentry>
+  <contextentry id="298" page="Digital_I_O.htm">
+  </contextentry>
+  <contextentry id="456" page="Oxy_Fuel_Cut_Chart_Screen.htm">
+  </contextentry>
+  <contextentry id="287" page="Watch_Screen.htm">
+  </contextentry>
+  <contextentry id="325" page="Repeat_Screen.htm">
+  </contextentry>
+  <contextentry id="267" page="Save_to_Disk_Screen.htm">
+  </contextentry>
+  <contextentry id="282" page="Pause_screen.htm">
+  </contextentry>
+  <contextentry id="336" page="Special_Setups.htm">
+  </contextentry>
+  <contextentry id="326" page="Analog_I_O.htm">
+  </contextentry>
+  <contextentry id="300" page="Home_Axes_Screen.htm">
+  </contextentry>
+  <contextentry id="290" page="Speeds_screen.htm">
+  </contextentry>
+  <contextentry id="263" page="Shape_Wizard.htm">
+  </contextentry>
+  <contextentry id="657" page="HPR_System_Screen.htm">
+  </contextentry>
+  <contextentry id="291" page="Machine_Setup_screen.htm">
+  </contextentry>
+  <contextentry id="297" page="Manual_Screen.htm">
+  </contextentry>
+  <contextentry id="541" page="HPR_System_Screen.htm">
+  </contextentry>
+  <contextentry id="314" page="Change_Consumables_Screen.htm">
+  </contextentry>
+  <contextentry id="266" page="Remnant_Trace_Screen.htm">
+  </contextentry>
+  <contextentry id="111" page="Main_Screen.htm">
+  </contextentry>
+ </contextmap>
+ <topiclist defaulttopic="Main_Screen.htm">
+  <topic>Oxy_Fuel_Screen.htm
+  </topic>
+  <topic>Manual_Options_Screen.htm
+  </topic>
+  <topic>Torch_height_disable.htm
+  </topic>
+  <topic>Current_Part_Options_Screen.htm
+  </topic>
+  <topic>Diagnostics_Screen.htm
+  </topic>
+  <topic>Nester_Screen.htm
+  </topic>
+  <topic>Tilt_and_Tilt_2_axes.htm
+  </topic>
+  <topic>Cut_a_part.htm
+  </topic>
+  <topic>Change_Consumables_Screen.htm
+  </topic>
+  <topic>Transverse_or_Rail_axis.htm
+  </topic>
+  <topic>Manual_Screen.htm
+  </topic>
+  <topic>Save_System_Files_Screen.htm
+  </topic>
+  <topic>Station_Configurarion_Screen.htm
+  </topic>
+  <topic>Rotate_and_Rotate_2_axes.htm
+  </topic>
+  <topic>Setup_files.htm
+  </topic>
+  <topic>Plasma_Cut_Chart_Screen.htm
+  </topic>
+  <topic>Speeds_screen.htm
+  </topic>
+  <topic>Shape_Wizard.htm
+  </topic>
+  <topic>Plasma_Cut_Chart_for_XPR.htm
+  </topic>
+  <topic>Setups_Screen.htm
+  </topic>
+  <topic>Power_Supply_Inputs_Screen.htm
+  </topic>
+  <topic>Save_to_Disk_Screen.htm
+  </topic>
+  <topic>System.htm
+  </topic>
+  <topic>Remnant_Trace_Screen.htm
+  </topic>
+  <topic>Sensor_THC_axis.htm
+  </topic>
+  <topic>Digital_I_O.htm
+  </topic>
+  <topic>Marker_1_and_2_Sensor_THC.htm
+  </topic>
+  <topic>Oxy_Fuel_Cut_Chart_Screen.htm
+  </topic>
+  <topic>Machine_Setup_screen.htm
+  </topic>
+  <topic>Plasma_1_and_2_No_THC.htm
+  </topic>
+  <topic>Align_Screen.htm
+  </topic>
+  <topic>HPR_System_Screen.htm
+  </topic>
+  <topic>Pause_screen.htm
+  </topic>
+  <topic>Files_or_Load_From_Disk_Screen.htm
+  </topic>
+  <topic>Special_Setups.htm
+  </topic>
+  <topic>Text_Editor_Screen.htm
+  </topic>
+  <topic>Marker_1_and_2_No_THC.htm
+  </topic>
+  <topic>Dual_Gantry.htm
+  </topic>
+  <topic>Laser_Mapping.htm
+  </topic>
+  <topic>Analog_I_O.htm
+  </topic>
+  <topic>Load_a_part.htm
+  </topic>
+  <topic>Main_Screen.htm
+  </topic>
+  <topic>Watch_Screen.htm
+  </topic>
+  <topic>Home_Axes_Screen.htm
+  </topic>
+  <topic>Repeat_Screen.htm
+  </topic>
+  <topic>Gas_Console_Inputs_Screen.htm
+  </topic>
+  <topic>Oscilloscope_Screen.htm
+  </topic>
+  <topic>Plasma_1_and_2_Sensor_THC.htm
+  </topic>
+  <topic>Nester_Setups_Screen.htm
+  </topic>
+  <topic>Transverse_2_axis.htm
+  </topic>
+  <topic>Shape_Manager_or_Shape_Library_Screen.htm
+  </topic>
+  <topic>CBH_axis.htm
+  </topic>
+  <topic>S-curve_acceleration.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="toc">
+   <filename>index.hhc
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="ndx">
+   <filename>index.hhk
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>index.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="gls">
+   <filename>index.glo
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>index.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>index.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="startpage">
+   <filename>index.htm
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="keywordinfo">
+   <filename>SearchOptions.xml
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="favicon">
+   <filename>edgeconnecticon_jgF_icon.ico
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

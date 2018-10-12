@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Oscilloscope Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.8.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Diagnostics Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Oscilloscope</h1>
+<p>Use the <span style="font-weight: bold;">Oscilloscope</span> screen 
+ to log I/O, servo output voltage to the drives, analog inputs, and drive 
+ status while the CNC is operating. The grid represents the time rate in 
+ which the function is recording data. You can set up the Oscilloscope 
+ to help you understand an issue with an input or output or to log a function 
+ and then provide a visual representation of the log file.</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Digital_Inputs">Digital Inputs and Outputs</a></p></td>
+		<td><p><a href="#Start">Start</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Analog_Inputs">Analog Inputs and Outputs</a></p></td>
+		<td><p><a href="#Stop">Stop</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Status">Status</a></p></td>
+		<td><p><a href="#Rate">Rate</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Digital_Inputs" id="Digital_Inputs"></a>Digital 
+ Inputs and Outputs</p>
+<p class="SettingBody">Double-click on the I/O point you want to record. 
+ Remove the I/O point by pressing the keyboard space bar.</p>
+<p class="SettingName"><a name="Analog_Inputs" id="Analog_Inputs"></a>Analog 
+ Inputs and Outputs</p>
+<p class="SettingBody">Double-click on the I/O point you want to record. 
+ Remove the I/O point by pressing the keyboard space bar.</p>
+<p class="SettingName"><a name="Status" id="Status"></a>Status</p>
+<p class="SettingBody">Choose the status bits you want to record. Phoenix 
+ has status bits for certain features, such as drive enables, torch height 
+ control, and tracking. You can view the state of status bits in the <span 
+	 style="font-weight: bold;">Oscilloscope</span> screen and the <a href="Watch_Screen.htm">Watch 
+ Window</a>.</p>
+<p class="SettingName"><a name="Start" id="Start"></a>Start</p>
+<p class="SettingBody">Select when you want the Oscilloscope to start recording.</p>
+<p class="SettingName"><a name="Stop" id="Stop"></a>Stop</p>
+<p class="SettingBody">Select when you want the Oscilloscope to stop recording.</p>
+<p class="SettingName"><a name="Rate" id="Rate"></a>Rate</p>
+<p class="SettingBody">Select the time intervals used by the Oscilloscope 
+ to record the data.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">Record</p>
+<p class="SettingBody">This soft key starts recording the file.</p>
+<p class="SettingName">Stop</p>
+<p class="SettingBody">Choose <span style="font-weight: bold;">Stop</span> 
+ to end recording or file viewing.</p>
+<p class="SettingName">Pause</p>
+<p class="SettingBody">This soft key temporarily pauses recording or file 
+ viewing.</p>
+<p class="SettingName">Play</p>
+<p class="SettingBody">This soft key starts the file for viewing.</p>
+<p class="SettingName">Fast Forward</p>
+<p class="SettingBody">This soft key speeds up the file for viewing.</p>
+<p class="SettingName">Load</p>
+<p class="SettingBody">This soft key loads an Oscilloscope file from a 
+ selected device.</p>
+<p class="SettingName">Save</p>
+<p class="SettingBody">This soft key saves the current Oscilloscope file 
+ to a selected device.</p>
+<p class="SettingName">Reset Channels</p>
+<p class="SettingBody">This soft key clears your input and output selections.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

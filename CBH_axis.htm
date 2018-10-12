@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>CBH axis</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_8";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>CBH axis</h1>
+<p>&#160;</p>
+<p>Contour bevel head (CBH) is a single C axis that is most commonly used 
+ in oxyfuel cutting.&#160;CBH can only be installed on axis 4. If this 
+ selection is not available, make sure that you do not have a Sensor THC 
+ assigned to axis 4.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Servo_error_tolerance">Servo error tolerance</a></p></td>
+		<td><p><a href="#Auto_home_at_power_up">Auto home at power up</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Encoder_counts_per_rev">Encoder counts per revolution</a></p></td>
+		<td><p><a href="#Absolute_home_angle">Absolute home angle</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Follower_initiially">Follower initially</a></p></td>
+		<td><p><a href="#Home_direction">Home direction</a></p></td>
+	</tr>
+</table>
+<p class="SnippetBookmark"><a name="Servo_error_tolerance" id="Servo_error_tolerance"></a></p>
+<div>
+<h4><span>Servo error tolerance</span> </h4>
+<p class="SettingBody">Servo error, also called following error, is the 
+ difference between the commanded motor position and the actual motor position 
+ as calculated by the drive. The servo error tolerance is the upper limit 
+ of the amount of following error allowed before the CNC faults. &#160;&#160;</p>
+<p class="SettingBody">The amount of servo error tolerance depends on the 
+ cutting machine mechanics. Setting the servo error tolerance too low could 
+ cause the CNC to fault repeatedly. Setting the tolerance too high may 
+ allow inaccurate motion or result in mechanical damage. Set the servo 
+ error tolerance to a value higher than the steady-state following error 
+ which is reported by the drive.</p>
+</div>
+<p class="SnippetBookmark"><a name="Encoder_counts_per_rev" id="Encoder_counts_per_rev"></a></p>
+<div>
+<p class="SettingName"><span>Encoder counts per revolution</span> </p>
+<p class="SettingBody">Enter a value that is the number of encoder edges 
+ per revolution (rev) of the Contour Bevel Head axis. </p>
+<p class="SettingBody">You can enter fractional encoder units and the CNC 
+ keeps track of these fractions automatically. Encoder counts per rev are 
+ equal to the resolution of the encoder multiplied by the encoder lines 
+ per rev.</p>
+<p class="SettingBody">Use the following formula: Encoder Counts/Rev = 
+ 4 Counts/Line x 1000 Lines/Rev = 4000</p>
+</div>
+<p class="SnippetBookmark"><a name="Follower_initiially" id="Follower_initiially"></a></p>
+<div>
+<p class="SettingName">Follower initially</p>
+<p class="SettingBody">This field determines whether the CBH and rotate 
+ features are always enabled after power up or are enabled through the 
+ part program.</p>
+</div>
+<p class="SnippetBookmark"><a name="Auto_home_at_power_up" id="Auto_home_at_power_up"></a></p>
+<div>
+<p class="SettingName">Auto home at power up</p>
+<p class="SettingBody">This field determines whether the contour bevel 
+ head (CBH) and tilt or rotate axes automatically go into the homing routine 
+ when the CNC powers up.</p>
+</div>
+<p class="SnippetBookmark"><a name="Absolute_home_angle" id="Absolute_home_angle"></a></p>
+<div>
+<p class="SettingName">Absolute home angle</p>
+<p class="SettingBody">This value defines the position of the axis when 
+ the home limit switch is detected.</p>
+</div>
+<p class="SnippetBookmark"><a name="Home_direction" id="Home_direction"></a></p>
+<div>
+<p class="SettingName">Home direction</p>
+<p class="SettingBody">This value determines which direction the axes will 
+ travel as it moves toward the home limit switch. </p>
+</div>
+<p>&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

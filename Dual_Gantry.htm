@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Dual Gantry</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_9";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Dual Gantry axis</h1>
+<p>The Dual Gantry Axis is commanded as a separate axis on the CNC that 
+ mirrors the output of the Rail axis. Additionally, performance of the 
+ Dual Gantry axis is compared to the Rail Axis and additional output command 
+ is given to keep the axis in position.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Skew_error_tolerance">Skew error tolerance</a></p></td>
+		<td><p><a href="#Use_home_limit_switch">Use home limit switch</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Encoder_counts_inch_mm">Encoder counts per mm 
+		 (inch)</a></p></td>
+		<td><p><a href="#Switch_offset_distance">Switch offset distance</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Backlash_compensation">Backlash compensation</a></p></td>
+		<td><p><a href="#Skew_limit">Skew limit</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Laser_compensation">Laser compensation</a></p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p class="SettingName"><a name="Skew_error_tolerance" id="Skew_error_tolerance"></a>Skew 
+ error tolerance</p>
+<p class="SettingBody">This value equals the position error allowed between 
+ the Rail and Dual Gantry axes before causing a fault.</p>
+<p class="SnippetBookmark"><a name="Encoder_counts_inch_mm" id="Encoder_counts_inch_mm"></a></p>
+<div>
+<h4>Encoder counts per mm (inch)</h4>
+<p class="SettingBody">This parameter is a position scaling factor used 
+ by Phoenix. Refer to the <span style="font-style: italic;">EDGE Connect 
+ Setup and Installation Manual</span> (809340) for a general overview of 
+ encoder counts. Refer to the drive manufacturer documentation for specific 
+ scaling information required by the drives.</p>
+</div>
+<p class="SnippetBookmark"><a name="Backlash_compensation" id="Backlash_compensation"></a></p>
+<div>
+<p class="SettingName">Backlash compensation</p>
+<p class="SettingBody">This setting offsets or compensates for any backlash 
+ in the mechanics of the drive system. The maximum value for backlash compensation 
+ is 12.7 mm (0.5 in).</p>
+</div>
+<p class="SettingName"><a name="Use_home_limit_switch" id="Use_home_limit_switch"></a>Use 
+ home limit switch</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">Yes</span> 
+ to enable the Home feature for the Dual Gantry axis. You must also assign 
+ Dual Gantry Home to an input to use this feature.</p>
+<p class="SettingName"><span class="emphasis"><a name="Switch_offset_distance" 
+												 id="Switch_offset_distance"></a></span>Switch 
+ offset distance</p>
+<p class="SettingBody">This distance sets a physical position offset between 
+ the Dual Gantry and Rail home switch positions. This allows the CNC to 
+ position the two axes accurately for operation and remove any skew of 
+ the gantry.</p>
+<p class="SettingName"><a name="Skew_limit" id="Skew_limit"></a>Skew limit</p>
+<p class="SettingBody">The amount of position error allowed between the 
+ Rail and Dual Gantry axes. For example: The Rail axis has 2.54&#160;mm 
+ (0.1&#160;inch) of position error, the Dual Gantry axis has 7.62 mm (0.3 
+ inch) of position error, and the Skew Error Tolerance is set to 3.81&#160;mm 
+ (0.15&#160;inch). In this case, Phoenix generates a skew error fault because 
+ the position error between the Rail and Dual Gantry axes&#160;(5.08 mm, 
+ 0.2 inch)&#160;exceeds the Skew Error Tolerance of 3.81 mm (0.15&#160;inch).</p>
+<p class="SnippetBookmark"><a name="Laser_compensation" id="Laser_compensation"></a></p>
+<div>
+<p class="SettingName">Laser compensation</p>
+<p class="SettingBody">This function uses position readings gathered with 
+ a laser interferometer to correct the actual position of the axes (Transverse, 
+ Dual Transverse, Rail, and Dual Gantry only).</p>
+</div>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Watch Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.5.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Setups Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Watch Window</h1>
+<p>The Watch Window appears on the <span style="font-weight: bold;">Main 
+ screen</span>. It provides feedback during cutting, including position, 
+ process data, I/O state, cutting speed, and so on. You can customize up 
+ to 10 Watch Windows. A Watch Window that shows HPR plasma system I/O and 
+ status becomes available when you select HPR in the <a href="Station_Configurarion_Screen.htm" 
+														 style="font-weight: bold;">Station 
+ Configuration</a> screen. </p>
+<p><span style="font-weight: bold;">Note:</span> To monitor XPR diagnostic 
+ information in Phoenix, select <span style="font-weight: bold;">Setups 
+ &gt; Diagnostics &gt;</span><span style="color: #ff0000; font-weight: bold;"> 
+ </span><span style="font-weight: bold;"><a href="Diagnostics_Screen.htm#Soft_Keys">XPR 
+ System</a></span>. To view error details and monitor XPR diagnostics with 
+ your wireless device, see the instruction manual supplied with your XPR 
+ plasma power supply. &#160;&#160;</p>
+<p>Several options are available to personalize the Watch Window and not 
+ all options can be viewed at one time. The options are grouped into two 
+ sizes of widgets or icons. Large widgets may be placed into the upper 
+ position at the top of the Watch Window or in the middle of the Watch 
+ Window. Small widgets are positioned in the lower-left corner of the Watch 
+ Window next to the cut information and clock. The cut information and 
+ clock at the lower right may not be edited.</p>
+<p>Selections in the Watch Window will change slightly based on the CNC 
+ I/O configuration and machine options that have been enabled. </p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span style="font-weight: bold;">Note:</span> When you are using a ProNest 
+ part program with XPR, there are some <a href="#pronest_overrides">parameters 
+ that you can and cannot override</a> from the Watch Window.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span><span 
+	 style="font-weight: bold;"> Main screen &gt; Setups &gt; Watch</span></p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Upper_Location">Upper Location</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Middle_Location">Middle Location</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Lower_Location">Lower Location</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#None">None</a></p></td>
+		<td><p><a href="#Input_Output">Input/Output</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Speedometer">Speedometer</a></p></td>
+		<td><p><a href="#Digital_Speedometer">Digital Speedometer</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Position">Position</a></p></td>
+		<td><p><a href="#Following_Error">Following Error</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Command_Voltage">Command Voltage</a></p></td>
+		<td><p><a href="#Jog_Keys">Jog Keys</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#System_Errors">System Errors</a></p></td>
+		<td><p><a href="#Laser_Nozzle">Laser Nozzle</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Oxy_Fuel_Torch_Tip">Oxy Fuel Torch Tip</a></p></td>
+		<td><p><a href="#Plasma_Torch_Tip">Plasma Torch Tip</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Plasma_Electrode">Plasma Electrode</a></p></td>
+		<td><p><a href="#HPR_Supply">HPR Power Supply</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Temperature">Temperature</a></p></td>
+		<td><p><a href="#XPR_Supply">XPR Power Supply</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierces">Pierces</a></p></td>
+		<td><p><a href="#Cut_Time">Cut Time</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#pronest_overrides">ProNest Part Program Overrides</a></p></td>
+		<td><p><a href="#Process_Data">Process Data</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Upper_Location" id="Upper_Location"></a>Upper 
+ Location</p>
+<p class="SettingBody">Choose <span style="font-weight: bold;">Upper Location</span> 
+ and scroll to set the parameter that you want to display in this Watch 
+ screen location.</p>
+<p class="SettingName"><a name="Middle_Location" id="Middle_Location"></a>Middle 
+ Location</p>
+<p class="SettingBody">Choose <span style="font-weight: bold;">Middle Location</span> 
+ and scroll to set the parameter that you want to display in this Watch 
+ screen location.</p>
+<p class="SettingName"><a name="Lower_Location" id="Lower_Location"></a>Lower 
+ Location</p>
+<p class="SettingBody">Choose <span style="font-weight: bold;">Lower Location</span> 
+ and scroll&#160;to set the parameter that you want to display in this 
+ Watch screen location.</p>
+<h2>Watch Window options</h2>
+<p class="SettingName"><a name="None" id="None"></a>None</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">None</span> 
+ to leave the location blank.</p>
+<p class="SettingName"><a name="Input_Output" id="Input_Output"></a>Input/Output</p>
+<p class="SettingBody">This option shows the current state of inputs, outputs 
+ or status information bits. This can be especially useful in debugging 
+ gas control sequencing problems. To add or delete a desired input, output, 
+ or status bit to the Input/Output list, double-click an item or highlight 
+ an item press the <span style="font-weight: bold;">+</span> or <span style="font-weight: bold;">-</span>&#160;keys 
+ on the alpha-numeric keypad.</p>
+<p class="SettingBody"><span class="Bold">Note: </span>Fixed-function I/O 
+ for&#160;HPRXD or XPR power supplies and the EDGE Connect TC operator 
+ console display in the Input and Output lists after input or output 512. 
+ </p>
+<p class="SettingName"><a name="Speedometer" id="Speedometer"></a>Speedometer</p>
+<p class="SettingBody">This option shows cut speed, maximum machine speed, 
+ and current machine speed as a gauge.</p>
+<p class="SettingName"><a name="Digital_Speedometer" id="Digital_Speedometer"></a>Digital 
+ Speedometer</p>
+<p class="SettingBody">This option shows cut speed, maximum machine speed, 
+ and current machine speed numerically.</p>
+<p class="SettingName"><a name="Position" id="Position"></a>Position</p>
+<p class="SettingBody">In the upper and middle locations, Phoenix can show 
+ the positions of 2 axes. In the lower location, Phoenix can show up to 
+ 4 axes.</p>
+<p class="SettingName"><a name="Following_Error" id="Following_Error"></a>Following 
+ Error</p>
+<p class="SettingBody">This option displays the following error calculated 
+ by the drive for that axis. A large following error may indicate that 
+ the cut speed may be higher than the cutting system can move. Phoenix 
+ can show the following error for two axes in the upper or middle locations. 
+ In the lower location, Phoenix can show up to 4 axes. </p>
+<p class="SettingName"><a name="Command_Voltage" id="Command_Voltage"></a>Command 
+ Voltage</p>
+<p class="SettingBody">This option shows the directional motion command 
+ voltage being sent to the amplifier for velocity-type drives. This voltage 
+ also equates to the current being commanded for motion in current type 
+ drives. Peak voltage can be displayed for a specified amount of time.</p>
+<p class="SettingName"><a name="Jog_Keys" id="Jog_Keys"></a>Jog Keys</p>
+<p class="SettingBody">This option shows a directional keypad for manual 
+ motion directly from the touchscreen. </p>
+<p class="SettingName"><a name="System_Errors" id="System_Errors"></a>System 
+ Errors</p>
+<p class="SettingBody">This option shows errors generated by the CNC and 
+ the power supply.</p>
+<p class="SettingName"><a name="Laser_Nozzle" id="Laser_Nozzle"></a>Laser 
+ Nozzle</p>
+<p class="SettingBody">This option shows laser nozzle consumable life. 
+ This helps determine when the nozzle should be replaced and tracks nozzle 
+ data for statistical process control.</p>
+<p class="SettingName"><a name="Plasma_Torch_Tip" id="Plasma_Torch_Tip"></a>Plasma 
+ Torch Tip</p>
+<p class="SettingBody">This option shows the selected plasma torch tip 
+ (1 – 8) consumable 
+ life. This helps determine when the torch tip should be replaced and tracks 
+ torch tip data for statistical process control.</p>
+<p class="SettingName"><a name="Plasma_Electrode" id="Plasma_Electrode"></a>Plasma 
+ Electrode</p>
+<p class="SettingBody">This option allows the selected plasma electrode 
+ (1&#160;– 8) consumable 
+ life to be graphically displayed while cutting. This helps determine when 
+ the electrode should be replaced and keeping track of electrode data for 
+ statistical process control.</p>
+<p class="SettingName"><a name="HPR_Supply"></a>HPR Power Supply</p>
+<p class="SettingBody">Select the HPR power supply that you want to monitor 
+ in the Watch Window. Phoenix shows the HPR I/O, and the status of the 
+ power supply choppers, current, and gases.</p>
+<p class="SettingName"><a name="XPR_Supply"></a>XPR Power Supply</p>
+<p class="SettingBody" style="color: #000000;">You can monitor XPR I/O 
+ in Phoenix by adding the I/O to a Watch Window. </p>
+<p class="SettingBody" style="color: #000000;"><span style="font-weight: bold;">Note:</span> 
+ To monitor the status of the power supply choppers, current, and gases 
+ for an XPR power supply, use the XPR Diagnostic View at the CNC. Select<span 
+	 style="font-weight: bold;"> Setups &gt; Diagnostics &gt; <a href="Diagnostics_Screen.htm#Soft_Keys" 
+	 style="color: #000000;">XPR System</a></span> and choose<span style="font-weight: bold;"> 
+ Plasma Power Supply</span>.</p>
+<p class="SettingName"><a name="Oxy_Fuel_Torch_Tip" id="Oxy_Fuel_Torch_Tip"></a>Oxy 
+ Fuel Torch Tip</p>
+<p class="SettingBody">This option shows the selected oxy fuel torch tip 
+ (1 – 12) consumable 
+ life. This helps determine when the torch tip should be replaced and tracks 
+ torch tip data for statistical process control.</p>
+<p class="SettingName"><a name="Temperature" id="Temperature"></a>Temperature</p>
+<p class="SettingBody">This option shows the temperature inside the CNC 
+ in <span style="font-weight: bold;">Fahrenheit</span> or <span style="font-weight: bold;">Celsius</span> 
+ (selected on the <a href="Special_Setups.htm" style="font-weight: bold;">Special 
+ Setups</a> screen).</p>
+<p class="SettingName"><a name="Cut_Time" id="Cut_Time"></a>Cut Time</p>
+<p class="SettingBody">This option shows an estimate of the amount of time 
+ it will take to cut the selected part or nest. This window also shows 
+ how much time has been completed and how much remains. The estimate of 
+ the cut time is based on the complexity of the parts or nest and the cut 
+ speed. This window can help you optimize production plans and the use 
+ of resources.</p>
+<p class="SettingName"><a name="Pierces" id="Pierces"></a>Pierces</p>
+<p class="SettingBody">This option shows the operator how many pierces 
+ are needed for the part or nest, how many pierces have been completed, 
+ and how many pierces remain. You can use this window to plan consumable 
+ changes.</p>
+<p class="SettingName"><a name="Process_Data" id="Process_Data"></a>Process 
+ Data</p>
+<p class="SettingBody">The Process Data option shows up to four selected 
+ items for a selected cut or marking process. Process timers and status 
+ items for Oxy Fuel, Plasma, and Marker may be selected. The process data 
+ will only be&#160;shown during the current cut process. For example, Plasma 
+ 1 process parameters will only be shown in the Watch Window while cutting 
+ in <span style="font-weight: bold;">Plasma 1</span> mode.</p>
+<p class="SettingName"><a name="pronest_overrides"></a>ProNest Part Program 
+ Overrides</p>
+<p class="SettingBody">When you are using a ProNest part program with XPR, 
+ there are some parameters that you can and cannot override from the Watch 
+ Window.</p>
+<p class="SettingBody" style="font-weight: bold;">Can override:</p>
+<ul style="list-style: disc;">
+	<li><p>Arc Off Time</p></li>
+	<li><p>AVC Delay</p></li>
+	<li><p>IHS Start Height</p></li>
+	<li><p>Puddle Jump Height</p></li>
+	<li><p>Retract Delay</p></li>
+	<li><p>Skip IHS Within</p></li>
+	<li><p>Cut Off Time</p></li>
+	<li><p>Stop Time</p></li>
+</ul>
+<p class="NormalIndent"><span style="font-weight: bold;">Note:</span> If 
+ the <span style="font-weight: bold;">Check to Automatically Set Parameter</span> 
+ option is selected on the <span style="font-weight: bold;">Process</span> 
+ screen, then you cannot override the parameter.</p>
+<p class="SettingBody" style="font-weight: bold; margin-left: 0px;">&#160;</p>
+<p class="SettingBody" style="font-weight: bold;">Cannot override:</p>
+<ul style="list-style: disc;">
+	<li><p>Kerf</p></li>
+	<li><p>Plasma Speed</p></li>
+	<li><p>Pierce Time</p></li>
+	<li><p>Cut Height</p></li>
+	<li><p>Cut Height Delay</p></li>
+	<li><p>Pierce Height</p></li>
+	<li><p>Set Arc Voltage</p></li>
+	<li><p>Transfer Height</p></li>
+	<li>Creep Time</li>
+</ul>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName"><span>Watch Number</span></p>
+<p class="SettingBody">Choose this soft key and enter the number of the 
+ Watch Window you want to set up.</p>
+<p class="SettingName">Watch Left/Right Arrows </p>
+<p class="SettingBody">These soft keys allow you to scroll through the 
+ Watch Windows.</p>
+<div>
+<h4>Cutting</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Cutting 
+ </span>screen.</p>
+</div>
+<div>
+<h4>Process</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Process</span> 
+ screen.</p>
+</div>
+<div>
+<h4>Disable Control/Enable Control</h4>
+<p class="SettingBody">This soft key disables the drives by turning off 
+ the <span style="font-weight: bold;">Drive Enable</span> <span style="font-weight: bold;">bit</span> 
+ for each axis. It also turns off the <span style="font-weight: bold;">Drive 
+ Enable output</span> if assigned. </p>
+</div>
+<div>
+<h4>Watch</h4>
+<p class="SettingBody">This soft key allows you to set up Watch Windows.</p>
+</div>
+<div>
+<h4>Password</h4>
+<p class="SettingBody">This soft key allows you to enter a password.</p>
+</div>
+<div>
+<h4>Diagnostics</h4>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Control 
+ Information (Diagnostics)</span> screen.</p>
+</div>
+<div>
+<h4>Change to Metric Units/Change to English Units</h4>
+<p class="SettingBody">This soft key changes all measurements from <span 
+	 style="font-weight: bold;">English</span> units to<span style="font-weight: bold;"> 
+ Metric</span>, or from <span style="font-weight: bold;">Metric</span> 
+ units to <span style="font-weight: bold;">English</span> throughout the 
+ Phoenix software. The changes take place immediately after you choose 
+ the soft key, but you must choose <span style="font-weight: bold;">Save 
+ Changes</span> when you exit the <span style="font-weight: bold;">Setups</span> 
+ screen.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

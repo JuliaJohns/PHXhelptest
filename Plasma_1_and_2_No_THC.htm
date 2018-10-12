@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Plasma 1 and 2 no THC</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function ehlp_showtip(current,e,text)
+{
+  if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape'))
+  {
+    document.tooltip.document.write("<layer bgColor='yellow' style='border:1px solid black;font-size:12px;'>"+ text + "</layer>");
+    document.tooltip.document.close();
+    document.tooltip.left=e.pageX+5;
+    document.tooltip.top=e.pageY+5;
+    document.tooltip.visibility="show";
+  }
+}
+function ehlp_hidetip()
+{
+  document.tooltip.visibility="hidden";
+}
+//]]>
+</script>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.6.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Process Screens" /><script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function ehlp_showtip(current,e,text)
+{
+  if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape'))
+  {
+    document.tooltip.document.write("<layer bgColor='yellow' style='border:1px solid black;font-size:12px;'>"+ text + "</layer>");
+    document.tooltip.document.close();
+    document.tooltip.left=e.pageX+5;
+    document.tooltip.top=e.pageY+5;
+    document.tooltip.visibility="show";
+  }
+}
+function ehlp_hidetip()
+{
+  document.tooltip.visibility="hidden";
+}
+//]]>
+</script>
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Plasma 1 and Plasma 2 without Sensor THC Process</h1>
+<p>The options on this screen appear when you have selected <span class="Bold">None 
+ or Other for the Lifter</span> in the <a href="Station_Configurarion_Screen.htm" 
+											 style="font-weight: bold;">Station 
+ Configuration</a> screen.</p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<p><span class="Bold" style="font-weight: normal;">Navigation:</span><span 
+	 style="font-weight: bold;"> Main screen &gt; Setups &gt; Process &gt; 
+ Plasma 1 or Plasma 2</span></p>
+<p>Use the following parameters to customize and control the plasma process 
+ and torch:</p>
+<table class="FieldJumps" cellspacing="16px" width="100%">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Torch_Down_Time">Torch Down Time</a></p></td>
+		<td><p><a href="#Arc_On_Feedback">Arc On Feedback</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Purge_Time">Purge Time</a></p></td>
+		<td><p><a href="#Partial_Raise">Partial Raise</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Pierce_Time">Pierce Time</a></p></td>
+		<td><p><a href="#Torch_Down_During_Cut">Torch Down During Cut</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Creep_Time">Creep Time</a></p></td>
+		<td><p><a href="#Torch_Down_Between_Cuts">Torch Down Between Cuts</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Cut_Off_Time">Cut Off Time</a></p></td>
+		<td><p><a href="#Ignition">Ignition</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Retract_Delay">Retract Delay</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Full_Torch_Up_Time">Full Torch Up Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Partial_Torch_Up_Time">Partial Torch Up Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Stop_Time">Stop Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Arc_Off_Time">Arc Off Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Retry_on_Transfer_Fail">Retry on Transfer Fail</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Transfer_Time">Transfer Time</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Set_Arc_Current">Set Arc Current</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Corner_Current_Percent">Corner Current Percent</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Torch_Down_Time" id="Torch_Down_Time"></a>Torch 
+ Down Time</p>
+<p class="SettingBody">This value is the time to lower the torch to the 
+ workpiece. Set this value to 0 (zero) if you use torch height control, 
+ such as the Sensor THC.</p>
+<p class="SettingName"><a name="Purge_Time" id="Purge_Time"></a>Purge Time</p>
+<p class="SettingBody">This value is the time to allow any impurities or 
+ previous cutting gasses to be cleared from the system before starting 
+ a new cutting process. Enter this value when performing the first cut 
+ after power up and when switching from one cutting gas to another.</p>
+<p class="SnippetBookmark"><a name="Pierce_Time" id="Pierce_Time"></a></p>
+<div>
+<h5>Pierce Time</h5>
+<p class="SettingBody">This value is the time the Pierce Control output 
+ is on before lowering the torch to the cut height.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you cannot override this 
+ field.</p>
+<p class="SnippetBookmark"><a name="Creep_Time" id="Creep_Time"></a> </p>
+<div>
+<h5>Creep Time</h5>
+<p class="SettingBody">After piercing, this value is the time that the 
+ torch travels at creep speed set on the <span style="font-weight: bold;">Machine 
+ Setups &gt; Speeds</span> screen. When the <span style="font-weight: bold;">Creep 
+ Time</span> ends, the CNC accelerates to full cut speed.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you cannot override this 
+ field.</p>
+<p class="SnippetBookmark"><a name="Cut_Off_Time" id="Cut_Off_Time"></a></p>
+<div>
+<p class="SettingName">Cut Off Time</p>
+<p class="SettingBody">This value is the time (-1&#160;– 2 seconds) that Cut Control output 
+ stays on after a cut and before the arc turns off.</p>
+<p class="SettingBody">This value turns off the plasma arc before or after 
+ the end of the cut to improve edge quality. A negative value turns off 
+ the arc before the end of the cutting machine motion. A positive value 
+ turns off the arc after motion stops. The <span style="font-weight: bold;">Cut 
+ Off Time</span> minimizes notches in part edges that can occur when motion 
+ stops with the arc on.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you can override this 
+ field.</p>
+<p class="SettingName"><a name="Retract_Delay" id="Retract_Delay"></a>Retract 
+ Delay</p>
+<p class="SettingBody">This value is the time delay at the end of a cut 
+ before the torch moves to the next pierce.</p>
+<p class="SettingName"><a name="Full_Torch_Up_Time" id="Full_Torch_Up_Time"></a>Full 
+ Torch Up Time</p>
+<p class="SettingBody">This value is the time to raise the torch to the 
+ travel limit of the lifter. Set this value to zero if you use an automated 
+ torch height control such as Sensor THC.</p>
+<p class="SettingName"><a name="Partial_Torch_Up_Time" id="Partial_Torch_Up_Time"></a>Partial 
+ Torch Up Time</p>
+<p class="SettingBody">Choose <span style="font-weight: bold;">ON</span> 
+ for Partial Raise to enable <span style="font-weight: bold;">Partial Torch 
+ Up Time</span>. Enter the time to raise the torch part way along the travel 
+ distance of the lifter.&#160;If you are using a torch height control such 
+ as the Sensor THC, set this value to zero.</p>
+<p class="SnippetBookmark"><a name="Stop_Time" id="Stop_Time"></a></p>
+<div>
+<p class="SettingName">Stop Time</p>
+<p class="SettingBody">This value is the time (0&#160;–&#160;10 seconds) that the CNC 
+ delays X/Y motion at the end of a cut before it moves to the next pierce 
+ point. This time can be used to retract the torch to avoid tip-ups.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR,&#160;you can override this 
+ field.</p>
+<p class="SnippetBookmark"><a name="Arc_Off_Time" id="Arc_Off_Time"></a></p>
+<div>
+<p class="SettingName">Arc Off Time</p>
+<p class="SettingBody" style="margin-left: 12px;">This value is the time 
+ (0&#160;– 2 seconds) 
+ that torch motion continues if the arc is lost while cutting. This option 
+ allows motion to continue to the next pierce point. Torch motion stops 
+ when <span style="font-weight: bold;">Arc Off Time</span> ends.</p>
+</div>
+<p class="SettingBody"><span style="font-weight: bold;">Note:</span> When 
+ you are using a ProNest part program with XPR, you can override this field.</p>
+<p class="SettingName"><a name="Retry_on_Transfer_Fail" id="Retry_on_Transfer_Fail"></a>Retry 
+ on Transfer Fail</p>
+<p class="SettingBody">This value is the number of times that the CNC tries 
+ to fire the torch in the event that the torch fails to ignite.</p>
+<p class="SettingName"><a name="Transfer_Time" id="Transfer_Time"></a>Transfer 
+ Time</p>
+<p class="SettingBody">This value is the time to attempt ignition of the 
+ torch. The CNC confirms ignition by the Cut Sense input. Enable the use 
+ of the Cut Sense input by selecting <span style="font-weight: bold;">Yes</span> 
+ for <span style="font-weight: bold;">Arc On Feedback</span> elsewhere 
+ on this screen.</p>
+<p class="SnippetBookmark"><a name="Set_Arc_Current" id="Set_Arc_Current"></a></p>
+<div>
+<p class="SettingName">Set Arc Current</p>
+<p class="SettingBody" style="margin-left: 12px;">Enter the amperage needed 
+ to cut the material. This option can be used only with plasma systems 
+ that communicate with the CNC.</p>
+<p style="margin-left: 12px;">The <span style="font-weight: bold;">Set 
+ Arc Current</span> value comes from the cut chart. You can override the 
+ <span style="font-weight: bold;">Set&#160;Arc Current</span> value if 
+ you enter a different number in this field. If you change this option, 
+ it will revert to the original cut chart value when the cut chart is loaded.</p>
+</div>
+<p style="margin-left: 12px;"><span style="font-weight: bold;">Note:</span> 
+ With XPR, this field is read-only.</p>
+<p class="SnippetBookmark"><a name="Corner_Current_Percent" id="Corner_Current_Percent"></a></p>
+<div>
+<p class="SettingName">Corner Current Percent</p>
+<p class="SettingBody">Enter a percentage of the <span style="font-weight: bold;">Set 
+ Arc Current</span>. This option reduces the arc current to a percentage 
+ that is 50%&#160;– 100% of the <span style="font-weight: bold;">Set Arc 
+ Current</span> value. Reduced arc current when cutting corners can improve 
+ corner cut quality. </p>
+</div>
+<p class="SnippetBookmark"><a name="Arc_On_Feedback" id="Arc_On_Feedback"></a></p>
+<div>
+<p class="SettingName">Arc On Feedback</p>
+<p class="SettingBody" style="margin-left: 12px;">Set this option to <span 
+	 style="font-weight: bold;">ON</span> to use the Cut/Mark Sense input. 
+ The CNC doesn’t start motion until the Cut/Mark Sense input activates.</p>
+</div>
+<p class="SnippetBookmark"><a name="Partial_Raise" id="Partial_Raise"></a></p>
+<div>
+<p class="SettingName">Partial Raise</p>
+<p class="SettingBody" style="margin-left: 12px;">This setting raises the 
+ torch at the end of the cut for the time specified by Partial Up Time.</p>
+</div>
+<p class="SnippetBookmark"><a name="Torch_Down_During_Cut" id="Torch_Down_During_Cut"></a></p>
+<div>
+<p class="SettingName">Torch Down During Cut</p>
+<p class="SettingBody">This setting specifies whether Torch Down is left 
+ on during cutting. Use this parameter for a pneumatic lifter.</p>
+</div>
+<p class="SettingName"><a name="Torch_Down_Between_Cuts" id="Torch_Down_Between_Cuts"></a>Torch 
+ Down Between Cuts</p>
+<p class="SettingBody">This value is the time to raise the torch to the 
+ travel limit of the lifter. You should set the <span style="font-weight: bold;">Full 
+ Torch Up Time</span> to zero if you use a torch height control, such as 
+ Sensor THC.</p>
+<p class="SnippetBookmark"><a name="Ignition" id="Ignition"></a></p>
+<div>
+<p class="SettingName">Ignition</p>
+<p class="SettingBody" style="margin-left: 12px;">This option enables use 
+ of the Ignition output for igniting the torch. If your plasma power supply 
+ requires a separate ignition signal, set<span style="font-weight: bold;"> 
+ Ignition</span> to <span style="font-weight: bold;">ON</span>. If not, 
+ set this option <span style="font-weight: bold;">OFF</span>. Typically, 
+ Hypertherm power supplies do not require this signal.</p>
+</div>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">Plasma 1 Cut Chart</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1 Cut Chart</span> screen <a title="Get help with XPR cut chart screen." href="Plasma_Cut_Chart_for_XPR.htm" onmouseover="if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape')) ehlp_showtip(this,event,'Get help with XPR cut chart screen.');" onmouseout="if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape')) ehlp_hidetip();">for 
+ XPR</a> or <a href="Plasma_Cut_Chart_Screen.htm">for HPRXD and other power 
+ supplies</a>.</p>
+<div>
+<p class="SettingName">Load Data/Save Data</p>
+<p class="SettingBody">Use these soft keys to save the settings from the<span 
+	 style="font-weight: bold;"> Process</span> screen. The CNC saves the 
+ file on either the CNC hard drive or on a USB memory stick. You can then 
+ transfer this file to another CNC or save a copy as a backup.</p>
+</div>
+<div>
+<p class="SettingName">Load Data</p>
+<p class="SettingBody">This soft key allows you to import a process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Plasma 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Plasma 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma cutting process.</p>
+</div>
+<div>
+<p class="SettingName">Marker 1</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 1</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 1</span> screen and process parameters are not available for XPR, 
+ but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Marker 2</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Marker 
+ 2</span> screen where you can customize and control torch motion and the 
+ plasma marking processes.</p>
+<p class="SettingBody"><span style="font-weight: bold;">Note: </span>The 
+ XPR cutting processes automatically include marking process settings.<span 
+	 style="font-weight: bold;"> </span>The<span style="font-weight: bold;"> 
+ Marker 2</span> &#160;screen and process parameters are not available 
+ for XPR, but marking is still supported. </p>
+</div>
+<div>
+<p class="SettingName">Timing Diagram</p>
+<p class="SettingBody">This soft key shows&#160;the activation and deactivation 
+ of I/O for each type of process. </p>
+</div>
+<div>
+<h6>Cutting Tips</h6>
+<p class="SettingBody" style="margin-left: 12px;">This soft key displays 
+ cutting tips for the selected process.</p>
+</div>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+ if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape'))
+  document.write("<div id='tooltip' class='WebHelpPopupMenu'></div>");
+//]]>
+</script><script type="text/javascript" language="JavaScript">
+//<![CDATA[
+ if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == 'Netscape'))
+  document.write("<div id='tooltip' class='WebHelpPopupMenu'></div>");
+//]]>
+</script>
+</body>
+</html>

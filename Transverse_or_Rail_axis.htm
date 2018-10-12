@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Transverse or Rail axis</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_7";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Transverse or Rail axis</h1>
+<p>This screen is identical for both the Transverse and Rail axes.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr>
+		<td><p><a href="#Servo_error_tolerance">Servo error tolerance</a></p></td>
+		<td><p><a href="#Home">Home</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#encoder_counts_per_mm__inch_">Encoder counts per 
+		 mm (inch)</a></p></td>
+		<td><p><a href="#Absolute_home_position">Absolute home position</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Use_hardware_overtravels">Use hardware overtravels</a></p></td>
+		<td><p><a href="#Home_offset_distance">Home offset distance</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Backlash_compensation">Backlash compensation</a></p></td>
+		<td><p><a href="#Home_direction">Home direction</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Fault_ramp_time">Fault ramp time</a></p></td>
+		<td><p><a href="#Use_software_travel_limits">Use software travel 
+		 limits</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Maximum_travel_limit">Maximum travel limit</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Minimum_travel_limit">Minimum travel limit</a></p></td>
+	</tr>
+	<tr>
+		<td><p>&#160;</p></td>
+		<td><p><a href="#Laser_compensation">Laser compensation</a></p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p class="SnippetBookmark"><a name="Servo_error_tolerance" id="Servo_error_tolerance"></a></p>
+<div>
+<h4><span>Servo error tolerance</span> </h4>
+<p class="SettingBody">Servo error, also called following error, is the 
+ difference between the commanded motor position and the actual motor position 
+ as calculated by the drive. The servo error tolerance is the upper limit 
+ of the amount of following error allowed before the CNC faults. &#160;&#160;</p>
+<p class="SettingBody">The amount of servo error tolerance depends on the 
+ cutting machine mechanics. Setting the servo error tolerance too low could 
+ cause the CNC to fault repeatedly. Setting the tolerance too high may 
+ allow inaccurate motion or result in mechanical damage. Set the servo 
+ error tolerance to a value higher than the steady-state following error 
+ which is reported by the drive.</p>
+</div>
+<p class="SnippetBookmark"><a name="encoder_counts_per_mm__inch_" id="encoder_counts_per_mm__inch_"></a></p>
+<div>
+<h4>Encoder counts per mm (inch)</h4>
+<p class="SettingBody">This parameter is a position scaling factor used 
+ by Phoenix. Refer to the <span style="font-style: italic;">EDGE Connect 
+ Setup and Installation Manual</span> (809340) for a general overview of 
+ encoder counts. Refer to the drive manufacturer documentation for specific 
+ scaling information required by the drives.</p>
+</div>
+<p class="SnippetBookmark"><a name="Use_hardware_overtravels" id="Use_hardware_overtravels"></a></p>
+<div>
+<p class="SettingName">Use hardware overtravels</p>
+<p class="SettingBody">Select whether the cutting machine uses hardware 
+ overtravel switches. If the cutting machine uses hardware overtravel switches, 
+ the CNC disables feedback and shows an error message if the inputs become 
+ active. It is recommended that hardware overtravel switches be installed.</p>
+</div>
+<p class="SnippetBookmark"><a name="Backlash_compensation" id="Backlash_compensation"></a></p>
+<div>
+<p class="SettingName">Backlash compensation</p>
+<p class="SettingBody">This setting offsets or compensates for any backlash 
+ in the mechanics of the drive system. The maximum value for backlash compensation 
+ is 12.7 mm (0.5 in).</p>
+</div>
+<p class="SnippetBookmark"><a name="Fault_ramp_time" id="Fault_ramp_time"></a></p>
+<div>
+<p class="SettingName">Fault ramp time</p>
+<p class="SettingBody">This value sets the motion deceleration time after 
+ a fault occurs. At the end of <span style="font-weight: bold;">fault ramp 
+ time</span>, the drives are disabled.</p>
+</div>
+<p class="SnippetBookmark"><a name="Home" id="Home"></a></p>
+<div>
+<p class="SettingName">Home</p>
+<p class="SettingBody">This value sets a known absolute physical position 
+ location on the cutting table that is used for referencing manual <span 
+	 style="font-weight: bold;">Go to Home</span> and other motion commands. 
+ This is generally performed through activation of a home switch positioned 
+ on the axis giving it a known physical location. The axis may be homed 
+ to either a home switch or an overtravel switch.</p>
+<p class="SettingBody">When you enter a homing command, the CNC moves each 
+ axis toward its home switch at the Fast Home Speed until the switches 
+ activate. Once the switch activates, motion stops and then the axis moves 
+ in the opposite direction off of the switch at the Slow Home Speed. The 
+ moment that the switch deactivates, the CNC records the position which 
+ provides an absolute reference point for future motion commands.</p>
+</div>
+<p class="SnippetBookmark"><a name="Absolute_home_position" id="Absolute_home_position"></a></p>
+<div>
+<p class="SettingName">Absolute home position</p>
+<p class="SettingBody">This value defines the position of the axis when 
+ the home switch is detected.</p>
+</div>
+<p class="SnippetBookmark"><a name="Home_offset_distance" id="Home_offset_distance"></a></p>
+<div>
+<p class="SettingName">Home offset distance</p>
+<p class="SettingBody">This value sets an offset distance from the home 
+ switch.</p>
+</div>
+<p class="SnippetBookmark"><a name="Home_direction" id="Home_direction"></a></p>
+<div>
+<p class="SettingName">Home direction</p>
+<p class="SettingBody">This value determines which direction the axes will 
+ travel as it moves toward the home limit switch. </p>
+</div>
+<p class="SnippetBookmark"><a name="Use_software_travel_limits" id="Use_software_travel_limits"></a></p>
+<div>
+<p class="SettingName">Use software travel limits</p>
+<p class="SettingBody">Software travel limits, placed within the travel 
+ limit of the axis before an overtravel switch or hard stop, stop motion 
+ before the axis contacts a hard stop. You can select <span style="font-weight: bold;">Fault</span> 
+ or <span style="font-weight: bold;">Fast Decel</span> for the routine 
+ to ramp down motion to a stop. Fault causes an immediate stop. Fast Decel 
+ uses the <span style="font-weight: bold;">Fast Deceleration rate</span> 
+ set on the <span style="font-weight: bold;">Speeds</span> screen to ramp 
+ down motion. </p>
+<p><img src="Art/Software_limits.jpg" alt="" style=" border:none; width:100%; max-width:330px;" border="0" /></p>
+<p class="SettingBody">The blue positions show the software travel limits. 
+ </p>
+</div>
+<p class="SnippetBookmark"><a name="Maximum_travel_limit" id="Maximum_travel_limit"></a></p>
+<div>
+<p class="SettingName">Maximum travel limit</p>
+<p class="SettingBody">If Software Overtravels are enabled, enter the maximum 
+ travel of the axis.</p>
+</div>
+<p class="SnippetBookmark"><a name="Minimum_travel_limit" id="Minimum_travel_limit"></a></p>
+<div>
+<p class="SettingName">Minimum travel limit</p>
+<p class="SettingBody">If Software Overtravels are enabled, enter the minimum 
+ travel of the axis.</p>
+</div>
+<p class="SnippetBookmark"><a name="Laser_compensation" id="Laser_compensation"></a></p>
+<div>
+<p class="SettingName">Laser compensation</p>
+<p class="SettingBody">This function uses position readings gathered with 
+ a laser interferometer to correct the actual position of the axes (Transverse, 
+ Dual Transverse, Rail, and Dual Gantry only).</p>
+</div>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

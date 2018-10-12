@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Align screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.4.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Current Part Options Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Align</h1>
+<p>&#160;</p>
+<p>Use this screen to align parts manually on the workpiece.</p>
+<p>Navigation: <span style="font-weight: bold;">Shape Library &gt; Shape 
+ Wizard &gt; Shape Options &gt; Align</span></p>
+<p>This screen has <a href="#Field_Definitions">field definitions</a> and 
+ <a href="#Soft_Keys">soft keys</a>.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr style="height: 17px;">
+		<td><p><a href="#Manual_Window">Manual Window</a></p></td>
+		<td><p><a href="#Corner_to_Align_with">Corner to Align with</a></p></td>
+	</tr>
+	<tr style="height: 5px;">
+		<td><p><a href="#Scrap_Clearance">Scrap Clearance</a></p></td>
+		<td><p><a href="#Skew_Adjustment">Skew Adjustment</a></p></td>
+	</tr>
+	<tr style="height: 17px;">
+		<td><p><a href="#Skew_Reference">Skew Reference</a></p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Manual_Window" id="Manual_Window"></a>Manual 
+ Window</p>
+<p class="SettingBody">This window, also called the preview window, shows 
+ the part or sheet to be cut.</p>
+<p class="SettingName"><a name="Corner_to_Align_with" id="Corner_to_Align_with"></a>Corner 
+ to Align with</p>
+<p class="SettingBody">This value is the corner of the workpiece to align 
+ the part in.</p>
+<p class="SettingName"><a name="Scrap_Clearance" id="Scrap_Clearance"></a>Scrap 
+ Clearance</p>
+<p class="SettingBody">This value is the amount of clearance between the 
+ edge of the workpiece and the part the control will add in when moving 
+ to the start point of the part.</p>
+<p class="SettingName"><a name="Skew_Adjustment" id="Skew_Adjustment"></a>Skew 
+ Adjustment</p>
+<p class="SettingBody">This setting determines if the control will adjust 
+ for workpiece skew when performing the align function.</p>
+<p class="SettingName"><a name="Skew_Reference" id="Skew_Reference"></a>Skew 
+ Reference</p>
+<p class="SettingBody">This value is the skew reference corner that you 
+ move toward and mark a point along the edge. This is only available if 
+ <span style="font-weight: bold;">Skew Adjustment</span> is <span style="font-weight: bold;">On</span>.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<p class="SettingName">At Corner</p>
+<p class="SettingBody">Choose&#160;this soft key when at the corner of 
+ the workpiece you want to align the part in.</p>
+<p class="SettingName">At Skew Point</p>
+<p class="SettingBody">Choose this soft key when at the edge of the workpiece 
+ for skew adjustment. This is only available if <span style="font-weight: bold;">Skew 
+ Adjustment</span> is <span style="font-weight: bold;">On</span>.</p>
+<p class="SettingName">Manual Options</p>
+<p class="SettingBody">This soft key opens the <span style="font-weight: bold;">Manual 
+ Options</span> screen.</p>
+<p class="SettingName">Align Wizard</p>
+<p class="SettingBody">This soft key opens the Align Wizard. The Align 
+ Wizard automates the following operations:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">Enter coordinates for a skewed workpiece 
+	 on the table.</p></li>
+	<li><p class="SettingBody">Align parts to a skewed or aligned workpiece.</p></li>
+</ul>
+<div>
+<p class="SettingName">View Part/View Sheet</p>
+<p class="SettingBody">This soft key toggles the display of the part in 
+ the <span style="font-weight: bold;">Preview</span> window. </p>
+<ul>
+	<li class="Bullet"><span style="font-weight: bold;">View Part</span> 
+	 zooms in to show only the part.</li>
+	<li class="Bullet"><span style="font-weight: bold;">View Sheet</span> 
+	 zooms out to show the part in relationship to the entire workpiece. 
+	 Phoenix shows the sheet dimensions that you entered in the <a href="Setups_Screen.htm" 
+	 style="font-weight: bold;">Cutting</a> screen.</li>
+</ul>
+</div>
+<p class="SettingName">Increment Move Speed</p>
+<p class="SettingBody" style="background-color: Transparent;">This soft 
+ key increases the move speed by a set amount.</p>
+<p class="SettingName">Decrement Move Speed</p>
+<p class="SettingBody" style="background-color: Transparent;">This soft 
+ key decreases the move speed by a set amount.</p>
+<p class="SettingName">Zero Positions</p>
+<p class="SettingBody">This soft key returns all axes positions to 0 (zero).</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

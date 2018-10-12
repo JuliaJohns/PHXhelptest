@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Speeds screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.9.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Machine Setups" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Speeds</h1>
+<p>This screen controls the axis feed rates, acceleration, and torch height 
+ disable speeds. You can also set speed breaks and set the acceleration 
+ rate for each speed break.</p>
+<table class="FieldJumps" cellspacing="16px">
+	<col style="width: 50%;" />
+	<col style="width: 50%;" />
+	<tr style="height: 5px;">
+		<td><p><a href="#Speed_0_to">Speed 0 to</a></p></td>
+		<td><p><a href="#THC_acceleration_rate">THC acceleration rate</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Acceleration_rate">Acceleration rate</a></p></td>
+		<td><p><a href="#Maximum_THC_speed">Maximum THC speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Peak_S_curve_acceleration">Peak S curve acceleration</a></p></td>
+		<td><p><a href="#THC__jog_speed">THC jog speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Fast_deceleration_rate">Fast deceleration rate</a></p></td>
+		<td><p><a href="#THC_home___Fast_IHS_speed">THC home/Fast IHS speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Maximum_machine_speed">Maximum machine speed</a></p></td>
+		<td><p><a href="#THC_slow_IHS_speed">THC slow IHS speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#High__medium__and_low_jog_speeds">High, medium, 
+		 and low&#160;jog speeds</a></p></td>
+		<td><p><a href="#Rotate_acceleration_rate">Rotate acceleration 
+		 rate</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Fast_and_slow_home_speeds">Fast and Slow home 
+		 speeds</a></p></td>
+		<td><p><a href="#Maximum_rotate_speed">Maximum rotate speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Minimum_corner_speed">Minimum corner speed</a></p></td>
+		<td><p><a href="#Rotate_fast_jog_home_speed">Rotate fast jog/home 
+		 speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Limited_machine_speed">Limited machine speed</a></p></td>
+		<td><p><a href="#Rotate_slow_jog_home_speed">Rotate slow jog/home 
+		 speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Creep_speed">Creep speed</a></p></td>
+		<td><p><a href="#Tilt_acceleration_rate">Tilt acceleration rate</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Torch_height_disable_speed">Torch height disable 
+		 speed</a></p></td>
+		<td><p><a href="#Maximum_tilt_speed">Maximum tilt speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Distance_before_THD_Speed">Distance before THD 
+		 speed</a></p></td>
+		<td><p><a href="#Tilt_fast_jog_home_speed">Tilt fast jog/home speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Distance_after_THD_speed">Distance after THD speed</a></p></td>
+		<td><p><a href="#Tilt_slow_jog_home_speed">Tilt slow jog/home speed</a></p></td>
+	</tr>
+	<tr style="height: 23px;">
+		<td><p><a href="#Limited_speed_if_not_homed">Limited speed if not 
+		 homed</a></p></td>
+		<td><p><a href="#S-curve_acceleration">S curve acceleration</a></p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p class="SettingName"><a name="Speed_0_to" id="Speed_0_to"></a>Speed 0 
+ to</p>
+<p class="SettingBody">This setting sets speed ranges (or breaks) and lets 
+ you set the acceleration rate for each speed break. When you enter a speed 
+ break that is lower than the maximum machine speed, Phoenix creates a 
+ new speed break at the maximum machine speed. You can set up to 5 speed 
+ ranges.</p>
+<p class="SettingName"><a name="Acceleration_rate" id="Acceleration_rate"></a>Acceleration 
+ rate</p>
+<p class="SettingBody">This setting sets both the acceleration and deceleration 
+ rate for all motion.</p>
+<p class="SettingBody">The higher the acceleration rate, the more quickly 
+ the cutting machine will reach program speed. The lower the acceleration 
+ rate, the more smoothly the machine will position the cutting device.</p>
+<p class="SettingBody">Enter a value in milliGs for the desired acceleration 
+ rate. One milliG is approximately 0.386 inches per second<span class="Superscript">2</span>. 
+ A value of 10 milliGs represents a starting point from where you can fine 
+ tune the acceleration rate for your cutting machine.</p>
+<p class="SettingName"><a name="Peak_S_curve_acceleration" id="Peak_S_curve_acceleration"></a>Peak 
+ S curve acceleration</p>
+<p class="SettingBody">This field shows the maximum acceleration used during 
+ the beginning of a cut and represents a rate of acceleration that is 50% 
+ greater than the average rate of acceleration. This parameter appears 
+ when <span style="font-weight: bold;">S Curve Acceleration</span> (at 
+ the lower left in the<span style="font-weight: bold;"> Speeds</span> screen) 
+ is set to <span style="font-weight: bold;">Yes</span>.</p>
+<p class="SettingName"><a name="Fast_deceleration_rate" id="Fast_deceleration_rate"></a>Fast 
+ deceleration rate</p>
+<p class="SettingBody">This parameter is activated by the Fast Stop or 
+ Torch Collision inputs and specifies in milliGs how quickly the system 
+ stops when the Fast Stop input activates. Generally, this value is much 
+ higher than the acceleration rate.</p>
+<p class="SettingName"><a name="Maximum_machine_speed" id="Maximum_machine_speed"></a>Maximum 
+ machine speed</p>
+<p class="SettingBody">Enter the maximum value at which the system is capable 
+ of contouring. This parameter limits the range of all subsequent speed 
+ entries. In addition, it scales the speedometer in the Watch Window during 
+ runtime operation.</p>
+<p class="SettingBody">The maximum speed at which the CNC can contour can 
+ be calculated with the following equation.</p>
+<p class="SettingBody">Maximum contouring rate (in/min or mm/min) = 60 
+ seconds x 1 inch x 100,000 edges</p>
+<p>&#160;</p>
+<table class="Equation" style=" left:0px; top:44px; border-collapse:separate; width:100%; max-width:773px;" cellspacing="0" border="1">
+	<col style="width: 25.715%;" />
+	<col style="width: 6.543%;" />
+	<col style="width: 28.332%;" />
+	<col style="width: 4.682%;" />
+	<col style="width: 34.728%;" />
+	<tr>
+		<td style="border-bottom: Solid 1px #000000;"><p>60 seconds</p></td>
+		<td rowspan="2" style="border-bottom: Solid 1px #000000;">x</td>
+		<td style="border-bottom: Solid 1px #000000;"><p>1 inch</p></td>
+		<td rowspan="2" style="border-bottom: Solid 1px #000000;">x</td>
+		<td style="border-bottom: Solid 1px #000000;"><p>100,000 edges</p></td>
+	</tr>
+	<tr>
+		<td><p>minute</p></td>
+		<td><p>user edges</p></td>
+		<td><p>second</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p class="SettingBody">For example, the CNC could command a cutting machine 
+ with 4000 edges per inch resolution at 1,500 in/min.</p>
+<p class="SettingName"><a name="High__medium__and_low_jog_speeds" id="High__medium__and_low_jog_speeds"></a>High, 
+ medium, and low jog speeds</p>
+<p class="SettingBody">Enter preset jog speeds for use in manual motion 
+ for rip cutting or manual moves. Phoenix uses these preset speeds on the 
+ <a href="Manual_Screen.htm" style="font-weight: bold;">Manual</a> screen 
+ when you choose the<span style="font-weight: bold;"> Move Speed</span> 
+ soft key. </p>
+<p class="SettingName"><a name="Fast_and_slow_home_speeds" id="Fast_and_slow_home_speeds"></a>Fast 
+ and Slow home speeds</p>
+<p class="SettingBody">Phoenix uses the <span style="font-weight: bold;">Fast 
+ home speed</span> when it moves the cutting device to the home or limit 
+ switch until it contacts the switch.</p>
+<p class="SettingBody">Phoenix uses <span style="font-weight: bold;">Slow 
+ home speed</span> when it moves the cutting device off of the home or 
+ limit switch and proceeds to the marker pulse. When Phoenix detects the 
+ marker pulse, it decelerates to a stop and performs a small move in the 
+ opposite direction to the marker pulse.</p>
+<p class="SettingName"><a name="Minimum_corner_speed" id="Minimum_corner_speed"></a>Minimum 
+ corner speed</p>
+<p class="SettingBody">This value is the minimum speed to use when moving 
+ into and out of corners. In some situations, a minimum corner speed prevents 
+ over-burning at corners. For most cutting jobs, set this parameter to 
+ 0 (zero).</p>
+<p class="SettingName"><a name="Limited_machine_speed" id="Limited_machine_speed"></a>Limited 
+ machine speed</p>
+<p class="SettingBody">This value sets the machine speed when the Limited 
+ Speed input is active for increased safety during machine testing or maintenance.</p>
+<p class="SettingName"><a name="Creep_speed" id="Creep_speed"></a>Creep 
+ speed</p>
+<p class="SettingBody">This value sets the percentage of the maximum machine 
+ speed (in general, 25%). Phoenix uses Creep after piercing, typically 
+ in a lead-in, before the machine accelerates to the cut speed. </p>
+<p class="SnippetBookmark"><a name="Torch_height_disable_speed" id="Torch_height_disable_speed"></a></p>
+<div>
+<p class="SettingName">Torch height disable speed</p>
+<p class="SettingBody">This value specifies the percentage of the program 
+ cut speed at which the CNC disables the height control.</p>
+<p class="SettingBody">For example, when the cutting machine slows to cut 
+ a part feature such as a corner, the arc voltage increases. Increased 
+ arc voltage causes the torch to move toward the workpiece. When the cutting 
+ machine slows down to this percentage of the cut speed, the CNC disables 
+ THC voltage tracking.</p>
+</div>
+<p class="SettingBody">See <a href="Torch_height_disable.htm">Torch height 
+ disable</a> for more information.</p>
+<p class="SettingName"><a name="Distance_before_THD_Speed" id="Distance_before_THD_Speed"></a>Distance 
+ before THD Speed</p>
+<p class="SettingBody">This value specifies the distance before turning 
+ a corner at which the CNCs disables the torch height control. This distance 
+ is active whenever the program cut speed drops below the Torch Height 
+ Disable Speed, or when segments intersect at an angle greater than the 
+ tangent angle.</p>
+<p class="SettingName"><a name="Distance_after_THD_speed" id="Distance_after_THD_speed"></a>Distance 
+ after THD speed</p>
+<p class="SettingBody">This value specifies the distance after turning 
+ a corner to enable voltage tracking for torch height control. This distance 
+ is active whenever the speed drops below the Torch Height Disable Speed, 
+ or when segments intersect at an angle greater than the tangent angle.</p>
+<p class="SettingName"><a name="Limited_speed_if_not_homed" id="Limited_speed_if_not_homed"></a>Limited 
+ speed if not homed</p>
+<p class="SettingBody">This value sets the machine speed when the Limited 
+ Speed input is active and the cutting machine has not been homed. </p>
+<p class="SettingName"><a name="THC_acceleration_rate" id="THC_acceleration_rate"></a>THC 
+ acceleration rate</p>
+<p class="SettingBody">This value specifies the acceleration rate for smooth 
+ and stable movement of the Sensor THC. The higher the acceleration rate, 
+ the quicker the THC reaches cutting speed. The lower the acceleration 
+ rate, the smoother the machine will position the cutting device. Values 
+ are in milliGs.</p>
+<p class="SettingName"><a name="Maximum_THC_speed" id="Maximum_THC_speed"></a>Maximum 
+ THC speed</p>
+<p class="SettingBody">This value specifies the maximum speed for the Sensor 
+ THC in mm/min or in/min.</p>
+<p class="SettingName"><a name="THC__jog_speed" id="THC__jog_speed"></a>THC&#160;jog 
+ speed</p>
+<p class="SettingBody">This value specifies speed when moving the lifter 
+ up or down using the jog keys on the CNC or on the screen.</p>
+<p class="SettingName"><a name="THC_home___Fast_IHS_speed" id="THC_home___Fast_IHS_speed"></a>THC 
+ home/Fast IHS speed</p>
+<p class="SettingBody">This value specifies the speed that is used during 
+ the following actions:</p>
+<ul style="list-style: disc;">
+	<li><p class="SettingBody">Home the torch at the top of the slide.</p></li>
+	<li><p class="SettingBody">Move the torch from the selected IHS height 
+	 until it senses the workpiece.</p></li>
+</ul>
+<p class="SettingName"><a name="THC_slow_IHS_speed" id="THC_slow_IHS_speed"></a>THC 
+ slow IHS speed</p>
+<p class="SettingBody">This value specifies the speed used to retract the 
+ torch after it senses the workpiece. The torch retracts at this speed 
+ until contact sense is lost. This determines the exact distance to the 
+ workpiece regardless of any flexing of the workpiece. A very low speed 
+ is recommended for optimal accuracy.</p>
+<p class="SettingName"><a name="Rotate_acceleration_rate" id="Rotate_acceleration_rate"></a>Rotate 
+ acceleration rate</p>
+<p class="SettingBody">This value specifies the acceleration rate, in revolutions 
+ per second<span class="Superscript">2</span>, for smooth bevel head motion. 
+ The higher the acceleration rate, the quicker the Rotate axis reaches 
+ cutting speed. The lower the acceleration rate, the smoother the machine 
+ will position the cutting device.</p>
+<p class="SettingName"><a name="Maximum_rotate_speed" id="Maximum_rotate_speed"></a>Maximum 
+ rotate speed</p>
+<p class="SettingBody">This value specifies the fastest speed for the rotate 
+ axis rotation in revolutions/minute.</p>
+<p class="SettingName"><a name="Rotate_fast_jog_home_speed" id="Rotate_fast_jog_home_speed"></a>Rotate 
+ fast jog/home speed</p>
+<p class="SettingBody">This value specifies the fastest speed for the rotate 
+ axis when it jogs.</p>
+<p class="SettingName"><a name="Rotate_slow_jog_home_speed" id="Rotate_slow_jog_home_speed"></a>Rotate 
+ slow jog/home speed</p>
+<p class="SettingBody">This value specifies the slowest speed for the rotate 
+ axis when it jogs.</p>
+<p class="SettingName"><a name="Tilt_acceleration_rate" id="Tilt_acceleration_rate"></a>Tilt 
+ acceleration rate</p>
+<p class="SettingBody">This value specifies the acceleration rate, in revolutions/second<span 
+	 class="Superscript">2</span>, for smooth and stable movement of the 
+ bevel head. The higher the acceleration rate, the quicker the tilt axis 
+ reaches cutting speed. The lower the acceleration rate, the smoother the 
+ machine positions the cutting device.</p>
+<p class="SettingName"><a name="Maximum_tilt_speed" id="Maximum_tilt_speed"></a>Maximum 
+ tilt speed</p>
+<p class="SettingBody">This value specifies the fastest speed for the tilt 
+ axis, in revolutions/minute.</p>
+<p class="SettingName"><a name="Tilt_fast_jog_home_speed" id="Tilt_fast_jog_home_speed"></a>Tilt 
+ fast jog/home speed</p>
+<p class="SettingBody">This value specifies the fastest speed for tilt 
+ axis when it jogs.</p>
+<p class="SettingName"><a name="Tilt_slow_jog_home_speed" id="Tilt_slow_jog_home_speed"></a>Tilt 
+ slow jog/home speed</p>
+<p class="SettingBody">This value specifies the slowest speed for tilt 
+ axis when it jogs.</p>
+<p class="SettingName"><a name="S-curve_acceleration" id="S-curve_acceleration"></a>S-curve 
+ acceleration</p>
+<p class="SettingBody">Select <span style="font-weight: bold;">Yes</span> 
+ to enable S-curve acceleration. Select <span style="font-weight: bold;">No</span> 
+ to use trapezoidal acceleration. Depending on the application and table 
+ mechanics, S-curve acceleration can reduce or eliminate “jerk” that results 
+ from trapezoidal motion. S-curve motion is available in the Advanced Plasma/Oxyfuel 
+ and Advanced Waterjet options to the EDGE Connect. </p>
+<p class="SettingBody">See <a href="S-curve_acceleration.htm">S-curve acceleration</a> 
+ for more information.</p>
+<p class="SettingBody"><span class="Bold">Caution!</span> <span class="Bold">To 
+ prevent machine damage</span></p>
+<p class="SettingBody">If the existing trapezoidal acceleration parameter 
+ value is set to the maximum acceleration capability of the cutting table, 
+ reduce this acceleration parameter by 50% before enabling the S-curve 
+ feature.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>

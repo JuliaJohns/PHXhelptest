@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Files or Load From Disk Screen</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.3.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Contents > Files Screens" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<p>&#160;</p>
+
+<h1>Files or Load from Disk</h1>
+<p>By default, the <span style="font-weight: bold;">Files</span> soft key 
+ shows the “Load from Disk” actions. You can load part programs from the 
+ CNC hard drive, a USB memory stick, or external mapped drives (network 
+ option) into working memory on the CNC. Permission to add or remove files 
+ and folders from the hard drive is assigned in the Status/Feature list 
+ on the <a href="Special_Setups.htm" style="font-weight: bold;">Special 
+ Setups</a> screen.</p>
+<p>Phoenix filters the file types that you see in this screen by the file 
+ extension that you enter in the <a href="Special_Setups.htm" style="font-weight: bold;">Special 
+ Setups</a> screen. For example, if you want to open CNC files, then you 
+ must enter CNC as a file extension on the <span style="font-weight: bold;">Special 
+ Setups</span> screen. </p>
+<p><span style="font-weight: bold;">Note:</span> Phoenix uses ProNest CNC 
+ to open DXF and DWG files. However, if these extensions have been entered 
+ in the <span style="font-weight: bold;">Special Setups</span> screen, 
+ you will still see these types of files. To open DXF and DWG files, choose 
+ the <span style="font-weight: bold;">ProNest CNC</span> soft key on the 
+ <a href="Shape_Manager_or_Shape_Library_Screen.htm" style="font-weight: bold;">Shape 
+ Library</a> screen.</p>
+<table class="FieldJumps" cellspacing="16px" width="50%">
+	<col style="width: 100%;" />
+	<tr>
+		<td><p><a href="#Load_from">Load from</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Files">Files</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#Preview">Preview</a></p></td>
+	</tr>
+	<tr>
+		<td><p><a href="#file_name">File Name</a></p></td>
+	</tr>
+</table>
+<h2><a name="Field_Definitions" id="Field_Definitions"></a>Field Definitions</h2>
+<p class="SettingName"><a name="Load_from" id="Load_from"></a>Load from</p>
+<p class="SettingBody">Choose a source that contains the file to load from 
+ the list.</p>
+<p class="SettingName"><a name="Files" id="Files"></a>Files</p>
+<p class="SettingBody">This field shows a list of files from the selected 
+ source.</p>
+<p class="SettingName"><a name="Preview" id="Preview"></a>Preview</p>
+<p class="SettingBody">Check this box to preview the selected file.</p>
+<p class="SettingName"><a name="file_name" id="file_name"></a>File Name</p>
+<p class="SettingBody">This field displays the name of the file selected 
+ in the <span style="font-weight: bold;">Files</span> list.</p>
+<h2><a name="Soft_Keys" id="Soft_Keys"></a>Soft Keys</h2>
+<div>
+<p class="SettingName">Load from Disk</p>
+<p class="SettingBody">This soft key opens a screen where you can load 
+ part programs from a USB memory stick or the CNC hard drive.</p>
+</div>
+<div>
+<p class="SettingName">Save to Disk</p>
+<p class="SettingBody">This soft key opens a<span class="Bold"> </span>screen 
+ where you can save a part program to a USB memory stick or the CNC hard 
+ drive.</p>
+</div>
+<div>
+<p class="SettingName">Resume Last Part</p>
+<p class="SettingBody">This soft key loads and executes another part program 
+ and then returns to the original part program. The part program and position 
+ resumes.</p>
+</div>
+<p class="SettingName">Show Certain Files</p>
+<p class="SettingBody">This soft key lets you use wildcard searches, both 
+ asterisk (*) and question mark (?), to search the selected folder for 
+ specific part files.</p>
+<p class="SettingName">Show All Files</p>
+<p class="SettingBody">This soft key lets you view all files with the file 
+ extensions selected in the <a href="Special_Setups.htm" style="font-weight: bold;">Special 
+ Setups</a> screen, rather than view only the selected files extensions.</p>
+<p>&#160;</p>
+<p class="Part_Number_Copyright">809710 Revision 5&#160;© 2017 Hypertherm, Inc.</p>
+<div style="position: relative; margin-top: 8px;" id="footer">
+	<p class="BackToTopFloat"><a href="#">Back to top</a></p>
+</div>
+</body>
+</html>
